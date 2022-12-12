@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>(prototype) [search query] - TUD repository</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Ashley Hemerik">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Import the component -->
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="body">
+
+	<header style="background-color: white; box-shadow: 0 2px 7px rgba(0,0,0,0.1); padding: 20px; display: flex; justify-content: space-between;">
+		<div style="width: fit-content; display: inline-block;" class="blue-text">
+			<a href="" class="blue-text">
+				<i class="material-icons left">school</i> 
+				<b class="hide-on-small-only">TU Delft Student Theses Repository</b>
+			</a>
+		</div>
+
+		<!--
+		<div style="background-color: white; border-radius: 999px; padding: 0 10px 0 30px; width: fit-content; border: #ddd 1px solid">
+			<input type="text" name="" id="" style="width: 30vw; border: none !important; margin: 0; height: 2rem;">
+			<i class="material-icons right blue-text" style="font-size: 2rem; margin-top: 2px; cursor: pointer;">search</i>
+		</div>-->
+
+		<div style="width: fit-content; display: inline-block;">
+			<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+				<a href="#" class="blue-text">
+					<i class="material-icons right">login</i>
+					<b class="hide-on-med-and-down">Log in</b>
+				</a>
+			</div>
+			<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+				<a href="#" class="blue-text">
+					<i class="material-icons right">upload</i>
+					<b class="hide-on-small-only">Upload</b>
+				</a>
+			</div>
+			<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+				<a href="#" class="blue-text">
+					<i class="material-icons right">bookmarks</i>
+					<b class="hide-on-small-only">Bookmarks</b>
+				</a>
+			</div>
+			<div style="width: fit-content; display: inline-block;">
+				<a href="#" class="blue-text">
+					<i class="material-icons right">history</i>
+					<b class="hide-on-small-only">History</b>
+				</a>
+			</div>
+		</div>
+
+	</header>
+
+	<article>
+		<!--Search Bar-->
+		<div style="background-color: white; border-radius: 999px; padding: 0 10px 0 30px; margin: 10vh auto 20px auto; width: fit-content; box-shadow: rgba(0, 0, 0, 0.1) 0 2px 7px; border: #ddd 1px solid">
+			<input type="text" name="" id="" style="width: 30vw; border: none !important">
+			<i class="material-icons right" style="font-size: 40px; margin-top: 7px; cursor: pointer;">search</i>
+		</div>
+		<!--Filters-->
+		<div style="margin: auto; text-align: center; font-size: large;">
+			Faculty/Program: <span class="dropdown">All <i class="material-icons">expand_more</i></span>&nbsp;
+			<label>
+        <input type="checkbox" class="filled-in"  checked="checked" />
+        <span>Include reports under embargo and without PDF report</span>
+      </label>
+			<br>
+			<label>
+        <input type="checkbox" class="filled-in"  checked="checked" />
+        <span>Master Theses</span>
+      </label>
+			<label>
+        <input type="checkbox" class="filled-in"  checked="checked" />
+        <span>Bachelor Theses</span>
+      </label>
+			<label>
+        <input type="checkbox" class="filled-in"  checked="checked" />
+        <span>Student Reports</span>
+      </label>
+			<br>
+			From <input type="number" name="" id="" style="max-width: 60px; text-align: right;" value="2007"> To <input type="number" name="" id="" style="max-width: 60px; text-align: right;" value="2022">
+			<br>
+			<a href="#" class="btn-flat waves-effect waves-dark blue-text">Advanced Search</a>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m2 hide-on-small-only" style="padding-left: 30px;">
+				<p>Popular Keywords:</p>
+				
+				<div class="chip">design (403)</div><br>
+				<div class="chip">Machine Learning (290)</div><br>
+				<div class="chip">Sustainability (283)</div><br>
+				<div class="chip">Amsterdam (261)</div><br>
+				<div class="chip">sustainability (243)</div><br>
+				<div class="chip">Design (231)</div><br>
+				<div class="chip">Rotterdam (229)</div><br>
+				<div class="chip">CFD (216)</div><br>
+				<div class="chip">Architecture (213)</div><br>
+				<div class="chip">Optimization (207)</div><br>
+				<div class="chip">architecture (198)</div><br>
+				<div class="chip">Windenergy (186)</div><br>
+				<div class="chip">optimization (186)</div><br>
+				<div class="chip">AR2A011 (185)</div><br>
+				<div class="chip">Deep Learning (173)</div><br>
+				<div class="chip">Circular Economy (160)</div><br>
+				<div class="chip">machine learning (150)</div><br>
+				<div class="chip">Delft3D (128)</div><br>
+				<div class="chip">public space (116)</div><br>
+				<div class="chip">simulation (115)</div><br>
+				<div class="chip">transformation (103)</div><br>
+				<div class="chip">Machine learning (102)</div><br>
+				<div class="chip">Optimisation (99)</div><br>
+				<div class="chip">Transformation (98)</div><br>
+				<div class="chip">modelling (98)</div><br>
+				<div class="chip">Simulation (97)</div><br>
+				<div class="chip">Modelling (96)</div><br>
+				<a href="" class="btn-flat blue-text">show more</a>
+		
+		
+			</div>
+
+
+			<div class="col s12 m8">
+				<!--Search Results-->
+		Sort By 
+		<a href="">Relevance</a> ▼ &nbsp;&nbsp;
+		<a href="">Date</a> &nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="">Trending</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="">Popularity</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<br>
+		<br>
+
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/260" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="">Title</a> <i class="material-icons tooltipped" data-tooltip="Only available for TU students/personell. login required">school</i></h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis By <a href="">Authorname Lastname</a> | Program: <a href="">Industrial Design Engineering - Design for Interaction</a> | 03-02-2023</p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p><span class="grey-text">[<i class="material-icons">smart_toy</i>Summarized by AI]</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/250" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="">Title</a></h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis By <a href="">Authorname Lastname</a> | Program: <a href="">Industrial Design Engineering - Design for Interaction</a> | 03-02-2023</p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="chip yellow"><i class="material-icons" style="vertical-align: top;">workspace_premium</i>Top 5 in 'Design for Interaction'</div><br>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div class="card" style="display: flex; padding: 20px; border-radius: 10px;">
+			<div>
+				<!--<img src="https://picsum.photos/99/99" alt="" class="circle" style="margin-right: 10px;">-->
+				<div style="background-color: #33a; color:white;border-radius: 999px; width: 100px; text-align: center; height: 100px; margin-right: 10px;" class="valign-wrapper"><div style="text-align: center; width: 100%; font-size: xx-large;">SL</div></div>
+
+			</div>
+			<div>
+				<span class="card-title"><a href="">Supervisorname Lastname</a> 
+					<i class="material-icons green-text tooltipped right" data-tooltip="Available for supervising (confirmed May 2022 by secretariat)">check_circle</i>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuX_SdeauP7yVLUdmrpjpLmifhRBaCavWKwJk4w9o&s" alt="" width="15px" style="cursor:pointer">
+					 (supervisor)</span>
+				<span class="card-content">
+					<p><a href="">Industrial Design Engineering - Human Centered Design</a></p>
+					<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+				</span>
+			</div>
+		</div>
+		<div class="card" style="display: flex; padding: 20px; border-radius: 10px;">
+			<div>
+				<!--<img src="https://picsum.photos/99/99" alt="" class="circle" style="margin-right: 10px;">-->
+				<div style="background-color: #c33; color:white;border-radius: 999px; width: 100px; text-align: center; height: 100px; margin-right: 10px;" class="valign-wrapper"><div style="text-align: center; width: 100%; font-size: xx-large;">SL</div></div>
+
+			</div>
+			<div>
+				<span class="card-title"><a href="">Supervisorname Lastname</a> 
+					<i class="material-icons green-text tooltipped right" data-tooltip="Available for supervising (confirmed May 2022 by secretariat)">check_circle</i>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuX_SdeauP7yVLUdmrpjpLmifhRBaCavWKwJk4w9o&s" alt="" width="15px" style="cursor:pointer">
+					 (supervisor)</span>
+				<span class="card-content">
+					<p><a href="">Industrial Design Engineering - Human Centered Design</a></p>
+					<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/261" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="">Title</a> <i class="material-icons tooltipped" data-tooltip="PDF under embargo, or invisible for privacy">visibility_off</i></h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis By <a href="">Authorname Lastname</a> | Program: <a href="">Industrial Design Engineering - Design for Interaction</a> | 03-02-2023</p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/255" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="">Title</a></h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis By <a href="">Authorname Lastname</a> | Program: <a href="">Industrial Design Engineering - Design for Interaction</a> | 03-02-2023</p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/262" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="">Title</a></h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis By <a href="">Authorname Lastname</a> | Program: <a href="">Industrial Design Engineering - Design for Interaction</a> | 03-02-2023</p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/254" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="">Title</a></h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis By <a href="">Authorname Lastname</a> | Program: <a href="">Industrial Design Engineering - Design for Interaction</a> | 03-02-2023</p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/263" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="">Title</a></h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis By <a href="">Authorname Lastname</a> | Program: <a href="">Industrial Design Engineering - Design for Interaction</a> | 03-02-2023</p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/249" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="">Title</a></h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis By <a href="">Authorname Lastname</a> | Program: <a href="">Industrial Design Engineering - Design for Interaction</a> | 03-02-2023</p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/266" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="">Title</a></h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis By <a href="">Authorname Lastname</a> | Program: <a href="">Industrial Design Engineering - Design for Interaction</a> | 03-02-2023</p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+			</div>
+
+			<div class="col s12 m2 hide-on-small-only">
+
+			</div>
+		</div>
+
+		
+	</article>
+	
+	<!--Footer-->
+	<footer class="page-footer blue" style="margin-top: 1em;">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">dns</i>
+					<a href="#" class="white-text">Other repositories</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">article</i>
+					<a href="" class="white-text">about</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">error</i>
+					<a href="" class="white-text">Disclaimer</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">gavel</i>
+					<a href="" class="white-text">Terms of Use</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">login</i>
+					<a href="" class="white-text">Log In</a>
+				</div>
+			</div>
+			<br>
+			&nbsp;
+		</div>
+	</footer>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="../js/materialize.js"></script>
+	<script src="../js/init.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

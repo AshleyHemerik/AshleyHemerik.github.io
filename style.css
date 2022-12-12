@@ -1,0 +1,80 @@
+.shadow {
+	text-shadow: 0px 0px 12px #000;
+}
+
+.aida {
+	margin-right: 20px !important;
+	margin-bottom: 5px !important;
+	padding: 5px !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	border-radius: 10px 10px 10px 0px;
+	background-color: #03a9f4;
+	color: white;
+	text-align: left;
+	width: fit-content;
+
+}
+
+.ash {
+	margin-left: auto !important;
+	margin-bottom: 5px !important;
+	padding: 5px !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	border-radius: 10px 10px 0px 10px;
+	background-color: #009688;
+	color:white;
+	text-align: right;
+	width: fit-content;
+}
+
+.ttd .tt{
+	visibility: hidden;
+	background-color: white;
+	border: #ddd 1px solid;
+	border-radius: 5px;
+	min-width: 100px;
+	min-height: 50px;
+	max-width: 500px;
+	position: absolute;
+  z-index: 1;
+	padding: 10px
+}
+
+.ttd:hover .tt{
+	visibility: visible !important;
+}
+
+.chip {
+	cursor: pointer;
+}
+.bib-item {
+	width: 100%;
+	border: 1px lightgray solid;
+	border-radius: 10px;
+	padding: 5px 5px 0 5px;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.bib-item::before {
+	background: dodgerblue;
+	padding:3px;
+	border-radius: 100px;
+}
+
+.showerImage {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+		max-width: 90%;
+		background-color: white;  
+		display: block; 
+		margin-left: auto; 
+		margin-right: auto; 
+		padding-top: 20px;
+		height: 90%;
+}
+
+.card .card-content p {
+	margin-top: 10px;
+}

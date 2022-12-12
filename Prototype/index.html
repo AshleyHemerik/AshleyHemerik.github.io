@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>(prototype) TU Delft Student Theses Repository</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Ashley Hemerik">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Import the component -->
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="body">
+
+	<header style="background-image: url(../Images/library.jpg); background-size: cover; min-height: 50vh; background-position: center;">
+		<div style="padding: 20px; color:white; text-shadow: rgba(0, 0, 0, 0.1) 0 2px 7px;">
+			<div style="width: fit-content; display: inline-block; cursor: pointer;">
+				<i class="material-icons left">school</i> 
+				<b>TU Delft Student Theses Repository</b>
+			</div>
+
+			<div style="width: fit-content; display: inline-block; float: right">
+				<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+					<a href="#" style="color: white;">
+						<i class="material-icons right">login</i>
+						<b class="hide-on-small-only">Log in</b>
+					</a>
+				</div>
+				<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+					<a href="#" style="color: white;">
+						<i class="material-icons right">upload</i>
+						<b class="hide-on-small-only">Upload</b>
+					</a>
+				</div>
+				<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+					<a href="#" style="color: white;">
+						<i class="material-icons right">bookmarks</i>
+						<b class="hide-on-small-only">Bookmarks</b>
+					</a>
+				</div>
+				<div style="width: fit-content; display: inline-block;">
+					<a href="#" style="color: white;">
+						<i class="material-icons right">history</i>
+						<b class="hide-on-small-only">History</b>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div style="background-color: white; border-radius: 999px; padding: 0 10px 0 30px; margin: auto; margin-top: 20vh; width: fit-content; box-shadow: rgba(0, 0, 0, 0.1) 0 2px 7px;">
+			<input type="text" name="" id="" style="width: 30vw; border: none !important">
+			<i class="material-icons right" style="font-size: 40px; margin-top: 7px; cursor: pointer;">search</i>
+		</div>
+	</header>
+
+	<article class="container">
+		<p>Welcome to the student theses repository of the TU Delft. Here you can find all publicly available graduation theses and student reports of the students of the TU.</p>
+		
+		<h4 class="blue-text">Featured Thesis:</h4>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/300" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text">Title</h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+				<div class="chip purple white-text"><i class="material-icons" style="vertical-align: top;">workspace_premium</i> Featured Thesis</div><br>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div style="text-align: right;">
+			<a href="#" class="btn-flat blue-text waves-effect waves-dark">View more</a>
+		</div>
+
+		<h4 class="blue-text">
+			<span class="dropdown dropdown-trigger" data-target='dropdown1'>
+				<i class="material-icons">new_releases</i> New <i class="material-icons">expand_more</i></span> 
+			&nbsp;in 
+			<span class="dropdown dropdown-trigger" data-target='dropdown2'>
+				Industrial Design Engineering - Strategic Product Design (SPD) 
+				<i class="material-icons">expand_more</i></span>
+		</h4>
+		<ul id='dropdown1' class='dropdown-content' style="min-width: fit-content;">
+			<li><a href="#!"><i class="material-icons">new_releases</i> New</a></li>
+			<li><a href="#!"><i class="material-icons">trending_up</i> Trending</a></li>
+			<li><a href="#!"><i class="material-icons">star</i> Most Popular</a></li>
+		</ul>
+
+		<ul id='dropdown2' class='dropdown-content' style="min-width: fit-content;">
+			<li><a href="#!">All</a></li>
+			<li><a href="#!">Industrial Design Engineering - All</a></li>
+			<li><a href="#!">Industrial Design Engineering - Design for Interaction (DFI)</a></li>
+			<li><a href="#!">Industrial Design Engineering - Strategic Product Design (SPD)</a></li>
+			<li><a href="#!">Industrial Design Engineering - Integrated Product Design (IPD)</a></li>
+			<li><a href="#!">3ME - All</a></li>
+			<li><a href="#!">3ME - Biomedical Engineering</a></li>
+			<li><a href="#!">3ME - Marine Technology</a></li>
+			<li><a href="#!">3ME - Materials Science Engineering</a></li>
+			<li><a href="#!">3ME - Biomechanical Engineering</a></li>
+			<li><a href="#!">3ME - Energy, Flow, and Process Technology</a></li>
+			<li><a href="#!">3ME - High-Tech Engineering</a></li>
+			<li><a href="#!">3ME - OptoMechantronics</a></li>
+			<li><a href="#!">3ME - Multi-Machine Engineering</a></li>
+			<li><a href="#!">3ME - Offshore Dredging Engineering</a></li>
+			<li><a href="#!">3ME - Systems and Control</a></li>
+			<li><a href="#!">3ME - Technical Medicine</a></li>
+			<li><a href="#!">3ME - Robotics</a></li>
+		</ul>
+		
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="row">
+					<div class="col s12 m4">
+						<img src="https://picsum.photos/200/301" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
+					</div>
+					<div class="col s12 m8">
+						<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<h5 class="blue-text">Title</h5>
+						<h6 class="grey-text">Subtitle</h6>
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="row">
+					<div class="col s12 m4">
+						<img src="https://picsum.photos/200/302" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
+					</div>
+					<div class="col s12 m8">
+						<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<h5 class="blue-text">Title</h5>
+						<h6 class="grey-text">Subtitle</h6>
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="row">
+					<div class="col s12 m4">
+						<img src="https://picsum.photos/200/303" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
+					</div>
+					<div class="col s12 m8">
+						<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<h5 class="blue-text">Title</h5>
+						<h6 class="grey-text">Subtitle</h6>
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="row">
+					<div class="col s12 m4">
+						<img src="https://picsum.photos/200/250" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
+					</div>
+					<div class="col s12 m8">
+						<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<h5 class="blue-text">Title</h5>
+						<h6 class="grey-text">Subtitle</h6>
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align: right;">
+			<a href="#" class="btn-flat blue-text waves-effect waves-dark">View more</a>
+		</div>
+
+		<h5 class="blue-text">Prize Winners</h5>
+		<h5 class="blue-text" style="text-align: center;">EEMCS best thesis award:</h5>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/260" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text">Title</h5>
+				<h6 class="grey-text">Subtitle</h6>
+				<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">EEMCS - Software Design</a></p>
+				<div class="chip purple white-text"><i class="material-icons" style="vertical-align: top;">workspace_premium</i> EEMCS Best Thesis 2022</div><br>
+				<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div style="text-align: right;">
+			<a href="#" class="btn-flat blue-text waves-effect waves-dark">View more</a>
+		</div>
+
+		<h4 class="blue-text">
+			<span class="dropdown dropdown-trigger" data-target='dropdown3'>
+				<i class="material-icons">trending_up</i> Trending <i class="material-icons">expand_more</i></span> 
+			&nbsp;in 
+			<span class="chiplike dropdown-trigger" data-target='dropdown4'>
+				Sustainability
+				<i class="material-icons">expand_more</i></span>
+		</h4>
+		<ul id='dropdown3' class='dropdown-content' style="min-width: fit-content;">
+			<li><a href="#!"><i class="material-icons">new_releases</i> New</a></li>
+			<li><a href="#!"><i class="material-icons">trending_up</i> Trending</a></li>
+			<li><a href="#!"><i class="material-icons">star</i> Most Popular</a></li>
+		</ul>
+
+		<ul id='dropdown4' class='dropdown-content' style="min-width: fit-content;">
+			<li><a href="#!">Design</a></li>
+			<li><a href="#!">Machine Learning</a></li>
+			<li><a href="#!">Sustainability</a></li>
+			<li><a href="#!">Amsterdam</a></li>
+			<li><a href="#!">Rotterdam</a></li>
+			<li><a href="#!">CFD</a></li>
+			<li><a href="#!">Architecture</a></li>
+			<li><a href="#!">Wind Energy</a></li>
+			<li><a href="#!">Optimization</a></li>
+			<li><a href="#!">AR2A011</a></li>
+			<li><a href="#!">Deep Learning</a></li>
+			<li><a href="#!">Circular Economy</a></li>
+			<li><a href="#!">Delft 3D</a></li>
+			<li><a href="#!">Public Space</a></li>
+			<li><a href="#!">Simulation</a></li>
+			<li><a href="#!">Transformation</a></li>
+			<li><a href="#!">Modelling</a></li>
+			<li><a href="#!">Strategy</a></li>
+			<li><a href="#!">Innovation</a></li>
+			<li><a href="#!">Heritage</a></li>
+			<li><a href="#!">FPGA</a></li>
+			<li><a href="#!">Dwelling</a></li>
+			<li><a href="#!">Housing</a></li>
+			<li><a href="#!">FEM</a></li>
+			<li><a href="#!">Hydrogen</a></li>
+			<li><a href="#!">Circularity</a></li>
+			<li><a href="#!">Reinforcement Learning</a></li>
+			<li><a href="#!">Additive Manufacturing</a></li>
+			<li><a href="#!">Breakwater</a></li>
+			<li><a href="#!">3D printing</a></li>
+			<li><a href="#!">India</a></li>
+			<li><a href="#!">Infrastructure</a></li>
+			<li><a href="#!">IoT</a></li>
+			<li><a href="#!">Interaction</a></li>
+			<li><a href="#!">Mobility</a></li>
+			<li><a href="#!">Blockchain</a></li>
+		</ul>
+		
+		
+		
+		<div class="row">
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/300/206">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip"><i class="material-icons" style="vertical-align: top;">workspace_premium</i> Trending</div><br>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">bookmark</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/300/205">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip"><i class="material-icons" style="vertical-align: top;">workspace_premium</i> Trending</div><br>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">bookmark</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/300/210">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip"><i class="material-icons" style="vertical-align: top;">workspace_premium</i> Trending</div><br>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">bookmark</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/200/200">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip"><i class="material-icons" style="vertical-align: top;">workspace_premium</i> Trending</div><br>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">bookmark</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align: right;">
+			<a href="#" class="btn-flat blue-text waves-effect waves-dark">View more</a>
+		</div>
+
+
+		<h4 class="blue-text"><i class="material-icons">bookmarks</i> Your Bookmarked Theses</h4>
+		<div class="row">
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/301/206">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">unbookmark</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/301/205">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">unbookmark</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/301/210">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">unbookmark</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+			</div>
+		</div>
+
+		<h4 class="blue-text"><i class="material-icons">history</i> History</h4>
+		<div class="row">
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/298/206">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">bookmark</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/298/205">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">bookmark</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/298/210">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">bookmark</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://picsum.photos/298/200">
+						<span class="card-title truncated"><a href="" style="color:white;text-shadow:black 0 1px 3px">Title: <br>subtitle</a></span>
+					</div>
+					<div class="card-content">
+						<p class="grey-text">Master Thesis by <a href="">Authorname Lastname</a> (03-02-2023)<br><a href="">IDE - Design for Interaction</a></p>
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					</div>
+					<div class="card-action">
+						<a href="" class="blue-text">bookmark</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align: right;">
+			<a href="#" class="btn-flat blue-text waves-effect waves-dark">View more</a>
+		</div>
+
+	</article>
+
+	
+
+	<!--Footer-->
+	<footer class="page-footer blue" style="margin-top: 1em;">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">dns</i>
+					<a href="#" class="white-text">Other repositories</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">article</i>
+					<a href="" class="white-text">about</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">error</i>
+					<a href="" class="white-text">Disclaimer</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">gavel</i>
+					<a href="" class="white-text">Terms of Use</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">login</i>
+					<a href="" class="white-text">Log In</a>
+				</div>
+			</div>
+			<br>
+			&nbsp;
+		</div>
+	</footer>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="../js/materialize.js"></script>
+	<script src="../js/init.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

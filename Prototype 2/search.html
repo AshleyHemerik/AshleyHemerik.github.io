@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>(prototype) [search query] - TUD repository</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Ashley Hemerik">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Import the component -->
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="body" onload="start()">
+
+	<header style="background-color: white; box-shadow: 0 2px 7px rgba(0,0,0,0.1); padding: 20px; display: flex; justify-content: space-between;">
+		<div style="width: fit-content; display: inline-block;" class="blue-text">
+			<a href="index.html" class="blue-text">
+				<i class="material-icons left">school</i> 
+				<b class="hide-on-small-only">TU Delft Student Theses Repository</b>
+			</a>
+		</div>
+
+		<!--
+		<div style="background-color: white; border-radius: 999px; padding: 0 10px 0 30px; width: fit-content; border: #ddd 1px solid">
+			<input type="text" name="" id="" style="width: 30vw; border: none !important; margin: 0; height: 2rem;">
+			<i class="material-icons right blue-text" style="font-size: 2rem; margin-top: 2px; cursor: pointer;">search</i>
+		</div>-->
+
+		<div style="width: fit-content; display: inline-block; padding: 0px">
+			<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+				<a href="login.html" class="blue-text">
+					<i class="material-icons right">login</i>
+					<b class="hide-on-med-and-down">Log in</b>
+				</a>
+			</div>
+			<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+				<a href="UploadPage.html" class="blue-text">
+					<i class="material-icons right">upload</i>
+					<b class="hide-on-med-and-down">Upload</b>
+				</a>
+			</div>
+			<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+				<a href="index.html#bookmarks" class="blue-text">
+					<i class="material-icons right">bookmarks</i>
+					<b class="hide-on-med-and-down">Bookmarks</b>
+				</a>
+			</div>
+			<div style="width: fit-content; display: inline-block;">
+				<a href="index.html#history" class="blue-text">
+					<i class="material-icons right">history</i>
+					<b class="hide-on-med-and-down">History</b>
+				</a>
+			</div>
+		</div>
+
+	</header>
+
+	<article>
+		<!--Search Bar-->
+		<div style="background-color: white; border-radius: 999px; padding: 0 10px 0 30px; margin: 10vh auto 20px auto; width: fit-content; box-shadow: rgba(0, 0, 0, 0.1) 0 2px 7px; border: #ddd 1px solid">
+			<input type="text" name="" id="" style="width: 30vw; border: none !important">
+			<i class="material-icons right" style="font-size: 40px; margin-top: 7px; cursor: pointer;">search</i>
+		</div>
+		<!--Filters-->
+		<div style="margin: auto; text-align: center; font-size: large;">
+			Faculty/Program: <span class="dropdown dropdown-trigger" data-target="dropdown2"><span id="puthere">All</span> <i class="material-icons">expand_more</i></span>&nbsp;
+			<label>
+        <input type="checkbox" class="filled-in"  checked="checked" onchange="start()" />
+        <span>Include reports under embargo and without PDF report</span>
+      </label>
+			<br>
+			<label>
+        <input type="checkbox" class="filled-in"  checked="checked" onchange="start()" />
+        <span>Master Theses</span>
+      </label>
+			<label>
+        <input type="checkbox" class="filled-in"  checked="checked" onchange="start()" />
+        <span>Bachelor Theses</span>
+      </label>
+			<label>
+        <input type="checkbox" class="filled-in"  checked="checked" onchange="start()" />
+        <span>Student Reports</span>
+      </label>
+			<label>
+        <input type="checkbox" class="filled-in"  checked="checked" onchange="start()" />
+        <span>Supervisors</span>
+      </label>
+			<br>
+			From <input type="number" name="" id="" style="max-width: 60px; text-align: right;" value="2007"> To <input type="number" name="" id="" style="max-width: 60px; text-align: right;" value="2022">
+			<br>
+			<a href="#modal1" class="btn-flat waves-effect waves-dark blue-text modal-trigger">Advanced Search</a>
+		</div>
+
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal">
+			<div class="modal-content">
+				<h4>Advanced Search</h4>
+				<div>
+					<h6>Find people...</h6>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include TU Personell</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include confirmed available for supervision</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include probably available for supervision</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" onchange="start()"/> <span>Include not available for supervision</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include students/alumni</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include alumni with bachelors thesis on the repository</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include alumni with masters thesis on the repository</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" onchange="start()"/> <span>Include alumni with neither thesis on the repository (only student reports)</span></label></p>
+
+					<p><label>Name includes <input type="text" name="" id="" class="uploadTextField"></label></p>
+					<p><label>Faculty includes <input type="text" name="" id="" class="uploadTextField"></label></p>
+					<p><label>Programme includes <input type="text" name="" id="" class="uploadTextField"></label></p>
+					<p><label>Department includes <input type="text" name="" id="" class="uploadTextField"></label></p>
+					<p><label>Subjects associated with person include <input type="text" name="" id="" class="uploadTextField"></label></p>
+				</div>
+
+				<div class="search_form">
+					<h6>Find content...</h2>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include reports under embargo</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include reports that require login</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include hidden reports</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include Master Theses</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include Bachelor Theses</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include Student Reports</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include English Theses</span></label></p>
+					<p><label><input type="checkbox" class="filled-in" checked="checked" onchange="start()"/> <span>Include Dutch Theses</span></label></p>
+
+					<div class="columnContainer">
+							<div class="columnOne inputs">
+									<label for="allwords">
+											With all words:
+									</label>
+							</div>
+
+							<div class="columnTwo">
+									<div class="search-cell search-field">
+											<div class="global-search">
+													<input id="allwords" itemprop="query-input" class="uploadTextField" placeholder="Type all important words" value="" name="allThese">
+											</div>
+									</div>
+							</div>
+					</div>
+
+					<div class="columnContainer">
+							<div class="columnOne inputs">
+									<label for="exact">With the exact phrase:</label>
+							</div>
+
+							<div class="columnTwo">
+									<div class="search-cell search-field">
+											<div class="global-search">
+													<input id="exact" itemprop="query-input" class="uploadTextField" placeholder="Type exact phrase to search for" value="" name="exactPhrase">
+											</div>
+									</div>
+							</div>
+					</div>
+
+					<div class="columnContainer">
+							<div class="columnOne inputs">
+									<label for="or">With at least one of the words:</label></div>
+
+							<div class="columnTwo">
+									<div class="search-cell search-field">
+											<div class="global-search">
+													<input id="or" class="uploadTextField" placeholder="Type in optional words" value="" name="or">
+											</div>
+									</div>
+							</div>
+					</div>
+
+					<div class="columnContainer RelatedConcepts">
+							<div class="columnOne inputs">
+									<label for="withoutthewords">Without the words:</label>
+							</div>
+
+							<div class="columnTwo">
+									<div class="search-cell search-field">
+											<div class="global-search dimmed">
+													<input id="withoutthewords" class="uploadTextField" placeholder="Type words to leave out of the search" value="" name="minus">
+											</div>
+									</div>
+							</div>
+					</div>
+			</div>
+				
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Search</a>
+			</div>
+		</div>
+
+		<ul id='dropdown2' class='dropdown-content' style="min-width: fit-content;">
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">All</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">Industrial Design Engineering - All</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">Industrial Design Engineering - Design for Interaction (DFI)</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">Industrial Design Engineering - Strategic Product Design (SPD)</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">Industrial Design Engineering - Integrated Product Design (IPD)</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - All</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - Biomedical Engineering</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - Marine Technology</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - Materials Science Engineering</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - Biomechanical Engineering</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - Energy, Flow, and Process Technology</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - High-Tech Engineering</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - OptoMechantronics</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - Multi-Machine Engineering</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - Offshore Dredging Engineering</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - Systems and Control</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - Technical Medicine</a></li>
+			<li><a href="#!" onclick="document.getElementById('puthere').innerText = this.innerText; start()">3ME - Robotics</a></li>
+		</ul>
+
+		<div class="row">
+			<div class="col s12 m2 hide-on-small-only" style="padding-left: 30px;">
+				<p>Popular Keywords:</p>
+				
+				<div class="chip">design (403)</div><br>
+				<div class="chip">Machine Learning (290)</div><br>
+				<div class="chip">Sustainability (283)</div><br>
+				<div class="chip">Amsterdam (261)</div><br>
+				<div class="chip">sustainability (243)</div><br>
+				<div class="chip">Design (231)</div><br>
+				<div class="chip">Rotterdam (229)</div><br>
+				<div class="chip">CFD (216)</div><br>
+				<div class="chip">Architecture (213)</div><br>
+				<div class="chip">Optimization (207)</div><br>
+				<div class="chip">architecture (198)</div><br>
+				<div class="chip">Windenergy (186)</div><br>
+				<div class="chip">optimization (186)</div><br>
+				<div class="chip">AR2A011 (185)</div><br>
+				<div class="chip">Deep Learning (173)</div><br>
+				<div class="chip">Circular Economy (160)</div><br>
+				<div class="chip">machine learning (150)</div><br>
+				<div class="chip">Delft3D (128)</div><br>
+				<div class="chip">public space (116)</div><br>
+				<div class="chip">simulation (115)</div><br>
+				<div class="chip">transformation (103)</div><br>
+				<div class="chip">Machine learning (102)</div><br>
+				<div class="chip">Optimisation (99)</div><br>
+				<div class="chip">Transformation (98)</div><br>
+				<div class="chip">modelling (98)</div><br>
+				<div class="chip">Simulation (97)</div><br>
+				<div class="chip">Modelling (96)</div><br>
+				<a href="" class="btn-flat blue-text">show more</a>
+		
+		
+			</div>
+
+
+			<div class="col s12 m8">
+				<!--Search Results-->
+		<b>Sort By&nbsp;&nbsp;</b>
+		
+		<div class="dropdown dropdown-trigger" data-target="dropdown3" style="margin-top: 5px; min-width: 200px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px; display: inline-block;">
+			<span class="black-text" id="sort">Relevance</span>
+			<i class="material-icons right">expand_more</i>
+		</div>
+
+		<!-- Dropdown Structure -->
+		<ul id='dropdown3' class='dropdown-content'>
+			<li><a href="#!" onclick="document.getElementById('sort').innerText='Relevance'; start()"><i class="material-icons">search</i> Relevance</a></li>
+			<li><a href="#!" onclick="document.getElementById('sort').innerText='Trending'; start()"><i class="material-icons">trending_up</i> Trending</a></li>
+			<li><a href="#!" onclick="document.getElementById('sort').innerText='Date (new-old)'; start()"><i class="material-icons">calendar_month</i> Date (new-old)</a></li>
+			<li><a href="#!" onclick="document.getElementById('sort').innerText='Date (old-new)'; start()"><i class="material-icons">calendar_month</i> Date (old-new)</a></li>
+			<li><a href="#!" onclick="document.getElementById('sort').innerText='Total Popularity (most-least)'; start()"><i class="material-icons">star</i> Total Popularity (most-least)</a></li>
+			<li><a href="#!" onclick="document.getElementById('sort').innerText='Total Popularity (least-most)'; start()"><i class="material-icons">star</i> Total Popularity (least-most)</a></li>
+		</ul>
+
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/260" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="#!" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="entry.html" class="title">Title</a></h5>
+				<h6 class="grey-text subtitle">Subtitle</h6>
+				<p class="grey-text"><span class="type">Master Thesis</span> By <a href="studentprofile.html" class="author">Authorname Lastname</a> | Program: <a href="Programme.html" class="programme">Industrial Design Engineering - Design for Interaction</a> | <span class="date">03-02-2023</span></p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="keywords">
+					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				</div>
+				<p><span class="grey-text">[<i class="material-icons">smart_toy</i>Summarized by AI]</span> <span class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</span></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/250" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="#!" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="entry.html" class="title">Title</a></h5>
+				<h6 class="grey-text subtitle">Subtitle</h6>
+				<p class="grey-text"><span class="type">Master Thesis</span> By <a href="studentprofile.html" class="author">Authorname Lastname</a> | Program: <a href="Programme.html" class="programme">Industrial Design Engineering - Design for Interaction</a> | <span class="date">03-02-2023</span></p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="chip yellow"><i class="material-icons" style="vertical-align: top;">workspace_premium</i>Top 5 in 'Design for Interaction'</div><br>
+				<div class="keywords">
+					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				</div>
+				<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+		<div class="card" style="display: flex; padding: 20px; border-radius: 10px;">
+			<div>
+				<!--<img src="https://picsum.photos/99/99" alt="" class="circle" style="margin-right: 10px;">-->
+				<div style="background-color: #33a; color:white;border-radius: 999px; width: 100px; text-align: center; height: 100px; margin-right: 10px;" class="valign-wrapper"><div style="text-align: center; width: 100%; font-size: xx-large;">SL</div></div>
+
+			</div>
+			<div>
+				<span class="card-title"><a href="supervisorprofile.html" class="name">Supervisorname Lastname</a>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuX_SdeauP7yVLUdmrpjpLmifhRBaCavWKwJk4w9o&s" alt="" width="15px" style="cursor:pointer">
+					 (supervisor)</span>
+				<span class="card-content">
+					<p class="green-text"><i class="material-icons">check_circle</i> Available for thesis supervision (confirmed May 2022 by secretariat)</p>
+					<p><a href="">Industrial Design Engineering - Human Centered Design</a></p>
+					<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+				</span>
+			</div>
+		</div>
+		<div class="card" style="display: flex; padding: 20px; border-radius: 10px;">
+			<div>
+				<!--<img src="https://picsum.photos/99/99" alt="" class="circle" style="margin-right: 10px;">-->
+				<div style="background-color: #c33; color:white;border-radius: 999px; width: 100px; text-align: center; height: 100px; margin-right: 10px;" class="valign-wrapper"><div style="text-align: center; width: 100%; font-size: xx-large;">SL</div></div>
+
+			</div>
+			<div>
+				<span class="card-title"><a href="supervisorprofile.html" class="name">Supervisorname Lastname</a>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuX_SdeauP7yVLUdmrpjpLmifhRBaCavWKwJk4w9o&s" alt="" width="15px" style="cursor:pointer">
+					 (supervisor)</span>
+				<span class="card-content">
+					<p class="yellow-text text-darken-3"><i class="material-icons">help</i> Maybe available for thesis supervision (last supervised thesis: March 2022)</p>
+					<p><a href="">Industrial Design Engineering - Human Centered Design</a></p>
+					<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+				</span>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="../Images/login required.jpg" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="#!" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="grey-text"><a href="login.html" class="title grey-text">Title</a> <i class="material-icons tooltipped" data-tooltip="PDF under embargo, or invisible for privacy">visibility_off</i></h5>
+				<h6 class="grey-text subtitle">Subtitle</h6>
+				<p class="grey-text"><span class="type">Master Thesis</span> By <a href="studentprofile.html" class="author">Authorname Lastname</a> | Program: <a href="Programme.html" class="programme">Industrial Design Engineering - Design for Interaction</a> | <span class="date">03-02-2023</span></p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="keywords">
+					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				</div>
+				<p class="desc grey-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/255" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="#!" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="entry.html" class="title">Title</a></h5>
+				<h6 class="grey-text subtitle">Subtitle</h6>
+				<p class="yellow-text text-darken-3">Report PDF not included (under embargo until November 2024)</p>
+				<p class="grey-text"><span class="type">Master Thesis</span> By <a href="studentprofile.html" class="author">Authorname Lastname</a> | Program: <a href="Programme.html" class="programme">Industrial Design Engineering - Design for Interaction</a> | <span class="date">03-02-2023</span></p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="keywords">
+					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				</div>
+				<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/262" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="#!" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="entry.html" class="title">Title</a></h5>
+				<h6 class="grey-text subtitle">Subtitle</h6>
+				<p class="grey-text"><span class="type">Master Thesis</span> By <a href="studentprofile.html" class="author">Authorname Lastname</a> | Program: <a href="Programme.html" class="programme">Industrial Design Engineering - Design for Interaction</a> | <span class="date">03-02-2023</span></p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="keywords">
+					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				</div>
+				<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/254" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="#!" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="entry.html" class="title">Title</a></h5>
+				<h6 class="grey-text subtitle">Subtitle</h6>
+				<p class="grey-text"><span class="type">Master Thesis</span> By <a href="studentprofile.html" class="author">Authorname Lastname</a> | Program: <a href="Programme.html" class="programme">Industrial Design Engineering - Design for Interaction</a> | <span class="date">03-02-2023</span></p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="keywords">
+					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				</div>
+				<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/263" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="#!" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="entry.html" class="title">Title</a></h5>
+				<h6 class="grey-text subtitle">Subtitle</h6>
+				<p class="grey-text"><span class="type">Master Thesis</span> By <a href="studentprofile.html" class="author">Authorname Lastname</a> | Program: <a href="Programme.html" class="programme">Industrial Design Engineering - Design for Interaction</a> | <span class="date">03-02-2023</span></p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="keywords">
+					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				</div>
+				<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/249" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="#!" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="entry.html" class="title">Title</a></h5>
+				<h6 class="grey-text subtitle">Subtitle</h6>
+				<p class="grey-text"><span class="type">Master Thesis</span> By <a href="studentprofile.html" class="author">Authorname Lastname</a> | Program: <a href="Programme.html" class="programme">Industrial Design Engineering - Design for Interaction</a> | <span class="date">03-02-2023</span></p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="keywords">
+					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				</div>
+				<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m4 l2">
+				<img src="https://picsum.photos/200/266" alt="" width="100%" style="cursor: pointer; box-shadow: #0001 0 5px 10px;">
+			</div>
+			<div class="col s12 m8 l10">
+				<a href="#!" class="btn-floating right blue waves-effect waves-light tooltipped" data-tooltip="bookmark"><i class="material-icons">bookmark</i></a>
+				<h5 class="blue-text"><a href="entry.html" class="title">Title</a></h5>
+				<h6 class="grey-text subtitle">Subtitle</h6>
+				<p class="grey-text"><span class="type">Master Thesis</span> By <a href="studentprofile.html" class="author">Authorname Lastname</a> | Program: <a href="Programme.html" class="programme">Industrial Design Engineering - Design for Interaction</a> | <span class="date">03-02-2023</span></p>
+				<p class="grey-text">2176 Views, 47 downloads, 10 bookmarks</p>
+				<div class="keywords">
+					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+				</div>
+				<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+			</div>
+		</div>
+
+			</div>
+
+			<div class="col s12 m2 hide-on-small-only">
+
+			</div>
+		</div>
+
+		
+	</article>
+	
+	<!--Footer-->
+	<footer class="page-footer blue" style="margin-top: 1em;">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">dns</i>
+					<a href="#" class="white-text">Other repositories</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">article</i>
+					<a href="" class="white-text">about</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">error</i>
+					<a href="" class="white-text">Disclaimer</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">gavel</i>
+					<a href="" class="white-text">Terms of Use</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">login</i>
+					<a href="" class="white-text">Log In</a>
+				</div>
+			</div>
+			<br>
+			&nbsp;
+		</div>
+	</footer>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="../js/materialize.js"></script>
+	<script src="../js/init.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

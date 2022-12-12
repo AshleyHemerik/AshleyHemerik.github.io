@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>(prototype) Upload Thesis</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Ashley Hemerik">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="body">
+
+	<header style="background-color: white; box-shadow: 0 2px 7px rgba(0,0,0,0.1); display: flex; justify-content: space-between;">
+		<div style="width: fit-content; display: inline-block; padding: 20px" class="blue-text">
+			<a href="" class="blue-text">
+				<i class="material-icons left">school</i> 
+				<b class="hide-on-small-only">TU Delft Student Theses Repository</b>
+			</a>
+		</div>
+	</header>
+
+	<article class="container">
+		<h1 class="blue-text">Upload your Masters Thesis</h1>
+
+		<h4 class="blue-text">Metadata</h4>
+
+		<b>Original Language of the Thesis</b> <span class="red-text">*</span>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<div class="dropdown dropdown-trigger" data-target="dropdown3" style="margin-top: 5px; max-width: 300px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px;">
+			<span class="black-text">English</span>
+			<i class="material-icons right">expand_more</i>
+		</div>
+
+		  <!-- Dropdown Structure -->
+			<ul id='dropdown3' class='dropdown-content'>
+				<li><a href="#!">English</a></li>
+				<li><a href="#!">Dutch</a></li>
+			</ul>
+
+		<b>Thesis Title (in its original language) </b><span class="red-text">*</span>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<input type="text" name="" id="" class="uploadTextField">
+
+		<b>Thesis Subtitle (in its original language) </b>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<input type="text" name="" id="" class="uploadTextField">
+
+		<b>Pitch (very short abstract)</b> <span class="red-text">*</span>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<textarea name="" id="" cols="30" rows="1"></textarea>
+		<span class="right grey-text" style="position:relative;top:-40px; right: 15px;">0/120</span>
+
+		<b>Abstract</b> <span class="red-text">*</span>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<textarea name="" id="" cols="30" rows="1"></textarea>
+
+		<b>Keywords (seperate with comma)</b> <span class="red-text">*</span>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<input type="text" name="" id="" class="uploadTextField">
+
+		<b>Programme</b> <span class="red-text">*</span>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<div class="dropdown dropdown-trigger" data-target="dropdown2" style="margin-top: 5px; max-width: 300px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px;">
+			<span class="black-text">IDE - Design for Interaction</span>
+			<i class="material-icons right">expand_more</i>
+		</div>
+
+		<!-- Dropdown Structure -->
+		<ul id='dropdown2' class='dropdown-content' style="min-width: fit-content;">
+			<li><a href="#!">All</a></li>
+			<li><a href="#!">Industrial Design Engineering - All</a></li>
+			<li><a href="#!">Industrial Design Engineering - Design for Interaction (DFI)</a></li>
+			<li><a href="#!">Industrial Design Engineering - Strategic Product Design (SPD)</a></li>
+			<li><a href="#!">Industrial Design Engineering - Integrated Product Design (IPD)</a></li>
+			<li><a href="#!">3ME - All</a></li>
+			<li><a href="#!">3ME - Biomedical Engineering</a></li>
+			<li><a href="#!">3ME - Marine Technology</a></li>
+			<li><a href="#!">3ME - Materials Science Engineering</a></li>
+			<li><a href="#!">3ME - Biomechanical Engineering</a></li>
+			<li><a href="#!">3ME - Energy, Flow, and Process Technology</a></li>
+			<li><a href="#!">3ME - High-Tech Engineering</a></li>
+			<li><a href="#!">3ME - OptoMechantronics</a></li>
+			<li><a href="#!">3ME - Multi-Machine Engineering</a></li>
+			<li><a href="#!">3ME - Offshore Dredging Engineering</a></li>
+			<li><a href="#!">3ME - Systems and Control</a></li>
+			<li><a href="#!">3ME - Technical Medicine</a></li>
+			<li><a href="#!">3ME - Robotics</a></li>
+		</ul>
+
+		<b>Other Bibliographical Notes</b>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<textarea name="" id="" cols="30" rows="1"></textarea>
+
+		<h5 class="blue-text">Contributors</h5>
+		<div class="row">
+			<div class="col s12 m6 l4">
+				<b>Author(s)</b> <span class="red-text">*</span>
+				<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+				<!--<div class="card" style="display: flex; border-radius: 20px; padding: 10px">
+					<div class="defaultPFP">YN</div>
+					<div>
+						<span class="card-title">Yourname Lastname (author)</span><br>
+						<a href="">Industrial Design Engineering - Design for Interaction</a><br><br>
+						<a href="" class="btn blue">Add Organisational Unit</a>
+					</div>
+				</div>-->
+				<div style="display: flex; margin: 10px 0">
+					<img src="https://thispersondoesnotexist.com/image" alt="" width="50px" height="50px" class="circle" style="margin-right: 10px">
+					<div>
+						Yourname Lastname<br>
+							<span class="grey-text">Industrial Design Engineering</span><br>
+							<a href="">add organiational unit</a>
+					</div>
+				</div>
+				<a href="" class="btn blue">Add another Author</a>
+			</div>
+			<div class="col s12 m6 l4">
+				<b>Supervisor(s)</b> <span class="red-text">*</span>
+				<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+				<br>
+				<a href="" class="btn blue" style="margin-bottom: 5px;">Add a supervisor</a>
+				<a href="" class="btn blue">Add an organisation</a>
+			</div>
+			<div class="col s12 m6 l4">
+				<b>Student Thesis managed by</b> <span class="red-text">*</span>
+					<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+					<!--<div class="card" style="display: flex; border-radius: 20px; padding: 10px">
+						<img src="../Images/IDE.jpg" alt="" class="circle" width="100px" height="100px" style="margin-right: 10px">
+						<div>
+							<span class="card-title">Industrial Design Engineering</span><br>
+							<span class="grey-text">Faculty</span>
+						</div>
+					</div>-->
+					<div style="display: flex; margin: 10px 0">
+						<img src="../Images/IDE.jpg" alt="" width="50px" height="50px" class="circle" style="margin-right: 10px">
+						<div>
+							Industrial Design Engineering<br>
+							<span class="grey-text">Faculty</span><br>
+						</div>
+					</div>
+					<a href="" class="btn blue">Change organisational Unit</a>
+			</div>
+		</div>
+		
+		
+
+		<br>
+		<h5 class="blue-text">Award Information</h5>
+		<div class="row">
+			<div class="col s12 m6 l4">
+				<b>Date of the awarding of your graduation</b> <span class="red-text">*</span>
+				<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+				<input type="date" name="" id="">
+			</div>
+			<div class="col s12 m6 l4">
+				<b>Sponsors (external organisations)</b>
+				<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+				<br>
+				<a href="" class="btn blue">Add External Organisation</a>
+			</div>
+		</div>
+		
+
+
+
+
+
+
+		<h4 class="blue-text">Files</h4>
+		<p>Important! check if you don't have you, or anyone else's phone number or email address in your files.</p>
+		<div class="row">
+			<div class="col s12 m6">
+
+				<b>PDFs (.pdf)</b> <span class="red-text">*</span>
+				<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+				<div class="dropzone">
+					<p class="material-icons grey-text" style="font-size: xx-large; text-align: center; margin: auto">picture_as_pdf</p>
+					<p class="grey-text">Drop files here</p>
+					<input type="file" name="" id="">
+				</div>
+
+				<b>Videos (.mp4, .ogg, .webm)</b>
+				<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+				<div class="dropzone">
+					<p class="material-icons grey-text" style="font-size: xx-large; text-align: center; margin: auto">video_library</p>
+					<p class="grey-text">Drop files here</p>
+					<input type="file" name="" id="">
+				</div>
+
+				<b>Audio Files (.mp3, .wav, ogg)</b>
+				<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+				<div class="dropzone">
+					<p class="material-icons grey-text" style="font-size: xx-large; text-align: center; margin: auto">library_music</p>
+					<p class="grey-text">Drop files here</p>
+					<input type="file" name="" id="">
+				</div>
+
+			</div>
+			<div class="col s12 m6">
+
+				<b>Images (.jpeg, .gif, .png, .apng, .svg, .bmp)</b>
+				<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+				<div class="dropzone">
+					<p class="material-icons grey-text" style="font-size: xx-large; text-align: center; margin: auto">photo_library</p>
+					<p class="grey-text">Drop files here</p>
+					<input type="file" name="" id="">
+				</div>
+
+				<b>3D Models (.obj, .cad, .fbx, )</b>
+				<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+				<div class="dropzone">
+					<p class="material-icons grey-text" style="font-size: xx-large; text-align: center; margin: auto">view_in_ar</p>
+					<p class="grey-text">Drop files here</p>
+					<input type="file" name="" id="">
+				</div>
+
+				<b>Others</b>
+				<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+				<div class="dropzone">
+					<p class="material-icons grey-text" style="font-size: xx-large; text-align: center; margin: auto">upload_file</p>
+					<p class="grey-text">Drop files here</p>
+					<input type="file" name="" id="">
+				</div>
+
+			</div>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>File</th>
+					<th>Title</th>
+					<th>Description</th>
+					<th>Available from-to (embargo / privacy)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align: center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1200px-PDF_icon.svg.png" alt="" width="50px" style="margin: auto;"><br>
+						<span class="grey-text">Master_graduation_repor<br>t_Ashley_Hemerik_4543629.pdf<br>71MB</span>
+						<br>
+						<label><input type="radio" class="with-gap" name="group1" /><span>Use as showcase/poster/graphic abstract</span></label><br>
+						<label><input type="radio" class="with-gap" name="group2" /><span>Use as cover image for your thesis entry</span></label>
+					</td>
+					<td>
+						<input type="text" name="" id="" class="uploadTextField" placeholder="Master_graduation_report_Ashley_Hemerik_4543629">
+					</td>
+					<td><input type="text" name="" id="" class="uploadTextField" value="The Report"></td>
+					<td>from: (embargo end date if applicable) <input type="date" name="" id=""><br>to: (privacy) <input type="date" name="" id=""></td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><img src="https://static.thenounproject.com/png/77707-200.png" alt="" width="50px" style="margin: auto;"><br>
+						<span class="grey-text">Master_graduation_Ashley_<br>Hemerik_4543629_Showcase_poster.jpg<br>12MB</span>
+						<br>
+						<label><input type="radio" class="with-gap"  checked="checked" name="group1" /><span>Use as showcase/poster/graphic abstract</span></label>
+						<label><input type="radio" class="with-gap" name="group2" /><span>Use as cover image for your thesis entry</span></label>
+					</td>
+					<td>
+						<input type="text" name="" id="" class="uploadTextField" value="Poster Showcase">
+					</td>
+					<td><input type="text" name="" id="" class="uploadTextField" value="Poster Showcase"></td>
+					<td>from: (embargo end date if applicable) <input type="date" name="" id=""><br>to: (privacy) <input type="date" name="" id=""></td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><img src="https://iconarchive.com/download/i96064/iconsmind/outline/File-Video.ico" alt="" width="50px" style="margin: auto;"><br>
+						<span class="grey-text">MasterPresentation.mp4<br>89MB</span>
+					</td>
+					<td><input type="text" name="" id="" class="uploadTextField" placeholder="MasterPresentation.mp4"></td>
+					<td><input type="text" name="" id="" class="uploadTextField" value="Presentation Recording"></td>
+					<td>from: (embargo end date if applicable) <input type="date" name="" id=""><br>to: (privacy) <input type="date" name="" id=""></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h5 class="blue-text">Thesis Links</h5>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<p>Add any links that are relevant to your thesis, such as a link to a github page, or website of an organisation.</p>
+		<p>You can also add your personal portfolio, linkedIn, or GitHub page. We recommend that you set a maximum amount of time for these types of links, as they may not
+			be relevant in a few years when you're done looking for jobs.
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>URL</th>
+					<th>Title</th>
+					<th>Description</th>
+					<th>Include Image</th>
+					<th>Preview</th>
+					<th>Also add link <br>to your profile</th>
+					<th>Available from-to (embargo / privacy)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="text" name="" id="" class="uploadTextField" value="https://ashleyhemerik.nl/"></td>
+					<td><input type="text" name="" id="" class="uploadTextField" placeholder="Ashley Hemerik, Portfolio"></td>
+					<td><textarea name="" id="" cols="30" rows="10" placeholder="Ashley Hemerik is a UI/UX designer following the master 'Design for Interaction' at the faculty for Industrial Design Engineering at the TU Delft."></textarea></td>
+					<td><label><input type="checkbox" class="filled-in"  checked="checked" /><span></span></label></td>
+					<td>
+						<div style="display: flex; max-width: 500px;">
+							<img src="https://picsum.photos/80/80" alt="" height="100px" style="margin-right: 10px; border-radius: 5px; box-shadow: #0001 0 5px 10px;">
+							<div>
+								<b><a href="">Ashley Hemerik, Portfolio</a></b><br>
+								Ashley Hemerik is a UI/UX designer following the master 'Design for Interaction' at the faculty for Industrial Design Engineering at the TU Delft.
+								<br><span class="grey-text">https://ashleyhemerik.nl/</span>
+							</div>
+						</div>
+					</td>
+					<td><label><input type="checkbox" class="filled-in"  checked="checked" /><span></span></label></td>
+					<td>from: (embargo end date if applicable) <input type="date" name="" id=""><br>to: (privacy) <input type="date" name="" id=""></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="" id="" class="uploadTextField" placeholder="paste URL here"></td>
+					<td><input type="text" name="" id="" class="uploadTextField" placeholder=""></td>
+					<td><textarea name="" id="" cols="30" rows="10" placeholder=""></textarea></td>
+					<td><label><input type="checkbox" class="filled-in"  checked="checked" /><span></span></label></td>
+					<td></td>
+					<td><label><input type="checkbox" class="filled-in"  checked="" /><span></span></label></td>
+					<td>from: (embargo end date if applicable) <input type="date" name="" id=""><br>to: (privacy) <input type="date" name="" id=""></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h5 class="blue-text">Also update your profile?</h5>
+		<b>Profile Image</b>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<div style="display: flex;">
+			<div class="valign-wrapper">
+				<div class="defaultPFP" style="margin-right: 20px;">YN</div>
+			</div>
+			<div class="dropzone">
+				<p class="grey-text">
+					<i class="material-icons" style="font-size: xx-large; text-align: center; margin: auto">image</i>
+					Drop file here
+				</p>
+				<input type="file" name="" id="">
+			</div>
+		</div>
+		<br>
+
+		<b>About you...</b>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<textarea name="" id="" cols="30" rows="1"></textarea>
+
+		<b>Profile Links</b>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<table>
+			<thead>
+				<tr>
+					<th>URL</th>
+					<th>Title</th>
+					<th>Description</th>
+					<th>Include Image</th>
+					<th>Preview</th>
+					<th>Visible until</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="text" name="" id="" class="uploadTextField" value="https://ashleyhemerik.nl/"></td>
+					<td><input type="text" name="" id="" class="uploadTextField" placeholder="Ashley Hemerik, Portfolio"></td>
+					<td><textarea name="" id="" cols="30" rows="10" placeholder="Ashley Hemerik is a UI/UX designer following the master 'Design for Interaction' at the faculty for Industrial Design Engineering at the TU Delft."></textarea></td>
+					<td><label><input type="checkbox" class="filled-in"  checked="checked" /><span></span></label></td>
+					<td>
+						<div style="display: flex; max-width: 500px;">
+							<img src="https://picsum.photos/80/80" alt="" height="100px" style="margin-right: 10px; border-radius: 5px; box-shadow: #0001 0 5px 10px;">
+							<div>
+								<b><a href="">Ashley Hemerik, Portfolio</a></b><br>
+								Ashley Hemerik is a UI/UX designer following the master 'Design for Interaction' at the faculty for Industrial Design Engineering at the TU Delft.
+								<br><span class="grey-text">https://ashleyhemerik.nl/</span>
+							</div>
+						</div>
+					</td>
+					<td>		
+						<div class="dropdown dropdown-trigger" data-target='dropdown4' style="margin-top: 5px; width: 120px ;max-width: 300px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px;">
+							<span class="black-text">2029</span>
+							<i class="material-icons right">expand_more</i>
+						</div>
+						<!-- Dropdown Structure -->
+						<ul id='dropdown4' class='dropdown-content'>
+							<li><a href="">2022</a></li>
+							<li><a href="">2023</a></li>
+							<li><a href="">2024</a></li>
+							<li><a href="">2025</a></li>
+							<li><a href="">2026</a></li>
+							<li><a href="">2027</a></li>
+							<li><a href="">2028</a></li>
+							<li><a href="">2029</a></li>
+							<li><a href="">2030</a></li>
+							<li><a href="">2031</a></li>
+							<li><a href="">2032</a></li>
+							<li><a href="">2033</a></li>
+							<li><a href="">Indefinitely</a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="" id="" class="uploadTextField" placeholder="paste URL here"></td>
+					<td><input type="text" name="" id="" class="uploadTextField" placeholder=""></td>
+					<td><textarea name="" id="" cols="30" rows="10" placeholder=""></textarea></td>
+					<td><label><input type="checkbox" class="filled-in"  checked="checked" /><span></span></label></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<hr style="border: 1px solid #0001">
+
+		<b>How long do you want your thesis and profile to be publicly available? (searchable by google, etc.)</b> <span class="red-text">*</span>
+		<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i>
+		<table>
+			<tr><th>Viewers</th><th>Thesis Entry</th><th>Profile</th>
+			</tr>
+			<tr>
+				<td>Findable on public search engines (i.e. google, or duckduckgo)
+					<i class="material-icons grey-text tooltipped right" data-tooltip="blabla">help</i></td>
+				<td>
+					<div class="dropdown dropdown-trigger" data-target='dropdown1' style="margin-top: 5px; max-width: 300px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px;">
+						<span class="black-text">Indefinitely</span>
+						<i class="material-icons right">expand_more</i>
+					</div>
+				</td>
+				<td>
+					<div class="dropdown dropdown-trigger" data-target='dropdown1' style="margin-top: 5px; max-width: 300px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px;">
+						<span class="black-text">Indefinitely</span>
+						<i class="material-icons right">expand_more</i>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Public (not logged in)</td>
+				<td>
+					<div class="dropdown dropdown-trigger" data-target='dropdown1' style="margin-top: 5px; max-width: 300px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px;">
+						<span class="black-text">Indefinitely</span>
+						<i class="material-icons right">expand_more</i>
+					</div>
+				</td>
+				<td>
+					<div class="dropdown dropdown-trigger" data-target='dropdown1' style="margin-top: 5px; max-width: 300px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px;">
+						<span class="black-text">Indefinitely</span>
+						<i class="material-icons right">expand_more</i>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Students and TU personell (logged in via NetID)</td>
+				<td>
+					<div class="dropdown dropdown-trigger" data-target='dropdown1' style="margin-top: 5px; max-width: 300px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px;">
+						<span class="black-text">Indefinitely</span>
+						<i class="material-icons right">expand_more</i>
+					</div>
+				</td>
+				<td>
+					<div class="dropdown dropdown-trigger" data-target='dropdown1' style="margin-top: 5px; max-width: 300px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px;">
+						<span class="black-text">Indefinitely</span>
+						<i class="material-icons right">expand_more</i>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<!--<div class="dropdown dropdown-trigger" data-target='dropdown1' style="margin-top: 5px; max-width: 300px; box-shadow: #0001 0 5px 10px; padding:10px; margin-bottom: 10px;">
+			<span class="black-text">Indefinitely</span>
+			<i class="material-icons right">expand_more</i>
+		</div>-->
+
+		<!-- Dropdown Structure -->
+		<ul id='dropdown1' class='dropdown-content'>
+			<li><a href="">Hide my thesis</a></li>
+			<li><a href="">1 year</a></li>
+			<li><a href="">3 years</a></li>
+			<li><a href="">10 years</a></li>
+			<li><a href="">Indefinitely (you can always submit a takedown request)</a></li>
+		</ul>
+					
+
+
+		<div style="text-align: center; margin-top: 10px;">
+			<a href="" class="btn-large blue" style="margin: auto;"><i class="material-icons left">open_in_new</i>Check entry preview</a>&nbsp;
+			<a href="" class="btn-large blue" style="margin: auto;"><i class="material-icons left">save</i>Save as draft</a>&nbsp;
+			<a href="" class="btn-large blue" style="margin: auto;"><i class="material-icons left">upload</i>Upload and Publish Thesis</a>
+		</div>
+		<p>When you hit upload, your entry will be sent to the editorial staff for checking. They will go over your upload entry and PDF to check if there are no emails or phone
+			numbers in your file for privacy reasons, and if you've filled the metadata in correctly.
+		</p>
+		<p>After uploading, you can always see a 'takedown request' button in the footer of the repository, or you could send an 
+			email to the editorial staff if you want something changed or deleted.
+		</p>
+		
+	</article>
+
+	<!--Footer-->
+	<footer class="page-footer blue" style="margin-top: 1em;">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">dns</i>
+					<a href="#" class="white-text">Other repositories</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">article</i>
+					<a href="" class="white-text">about</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">error</i>
+					<a href="" class="white-text">Disclaimer</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">gavel</i>
+					<a href="" class="white-text">Terms of Use</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">logout</i>
+					<a href="" class="white-text">Log Out</a>
+				</div>
+			</div>
+			<br>
+			&nbsp;
+			
+		</div>
+	</footer>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="../js/materialize.js"></script>
+	<script src="../js/init.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

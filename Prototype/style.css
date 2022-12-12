@@ -1,0 +1,123 @@
+.dropdown {
+	border-radius: 10px;
+	padding: 0 5px 0 10px;
+	border: solid #ddd 1px;
+	cursor: pointer;
+	color: #aaa;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */
+}
+
+.dropdown:hover {
+	background-color: #f8f8f8;
+}
+
+.dropdown-content li a {
+	color: dodgerblue !important;
+}
+
+.chip {
+	cursor: pointer;
+}
+
+.chiplike {
+	background-color: #e4e4e4;
+	border-radius: 999px;
+	padding: 0 20px 0 20px;
+	cursor:pointer;
+	color: rgba(0,0,0,0.5);
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */
+}
+
+span::after {
+	background-color: dodgerblue !important;
+	border-color: dodgerblue !important;
+}
+
+input {
+	box-shadow: none !important;
+}
+
+.material-icons {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */
+}
+
+.smallchip {
+	background-color: #e4e4e4;
+	color: #0008;
+	border-radius: 999px;
+	padding: 0 10px;
+	font-size: small;
+	margin-right: 0.1em;
+	display: inline-block;
+}
+
+.defaultPFP {
+	background-color: #33a;
+	color: white;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	font-size: xx-large;
+	border-radius: 999px;
+	margin-right: 10px;
+	line-height: 100px;
+
+}
+
+textarea {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: #0001 0 2px 10px;
+	margin: 5px 0 10px 0;
+	padding:10px;
+	resize: vertical;
+	min-height: fit-content;
+}
+textarea::placeholder {
+	color:gray
+}
+
+.dropzone {
+	background-color: #f4f4f4;
+	border: #ddd dashed 3px;
+	border-radius: 10px;
+	min-height: 100px;
+	padding: 20px;
+	text-align: center;
+	margin: 5px 0 10px 0;
+}
+
+.uploadTextField {
+	border: 1px solid #ddd !important;
+	border-radius: 5px !important;
+	box-shadow: #0001 0 2px 10px !important;
+	margin: 5px 0 10px 0 !important;
+	padding: 0 0 0 10px !important;
+	width: calc(100% - 10px) !important;
+}
+input::placeholder {
+	color:gray
+}
+
+.dropdown-content {
+	border: #ddd 1px solid;
+	border-radius: 10px;
+	box-shadow: #0001 0 5px 10px;
+}
+
+input[type="date"] {
+	max-width: fit-content;
+}
+
+[type="radio"].with-gap:checked + span::before {
+	border-color: dodgerblue !important;
+}

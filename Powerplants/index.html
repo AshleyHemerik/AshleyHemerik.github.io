@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Security of Supply during the Energy Transition</title>
+	<meta name="description" content="Ashley Hemerik's graduation project for redesigning the student theses repository for multimedia and modern usecases">
+	<meta name="keywords" content="Graduation, Theses, TU Delft, Interaction Designer, UI designer, UI/UX Designer, Pathfinder Dashboard, Pathfinder, Portfolio, TU Delft">
+	<meta name="author" content="Ashley Hemerik">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Import the component -->
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<!--Download as PDF-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+	integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body class="blue" onload="start()">
+
+	<div id="imageShower" style="display: none; position: sticky; top: 0; left: 0; background-color: #333; width: 100%; height: 100vh; z-index: 999;" 
+	onclick="$('#imageShower').fadeOut()">
+		<br>
+		<img id="showerImage" src="Images/3.png" class="showerImage">
+	</div>
+
+	<header>
+		<nav class="white" role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="#" class="brand-logo blue-text truncate"><i class="material-icons">school</i>Student Theses Repository Prototype</span></a>
+			</div>
+		</nav>
+	</header>
+	
+	<div id="index-banner" class="parallax-container" style="height: 300px; box-shadow: inset 0 0 10px 20px rgba(0, 0, 0, 0.1);">
+		<div class="section no-pad-bot"></div>
+		<div class="parallax">
+			<img src="Images/banner.png" alt="TU Library">
+		</div>
+		<div style="overflow-x:auto; white-space: nowrap; -ms-overflow-style: none;scrollbar-width: none; height: 150px;" id="mySlideShow">
+			<img src="Images/0.png"  alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/0.png')">
+			<img src="Images/1.png"  alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/1.png')">
+			<img src="Images/2.png"  alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/2.png')">
+			<img src="Images/3.png"  alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/3.png')">
+			<img src="Images/4.png"  alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/4.png')">
+			<img src="Images/5.png"  alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/5.png')">
+			<img src="Images/6.png"  alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/6.png')">
+			<img src="Images/7.png"  alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/7.png')">
+			<img src="Images/8.png"  alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/8.png')">
+			<img src="Images/9.png"  alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/9.png')">
+			<img src="Images/10.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/10.png')">
+			<img src="Images/11.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/11.png')">
+			<img src="Images/12.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/12.png')">
+			<img src="Images/13.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/13.png')">
+			<img src="Images/14.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/14.png')">
+			<img src="Images/15.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/15.png')">
+			<img src="Images/16.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/16.png')">
+			<img src="Images/17.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/17.png')">
+			<img src="Images/18.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/18.png')">
+			<img src="Images/19.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/19.png')">
+			<img src="Images/20.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/20.png')">
+			<img src="Images/21.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/21.png')">
+			<img src="Images/22.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/22.png')">
+			<img src="Images/23.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/23.png')">
+			<img src="Images/24.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/24.png')">
+			<img src="Images/25.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/25.png')">
+			<img src="Images/26.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/26.png')">
+			<img src="Images/27.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/27.png')">
+			<img src="Images/28.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/28.png')">
+			<img src="Images/29.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/29.png')">
+			<img src="Images/30.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/30.png')">
+			<img src="Images/31.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/31.png')">
+			<img src="Images/32.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/32.png')">
+			<img src="Images/33.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/33.png')">
+			<img src="Images/34.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/34.png')">
+			<img src="Images/35.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/35.png')">
+			<img src="Images/36.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/36.png')">
+			<img src="Images/37.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/37.png')">
+			<img src="Images/38.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/38.png')">
+			<img src="Images/49.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/49.png')">
+			<img src="Images/40.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/40.png')">
+			<img src="Images/41.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/41.png')">
+		</div>
+		<div style="overflow-x:auto; white-space: nowrap; -ms-overflow-style: none;scrollbar-width: none; height: 150px;" id="mySlideShow2">
+			<img src="Images/42.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/42.png')">
+			<img src="Images/43.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/43.png')">
+			<img src="Images/44.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/44.png')">
+			<img src="Images/45.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/45.png')">
+			<img src="Images/46.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/46.png')">
+			<img src="Images/47.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/47.png')">
+			<img src="Images/48.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/48.png')">
+			<img src="Images/49.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/49.png')">
+			<img src="Images/50.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/50.png')">
+			<img src="Images/51.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/51.png')">
+			<img src="Images/52.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/52.png')">
+			<img src="Images/53.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/53.png')">
+			<img src="Images/54.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/54.png')">
+			<img src="Images/55.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/55.png')">
+			<img src="Images/56.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/56.png')">
+			<img src="Images/57.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/57.png')">
+			<img src="Images/58.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/58.png')">
+			<img src="Images/59.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/59.png')">
+			<img src="Images/60.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/60.png')">
+			<img src="Images/61.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/61.png')">
+			<img src="Images/62.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/62.png')">
+			<img src="Images/63.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/63.png')">
+			<img src="Images/64.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/64.png')">
+			<img src="Images/65.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/65.png')">
+			<img src="Images/66.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/66.png')">
+			<img src="Images/67.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/67.png')">
+			<img src="Images/68.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/68.png')">
+			<img src="Images/69.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/69.png')">
+			<img src="Images/70.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/70.png')">
+			<img src="Images/71.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/71.png')">
+			<img src="Images/72.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/72.png')">
+			<img src="Images/73.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/73.png')">
+			<img src="Images/74.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/74.png')">
+			<img src="Images/75.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/75.png')">
+			<img src="Images/76.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/76.png')">
+			<img src="Images/77.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/77.png')">
+			<img src="Images/78.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/78.png')">
+			<img src="Images/79.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/79.png')">
+			<img src="Images/80.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/80.png')">
+			<img src="Images/81.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/81.png')">
+			<img src="Images/82.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/82.png')">
+			<img src="Images/83.png" alt="" height="100px" class="z-depth-3 white" style="margin: 10px; display: inline-block; cursor: pointer;" onclick="showImage('Images/83.png')">
+		</div>
+		
+	</div>
+
+	<article class="container white z-depth-1" style="padding: 40px; margin-top: 30px">
+		<div class="row">
+			<div class="col s2">
+				<img src="Images/cover.jpg" alt="" class="materialboxed left" width="100%;">
+			</div>
+			<div class="col s10">
+				<h1 class="blue-text" style="margin: 0;">Security of supply during the energy transition</h1>
+				<h5 class="grey-text">Evaluating the adequacy of the Dutch energy system during the transition to a zero carbon energy system in a realistic scenario</h5>
+				<p class="grey-text"><a href="">Master Thesis</a>. By: <a href="">B.C. van Nobelen</a>. Date: <a href="">2022</a>-09-23</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m6 l3">
+				<p class="blue-text">Popularity: 
+					<span class="circle blue white-text" style="width: 1.5em; display: inline-block; text-align: center;">15</span> 
+					<i class="material-icons left grey-text tooltipped" data-tooltip="This is calculated with blablabla">info</i>
+				</p>
+				<p class="blue-text">Academic Rigor: 
+					<span class="circle blue white-text" style="width: 1.5em; display: inline-block; text-align: center;">7</span>
+					<i class="material-icons left grey-text tooltipped" data-tooltip="This is calculated with blablabla">info</i>
+				</p>
+			</div>
+			<div class="col s12 m6 l9">
+				<div style="margin-left: auto; width: fit-content;">
+					<a href="" class="btn blue waves-effect waves-light"><i class="material-icons left">file_download</i> download pdf</a>
+					<a href="" class="btn blue waves-effect waves-light"><i class="material-icons left">thumb_up</i>like</a>
+					<a href="" class="btn blue waves-effect waves-light"><i class="material-icons left">bookmark</i>bookmark</a>
+					<a href="" class="btn blue waves-effect waves-light"><i class="material-icons left">format_quote</i>cite</a>
+				</div>
+				<p class="grey-text" style="text-align: right;">547 views. 381 downloads. 14 likes. 6 bookmarks. 2 citations.<br><a href="">Advanced Statistics...</a></p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col s12 m6">
+				<h4 class="blue-text">Pitch</h4>
+				<p>The renewable energy transition is coming! Which capacity remuneration mechanism would deliver the highest level of security of supply?
+					Multiple simulations are ran. The results show 0-carbon emissions won't be reached in 2050 without government interference; No shortage hours
+					will occur in an energy-only market; The basic strategic reverse is the cheapest and sufficient; And the best option for security of energy supply is a
+					yearly capacity market.
+				</p>
+				<h4 class="blue-text">Keywords</h4>
+				<div class="chip waves-effect">Energy</div>
+				<div class="chip waves-effect">Energy markets</div>
+				<div class="chip waves-effect">Capacity Market</div>
+				<div class="chip waves-effect">Strategic reserve</div>
+				<div class="chip waves-effect">Capacity Mechanism</div>
+				<div class="chip waves-effect">Simulations</div>
+				<div class="chip waves-effect">EMLab</div>
+				<div class="chip waves-effect">AMRIS</div>
+				<div class="chip waves-effect">Electricity</div>
+				<div class="chip waves-effect">Energy system</div>
+				<div class="chip waves-effect">Zero-carbon energy system</div>
+				<div class="chip waves-effect">Energy transition</div>
+			</div>
+			<div class="col s12 m6">
+				<h4 class="blue-text">Author</h4>
+				<div class="card">
+					<div class="card-content row">
+						<span class="card-title"><a href="">B.C. van Nobelen</a></span>
+						<div class="col s10">
+							<p><a href="">Electrical Engineering</a>, <a href="">Mathematics and Computer Science</a>, <a href="">Pattern Recognition and Bioinformatics</a></p>
+							<p class="grey-text">Research output: 7; Citations: 4</p>
+							<ul>
+								<li><b>Skills (via linkedIn):</b></li>
+								<li>Python</li>
+								<li>Dutch, (Native or Bilingual)</li>
+								<li>English, (Full Professional)</li>
+								<li>German (Professional Working)</li>
+							</ul>
+						</div>
+						<div class="col s2">
+							<img src="Images/bart.jpg" alt="" class="circle responsive-img">
+						</div>
+						<div class="col s12">
+							<ul>
+								<li><b>Experience (via linkedIn):</b></li>
+								<li>Energietalenten: Ambassador of the energy transition <span class="grey-text">september 2020 - Present (2 jaar 1 maand)</span></li>
+								<li>Skischule Serfaus: Ski instructor <span class="grey-text">december 2021 - april 2022 (5 maanden)</span></li>
+								<li>UniPartners Delft: Junior consultant <span class="grey-text">mei 2020 - juli 2020 (3 maanden)</span></li>
+								<li>Berenschot: Intern <span class="grey-text">september 2019 - januari 2020 (5 maanden)</span></li>
+								<li>KlasseStudent: Substitute Teacher <span class="grey-text">2018 - 2019 (1 jaar)</span></li>
+							</ul>
+							<ul>
+								<li><b>Education (via linkedIn):</b></li>
+								<li>TU Delft: MSc, Electrical Power Engineering <span class="grey-text">februari 2020 - september 2022</span></li>
+								<li>TU Delft: BSc, Electrical engineering <span class="grey-text">september 2015 - november 2019</span></li>
+								<li>TU Delft: Minor, Ondernemerschap: Technology-Based Entrepreneurship <span class="grey-text">september 2017 - januari 2018</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h4 class="blue-text">Contributors</h4>
+		<div class="row">
+			<div class="col s6 l4">
+				<div class="card">
+					<div class="card-content row">
+						<span class="card-title"><a href="">Cvetkovic, M.</a> (mentor)</span>
+						<div class="col s9">
+							<p><a href="">Electrical Engineering</a>, <a href="">Mathematics and Computer Science</a>, <a href="">Pattern Recognition and Bioinformatics</a></p>
+							<p class="grey-text">Research output: 7; Citations: 4</p>
+						</div>
+						<div class="col s3">
+							<img src="Images/p1.jpg" alt="" class="circle responsive-img">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s6 l4">
+				<div class="card">
+					<div class="card-content row">
+						<span class="card-title"><a href="">Palensky, P.</a> (graduation committee)</span>
+						<div class="col s9">
+							<p><a href="">Electrical Engineering</a>, <a href="">Mathematics and Computer Science</a>, <a href="">Pattern Recognition and Bioinformatics</a></p>
+							<p class="grey-text">Research output: 7; Citations: 4</p>
+						</div>
+						<div class="col s3">
+							<img src="Images/p2.jpg" alt="" class="circle responsive-img">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s6 l4">
+				<div class="card">
+					<div class="card-content row">
+						<span class="card-title"><a href="">De Vries, Laurens</a> (graduation committee)</span>
+						<div class="col s9">
+							<p><a href="">Electrical Engineering</a>, <a href="">Mathematics and Computer Science</a>, <a href="">Pattern Recognition and Bioinformatics</a></p>
+							<p class="grey-text">Research output: 7; Citations: 4</p>
+						</div>
+						<div class="col s3">
+							<img src="Images/p3.jpg" alt="" class="circle responsive-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 l6">
+				<h4 class="blue-text">Abstract</h4>
+				<p>The climate change is evident and a big contributor to the negative effects of the climate change is the energy production sector. Therefore, the energy production must shift towards a more environment friendly mix. Changing our energy sources to mostly renewable energy sources comes with many challenges. </p>
+				<p>the market is penetrated with a high concentration of renewable energy sources. So the electricity market mechanism needs to be reformed to have a price determination system better suited for energy sources with low marginal costs. Furthermore, a capacity remuneration system needs to be implemented to create enough investment incentive in controllable energy capacity to maintain a high level of security of supply in the Dutch energy system during the energy transition.</p>
+				<p>There exist many different forms of capacity remuneration mechanisms, but the strategic reserve and capacity markets are examined to check which one would work best in the Dutch energy system. In a strategic reserve a central authority sets the capacity volume, which will be contracted by an operator. This operator will dispatch the contracted capacity when needed. In a capacity market a central authority determines the amount of capacity each consumer should acquire through buying capacity credits on the market. </p>
+				<p>To determine which capacity remuneration mechanism would deliver the highest level of security of supply, simulations of the Dutch energy system are run. The simulations were done using the models AMIRIS and EMLab, which are coupled to give a more accurate representation of reality. The coupling takes place in the Spine Toolbox. The capacity remuneration mechanisms were created in Python and can be activated as modules in the Spine Toolbox.</p>
+				<p>The vertices are sketched of the possible future energy scenario of the Netherlands in 2050. These vertices are the so called scenarios, regional governance, national governance, European CO2-governance and international governance. The simulations were run with a scenario in which the energy demand stays equal and with a scenario where the energy demand descends similar to the international governance scenario. The international governance scenario was chosen to base the simulations on, because the simulations make profit driven decisions, similar to the international governance scenario. </p>
+				<p>The results of the simulations show that, firstly, without any governmental interference, a (near) zero-carbon energy system will not be achieved in 2050. Secondly, when running the energy-only market in a realistic scenario, no shortage hours will occur and the system had sufficient generation capacity for supplying the demand, even in a "dunkelflaute" scenario. Thirdly, the basic version of the strategic reserve offered the least costly solution for society for providing sufficient security of supply, so no significant shortage periods will occur in a realistic scenario. Finally, the best option for maintaining security of supply in the Netherlands during the transition to a zero-carbon energy system is the implementation of the yearly capacity market.</p>
+
+			</div>
+			<div class="col s12 l6">
+				<h4 class="blue-text">Videos</h4>
+				<video src="Images/video.mp4" width="100%" controls></video>
+			</div>
+			<div class="col s12 l6">
+				<h4 class="blue-text">Figures</h4>
+				<div id="imageCloud" style="max-height: calc(100vh / 2); overflow-y: scroll; padding: 10px" class="z-depth-1">
+					<img src="Images/0.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/1.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/2.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/3.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/4.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/5.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/6.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/7.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/8.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/9.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/0.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/1.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/2.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/3.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/4.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/5.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/6.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/7.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/8.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/9.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/10.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/11.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/12.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/13.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/14.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/15.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/16.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/17.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/18.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/19.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/20.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/21.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/22.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/23.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/24.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/25.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/26.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/27.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/28.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/29.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/30.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/31.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/32.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/33.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/34.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/35.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/36.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/37.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/38.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/39.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/40.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/41.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/42.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/43.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/44.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/45.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/46.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/47.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/48.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/49.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/50.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/51.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/52.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/53.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/54.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/55.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/56.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/57.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/58.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/59.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/60.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/61.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/62.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/63.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/64.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/65.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/66.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/67.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/68.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/69.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/70.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/71.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/72.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/73.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/74.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/75.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/76.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/77.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/78.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/79.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/80.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/81.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/82.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/83.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/84.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/85.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/86.png" alt="" class="materialboxed left" width="100px" >
+					<img src="Images/87.png" alt="" class="materialboxed left" width="100px" >
+				</div>
+			</div>
+			<div class="col s12">
+				<div class="carousel">
+					<a class="carousel-item"><img src="Images/0.png" ></a>
+					<a class="carousel-item"><img src="Images/1.png" ></a>
+					<a class="carousel-item"><img src="Images/2.png" ></a>
+					<a class="carousel-item"><img src="Images/3.png" ></a>
+					<a class="carousel-item"><img src="Images/4.png" ></a>
+					<a class="carousel-item"><img src="Images/5.png" ></a>
+					<a class="carousel-item"><img src="Images/6.png" ></a>
+					<a class="carousel-item"><img src="Images/7.png" ></a>
+					<a class="carousel-item"><img src="Images/8.png" ></a>
+					<a class="carousel-item"><img src="Images/9.png" ></a>
+					<a class="carousel-item"><img src="Images/0.png" ></a>
+					<a class="carousel-item"><img src="Images/1.png" ></a>
+					<a class="carousel-item"><img src="Images/2.png" ></a>
+					<a class="carousel-item"><img src="Images/3.png" ></a>
+					<a class="carousel-item"><img src="Images/4.png" ></a>
+					<a class="carousel-item"><img src="Images/5.png" ></a>
+					<a class="carousel-item"><img src="Images/6.png" ></a>
+					<a class="carousel-item"><img src="Images/7.png" ></a>
+					<a class="carousel-item"><img src="Images/8.png" ></a>
+					<a class="carousel-item"><img src="Images/9.png" ></a>
+					<a class="carousel-item"><img src="Images/10.png"></a>
+					<a class="carousel-item"><img src="Images/11.png"></a>
+					<a class="carousel-item"><img src="Images/12.png"></a>
+					<a class="carousel-item"><img src="Images/13.png"></a>
+					<a class="carousel-item"><img src="Images/14.png"></a>
+					<a class="carousel-item"><img src="Images/15.png"></a>
+					<a class="carousel-item"><img src="Images/16.png"></a>
+					<a class="carousel-item"><img src="Images/17.png"></a>
+					<a class="carousel-item"><img src="Images/18.png"></a>
+					<a class="carousel-item"><img src="Images/19.png"></a>
+					<a class="carousel-item"><img src="Images/20.png"></a>
+					<a class="carousel-item"><img src="Images/21.png"></a>
+					<a class="carousel-item"><img src="Images/22.png"></a>
+					<a class="carousel-item"><img src="Images/23.png"></a>
+					<a class="carousel-item"><img src="Images/24.png"></a>
+					<a class="carousel-item"><img src="Images/25.png"></a>
+					<a class="carousel-item"><img src="Images/26.png"></a>
+					<a class="carousel-item"><img src="Images/27.png"></a>
+					<a class="carousel-item"><img src="Images/28.png"></a>
+					<a class="carousel-item"><img src="Images/29.png"></a>
+					<a class="carousel-item"><img src="Images/30.png"></a>
+					<a class="carousel-item"><img src="Images/31.png"></a>
+					<a class="carousel-item"><img src="Images/32.png"></a>
+					<a class="carousel-item"><img src="Images/33.png"></a>
+					<a class="carousel-item"><img src="Images/34.png"></a>
+					<a class="carousel-item"><img src="Images/35.png"></a>
+					<a class="carousel-item"><img src="Images/36.png"></a>
+					<a class="carousel-item"><img src="Images/37.png"></a>
+					<a class="carousel-item"><img src="Images/38.png"></a>
+					<a class="carousel-item"><img src="Images/39.png"></a>
+					<a class="carousel-item"><img src="Images/40.png"></a>
+					<a class="carousel-item"><img src="Images/41.png"></a>
+					<a class="carousel-item"><img src="Images/42.png"></a>
+					<a class="carousel-item"><img src="Images/43.png"></a>
+					<a class="carousel-item"><img src="Images/44.png"></a>
+					<a class="carousel-item"><img src="Images/45.png"></a>
+					<a class="carousel-item"><img src="Images/46.png"></a>
+					<a class="carousel-item"><img src="Images/47.png"></a>
+					<a class="carousel-item"><img src="Images/48.png"></a>
+					<a class="carousel-item"><img src="Images/49.png"></a>
+					<a class="carousel-item"><img src="Images/50.png"></a>
+					<a class="carousel-item"><img src="Images/51.png"></a>
+					<a class="carousel-item"><img src="Images/52.png"></a>
+					<a class="carousel-item"><img src="Images/53.png"></a>
+					<a class="carousel-item"><img src="Images/54.png"></a>
+					<a class="carousel-item"><img src="Images/55.png"></a>
+					<a class="carousel-item"><img src="Images/56.png"></a>
+					<a class="carousel-item"><img src="Images/57.png"></a>
+					<a class="carousel-item"><img src="Images/58.png"></a>
+					<a class="carousel-item"><img src="Images/59.png"></a>
+					<a class="carousel-item"><img src="Images/60.png"></a>
+					<a class="carousel-item"><img src="Images/61.png"></a>
+					<a class="carousel-item"><img src="Images/62.png"></a>
+					<a class="carousel-item"><img src="Images/63.png"></a>
+					<a class="carousel-item"><img src="Images/64.png"></a>
+					<a class="carousel-item"><img src="Images/65.png"></a>
+					<a class="carousel-item"><img src="Images/66.png"></a>
+					<a class="carousel-item"><img src="Images/67.png"></a>
+					<a class="carousel-item"><img src="Images/68.png"></a>
+					<a class="carousel-item"><img src="Images/69.png"></a>
+					<a class="carousel-item"><img src="Images/70.png"></a>
+					<a class="carousel-item"><img src="Images/71.png"></a>
+					<a class="carousel-item"><img src="Images/72.png"></a>
+					<a class="carousel-item"><img src="Images/73.png"></a>
+					<a class="carousel-item"><img src="Images/74.png"></a>
+					<a class="carousel-item"><img src="Images/75.png"></a>
+					<a class="carousel-item"><img src="Images/76.png"></a>
+					<a class="carousel-item"><img src="Images/77.png"></a>
+					<a class="carousel-item"><img src="Images/78.png"></a>
+					<a class="carousel-item"><img src="Images/79.png"></a>
+					<a class="carousel-item"><img src="Images/80.png"></a>
+					<a class="carousel-item"><img src="Images/81.png"></a>
+					<a class="carousel-item"><img src="Images/82.png"></a>
+					<a class="carousel-item"><img src="Images/83.png"></a>
+					<a class="carousel-item"><img src="Images/84.png"></a>
+					<a class="carousel-item"><img src="Images/85.png"></a>
+					<a class="carousel-item"><img src="Images/86.png"></a>
+					<a class="carousel-item"><img src="Images/87.png"></a>
+				</div>
+			</div>
+			<div class="col s12 l6">
+				<h4 class="blue-text">Datasets</h4>
+				<iframe src="https://widgets.figshare.com/articles/21154606/embed?show_title=1" width="100%" height="300px" allowfullscreen frameborder="0">Your browser doesn't
+					support this iframe
+				</iframe>
+			</div>
+			<div class="col s12 l6">
+				<h4 class="blue-text">Models</h4>
+				<p>This model does not work online</p>
+				<a href="Images/AMIRIS.zip" class="btn blue"><i class="material-icons left">folder_zip</i> download the model</a>
+			</div>
+			<div class="col s12 l6">
+				<h4 class="blue-text">Report Word Cloud</h4>
+				<img src="Images/wordcloud.jpg" alt="" class="materialboxed" width="100%">
+			</div>
+			<div class="col s12 l6">
+				<h4 class="blue-text">Report file summary</h4>
+				<p class="grey-text">Word count: 8451<br>Page count: 162 <br>Sources cited: 84 <br>Academic sources: 79</p>
+				<p><b class="blue-text">Table of Contents</b></p>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header"><i class="material-icons blue-text">toc</i>See Table of Contents</div>
+						<div class="collapsible-body center row">
+							<pre style="border: #ddd 1px solid; border-radius: 10px; background-color: #f8f8f8; padding: 10px; font-size: small; line-height: 1; text-align: left;">
+Abstract (3 pages)
+List of Figures (1 pages)
+List of Tables (1 pages)
+List of Abbreviations (1 pages)
+Introduction (18 pages)
+  European electricity market design (6 pages)
+    Wholesale market design  (6 pages)
+    Need for capacity mechanisms (6 pages)
+  Context  (8 pages)
+  Research questions (8 pages)
+  Outline of the thesis  (7 pages)
+  Dutch Electricity Market (6 pages)
+    Wholesale electricity market (5 pages)
+      Trading platforms  (1 pages)
+      Forward and futures market (4 pages)
+      Day head market (6 pages)
+      Intraday market  (6 pages)
+    Merit order curve. (6 pages)
+  Capacity Remuneration Mechanisms (6 pages)
+    Energy only market (6 pages)
+    Strategic reserve. (6 pages)
+      German strategic reserve (6 pages)
+      Swedish strategic reserve  (6 pages)
+    Capacity market  (6 pages)
+      Yearly capacity market (6 pages)
+      Forward capacity market. (6 pages)
+    Capacity subscription  (6 pages)
+    Incentives versus control  (6 pages)
+  Models (6 pages)
+    Energy Modelling Laboratory (EMLab)  (6 pages)
+      Model concept. (6 pages)
+      Model overview (6 pages)
+      Input  (6 pages)
+      Model mechanics  (6 pages)
+    AMIRIS (6 pages)
+      Model concept. (6 pages)
+      Model overview (6 pages)
+      Input  (6 pages)
+      Model mechanics  (6 pages)
+  Future Dutch Electricity Mix 29 (6 pages)
+    Regional governance  (6 pages)
+    National governance  (6 pages)
+    European CO2 governance  (6 pages)
+    International governance (6 pages)
+    Feasibility of the scenarios (6 pages)
+  Simulations (6 pages)
+    Coupling of AMIRIS and EMLab.  (6 pages)
+      The Spine Toolbox  (6 pages)
+    Power plant database update  (6 pages)
+      Dutch power plants (6 pages)
+      German power plants  (6 pages)
+      Grouping of power plants (6 pages)
+    The baseline scenario. (6 pages)
+      Load demand curve  (6 pages)
+  Implementation of the Capacity Mechanisms  (6 pages)
+    Strategic reserve. (6 pages)
+      German strategic reserve (6 pages)
+      Swedish strategic reserve  (6 pages)
+    Capacity market  (6 pages)
+      Yearly capacity market (6 pages)
+      Forward capacity market. (6 pages)
+    Capacity subscription  (6 pages)
+  Results (6 pages)
+    Simulations without demand trend (6 pages)
+    Security of supply (6 pages)
+    Energy prices  (6 pages)
+    Closeness to reality.  (6 pages)
+    Simulations with descending demand trend (6 pages)
+    Security of supply (6 pages)
+    Energy prices  (6 pages)
+    Closeness to reality.  (6 pages)
+  Conclusion (6 pages)
+  Discussion (6 pages)
+    Future work (6 pages)
+Simulation Results (6 pages)
+  Simulations without demand trend (6 pages)
+    Energy only market.  (6 pages)
+      Yearly capacity market (6 pages)
+      Forward capacity market. (6 pages)
+      Strategic reserve  (6 pages)
+      German strategic reserve (6 pages)
+      Swedish strategic reserve  (6 pages)
+  Simulations with descending demand trend (6 pages)
+    Energy only market.  (6 pages)
+    Yearly capacity market (6 pages)
+    Forward capacity market. (6 pages)
+    Strategic reserve  (6 pages)
+    German strategic reserve (6 pages)
+    Swedish strategic reserve  (6 pages)
+Simulation Instructions (6 pages)
+Bibliography
+							</pre>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			</div>
+			</article>
+
+			<div class="row">
+			<div class="col s12">
+				<h4 class="blue-text">Read the Report</h4>
+				<embed src="powerplants.pdf" width="100%" height="1000vh"/>
+			</div>
+			</div>
+
+			<article class="container white z-depth-1" style="padding: 40px">
+				<div class="row">
+			<div class="col s12 m6">
+				<h4 class="blue-text">Bibliography</h4>
+				<p>Sources: 
+					<span class="circle blue white-text" style="width: 1.5em; display: inline-block; text-align: center;">84</span>
+					Academic Sources: 
+					<span class="circle blue white-text" style="width: 1.5em; display: inline-block; text-align: center;">79</span>
+					Sum of Citations: 
+					<span class="circle blue white-text" style="width: 1.5em; display: inline-block; text-align: center;">411</span>
+				</p>
+				<ul>
+					<li class="bib-item">
+						<div class="row valign-wrapper" style="margin-bottom: 0;">
+							<div class="col s1">
+								<span class="circle blue white-text" style="width: 1.5em; display: inline-block; text-align: center;">1</span>
+							</div>
+							<div class="col s9">
+								<b class="blue-text">Insufficient incentives for investment in electricity generations</b><br>
+								<span style="border-radius: 99px; padding: 0 7px 0 5px" class="blue white-text tooltipped" data-tooltip="citations">
+									<i class="material-icons" style="font-size: 14px;">format_quote</i> 7</span>
+								<i class="grey-text">Elsevier - Karsten Neuhoff. Laurens de Vries</i>
+								<p class="truncated">In theory, competitive electricity markets provide incentives for efficient investment in generation capacity. We show that..</p>
+							</div>
+							<div class="col s2">
+								<img src="Images/utility policy.jpg" alt="" width="100%">
+							</div>
+						</div>
+					</li>
+					<li class="bib-item">
+						<div class="row valign-wrapper" style="margin-bottom: 0;">
+							<div class="col s1">
+								<span class="circle blue white-text" style="width: 1.5em; display: inline-block; text-align: center;">2</span>
+							</div>
+							<div class="col s9">
+								<b class="blue-text">The effectiveness of capacity markets in the presence of a high portfolio share of renewable energy sources</b><br>
+								<span style="border-radius: 99px; padding: 0 7px 0 5px" class="blue white-text tooltipped" data-tooltip="citations">
+									<i class="material-icons" style="font-size: 14px;">format_quote</i> 14</span>
+								<i class="grey-text">Elsevier - Pradyumna C.Bhagwat Kaveri K.Iychettira Jörn C.Richstein Emile J.L.Chappin Laurens J.De Vries</i>
+								<p class="truncated">The effectiveness of a capacity market is analyzed by simulating three conditions..</p>
+							</div>
+							<div class="col s2">
+								<img src="Images/utility policy.jpg" alt="" width="100%">
+							</div>
+						</div>
+					</li>
+					<li class="bib-item">
+						<div class="row valign-wrapper" style="margin-bottom: 0;">
+							<div class="col s1">
+								<span class="circle blue white-text" style="width: 1.5em; display: inline-block; text-align: center;">3</span>
+							</div>
+							<div class="col s9">
+								<b class="blue-text">Decarbonization of Electricity Systems in Europe: Market Design Challenges</b><br>
+								<span style="border-radius: 99px; padding: 0 7px 0 5px" class="blue white-text tooltipped" data-tooltip="citations">
+									<i class="material-icons" style="font-size: 14px;">format_quote</i> 71</span>
+								<i class="grey-text">IEEE - Goran Strbac; Dimitrios Papadaskalopoulos; Nikolaos Chrysanthopoulos; Ana Estanqueiro; Hugo Algarvio; Fernando Lopes</i>
+								<p class="truncated">Driven by climate change concerns, Europe has taken significant initiatives toward the..</p>
+							</div>
+							<div class="col s2">
+								<img src="Images/ieeeexplore.JPG" alt="" width="100%">
+							</div>
+						</div>
+					</li>
+					<li class="bib-item">
+						<div class="row valign-wrapper" style="margin-bottom: 0;">
+							<div class="col s1">
+								<span class="circle blue white-text" style="width: 1.5em; display: inline-block; text-align: center;">4</span>
+							</div>
+							<div class="col s9">
+								<b class="blue-text">The effectiveness of capacity markets in the presence of a high portfolio share of renewable energy sources,</b><br>
+								<span style="border-radius: 99px; padding: 0 7px 0 5px" class="blue white-text tooltipped" data-tooltip="citations">
+									<i class="material-icons" style="font-size: 14px;">format_quote</i> 2</span>
+								<i class="grey-text">Utilities Policy, vol. 48, pp. 76-91, 2017 - P. C. Bhagwat, K. K. Iychettira, J. C. Richstein, E. J. L. Chappin, and L. J. De Vries</i>
+							</div>
+							<div class="col s2">
+								<img src="Images/doc.png" alt="" width="100%">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col s12 m6">
+				<h4 class="blue-text">Related Theses</h4>
+				<ul>
+					<li>
+						<div class="row">
+							<div class="col s2">
+								<img src="Images/illuminator.jpg" alt="" width="100%">
+							</div>
+							<div class="col s10">
+								<b class="blue-text">The Illuminator: Energy system development kit</b> 
+								<span style="border-radius: 99px; padding: 0 7px 0 5px" class="blue white-text tooltipped" data-tooltip="academic rigor score">
+									<i class="material-icons" style="font-size: 14px;">school</i> 9</span><br>
+								<i class="grey-text">Saini, Raghav (TU Delft Electrical Engineering, Mathematics and Computer Science)</i>
+								<p>Engineering has a significant cultural component in addition to its widespread perception as an engine of ..</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col s2">
+								<img src="Images/kalimantan.jpg" alt="" width="100%">
+							</div>
+							<div class="col s10">
+								<b class="blue-text">Energy transition in the Kalimantan power system</b>
+								<span style="border-radius: 99px; padding: 0 7px 0 5px" class="blue white-text tooltipped" data-tooltip="academic rigor score">
+									<i class="material-icons" style="font-size: 14px;">school</i> 2</span><br>
+								<i class="grey-text">Hilman Dwi Putra, Hilman (TU Delft Technology, Policy and Management) </i>
+								<p>The Indonesian government has announced a national strategy to achieve net-zero emissions through energy transition and ..</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col s2">
+								<img src="Images/bess.jpg" alt="" width="100%">
+							</div>
+							<div class="col s10">
+								<b class="blue-text">Optimising BESS Control Strategies for Congestion and Price Arbitrage</b>
+								<span style="border-radius: 99px; padding: 0 7px 0 5px" class="blue white-text tooltipped" data-tooltip="academic rigor score">
+									<i class="material-icons" style="font-size: 14px;">school</i> 7</span><br>
+								<i class="grey-text">Rietveld, Jip (TU Delft Electrical Engineering, Mathematics and Computer Science; TU Delft Algorithmics) </i>
+								<p>Renewable energy generation projects are often measured by their peak capacity. A wind farm rated at 25 MW will generate 25..</p>
+								
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col s2">
+								<img src="Images/zuidoost.jpg" alt="" width="100%">
+							</div>
+							<div class="col s10">
+								<b class="blue-text">Interventions for an inclusive energy transition in Amsterdam Zuidoost</b>
+								<span style="border-radius: 99px; padding: 0 7px 0 5px" class="blue white-text tooltipped" data-tooltip="academic rigor score">
+									<i class="material-icons" style="font-size: 14px;">school</i> 4</span><br>
+								<i class="grey-text">van Gent, Alisa (TU Delft Architecture and the Built Environment; AMS Institute) </i>
+								<p>In order to overcome the existential threat of climate change the energy transition is needed. The energy transition has multiple..</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</article>
+
+	<!--Footer-->
+	<footer class="page-footer blue" style="margin-top: 1em;">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">contact_page</i>
+					<a href="https://www.linkedin.com/in/ashley-hemerik-346411226/" class="white-text">Contact</a>
+				</div>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">alternate_email</i>
+					<a href="mailto:ashleyhemerik@gmail.com" class="white-text">Email</a>
+				</div>
+			</div>
+			<br>
+			&nbsp;
+		</div>
+	</footer>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="../js/materialize.js"></script>
+	<script src="../js/init.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>

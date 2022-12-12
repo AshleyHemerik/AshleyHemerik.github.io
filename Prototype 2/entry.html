@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>(prototype) [entry title] - TUD repository</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Ashley Hemerik">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="body" onload="start()">
+
+	<header style="background-color: white; box-shadow: 0 2px 7px rgba(0,0,0,0.1); display: flex; justify-content: space-between;">
+		<div style="width: fit-content; display: inline-block; padding: 20px" class="blue-text">
+			<a href="" class="blue-text">
+				<i class="material-icons left">school</i> 
+				<b class="hide-on-med-and-down">TU Delft Student Theses Repository</b>
+			</a>
+		</div>
+
+		
+		<div style="background-color: white; border-radius: 999px; padding: 0 10px 0 30px; width: fit-content; border: #ddd 1px solid; margin: 10px 0 10px 0">
+			<input type="text" name="" id="" style="width: 30vw; border: none !important; margin: 0; height: 2rem;">
+			<i class="material-icons right blue-text" style="font-size: 2rem; margin-top: 5px; cursor: pointer;">search</i>
+		</div>
+
+		<div style="width: fit-content; display: inline-block; padding: 20px">
+			<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+				<a href="login.html" class="blue-text">
+					<i class="material-icons right">login</i>
+					<b class="hide-on-med-and-down">Log in</b>
+				</a>
+			</div>
+			<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+				<a href="UploadPage.html" class="blue-text">
+					<i class="material-icons right">upload</i>
+					<b class="hide-on-med-and-down">Upload</b>
+				</a>
+			</div>
+			<div style="width: fit-content; display: inline-block; margin-right: 10px;">
+				<a href="index.html#bookmarks" class="blue-text">
+					<i class="material-icons right">bookmarks</i>
+					<b class="hide-on-med-and-down">Bookmarks</b>
+				</a>
+			</div>
+			<div style="width: fit-content; display: inline-block;">
+				<a href="index.html#history" class="blue-text">
+					<i class="material-icons right">history</i>
+					<b class="hide-on-med-and-down">History</b>
+				</a>
+			</div>
+		</div>
+
+	</header>
+
+	<article class="row">
+
+		<div class="col s12 m1 hide-on-small-only">
+
+		</div>
+
+		<div class="col s12 m8 l9" style="margin-top: 20px;">
+			<div class="row">
+				<div class="col s12 m4 l2">
+					<img src="https://picsum.photos/1000/1500" alt="" class="materialboxed" width="100%" style="box-shadow: #0001 0 2px 10px;">
+				</div>
+				<div class="col s12 m8 l10">
+					<h1 class="blue-text title">Title</h1>
+					<h4 class="grey-text subtitle">Subtitle</h4>
+					<p class="grey-text"><span class="type">Master Thesis</span> By <a href="studentprofile.html" class="author">Authorname Lastname</a> | <a href="Programme.html" class="programme">IDE - Design for Interaction</a> | <span class="date">03-02-2023</span></p>
+					<div>
+						<div class="chip purple white-text"><i class="material-icons">workspace_premium</i> Thesis of the year 2021</div>
+						<div class="chip yellow"><i class="material-icons">workspace_premium</i>Top 5 in 'Design for Interaction'</div>
+						<div class="chip"><i class="material-icons">workspace_premium</i>Trending in 'Circular Economy'</div>
+					</div>
+					<a href="" class="btn blue"><i class="material-icons left">bookmark</i>bookmark</a>
+					<a href="" class="btn blue"><i class="material-icons left">download</i>download PDF</a>
+					<a href="" class="btn blue"><i class="material-icons left">format_quote</i>cite</a>
+					<a href="" class="btn blue"><i class="material-icons left">share</i>share</a>
+					<p class="grey-text">268 views | 160 downloads | 20 bookmarks | 1 citation | <a href="">advanced statistics...</a></p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m6">
+					<h4 class="blue-text">Keywords</h4>
+					<div class="keywords">
+						<div class="chip waves-effect waves-dark">Keyword</div>
+						<div class="chip waves-effect waves-dark">Subject</div>
+						<div class="chip waves-effect waves-dark">Very Long Keyword</div>
+						<div class="chip waves-effect waves-dark">Trait</div>
+						<div class="chip waves-effect waves-dark">Tag</div>
+						<div class="chip waves-effect waves-dark">Keyword</div>
+						<div class="chip waves-effect waves-dark">Subject</div>
+						<div class="chip waves-effect waves-dark">Long Keyword</div>
+						<div class="chip waves-effect waves-dark">Trait</div>
+						<div class="chip waves-effect waves-dark">Tag</div>
+					</div>
+
+					<h4 class="blue-text">Abstract</h4>
+					<p class="abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo omnis quia ratione! Rerum earum dignissimos a amet labore cumque eum ratione autem? Sunt itaque unde maiores animi minus repellat?<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempora doloremque ipsa nihil recusandae ullam reprehenderit! Vero neque minus architecto? Architecto excepturi voluptatibus corrupti, reprehenderit aut accusantium! Voluptatem, perferendis nostrum?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, aliquid eum tenetur atque beatae reiciendis architecto deserunt culpa repudiandae officia deleniti tempore animi illo repellendus veniam explicabo aspernatur. Ullam, recusandae.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, expedita quas alias quasi eius minima dolorem? Vel atque officia, asperiores dolore natus quo officiis nihil minima adipisci provident? Saepe, sunt!
+					</p>
+
+					<h4 class="blue-text">Presentation</h4>
+					<video width="100%" controls>
+						<source src="../Images/placeholdervideo.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video> 
+
+					<h4 class="blue-text">Contributor profiles</h4>
+					<div class="card" style="display: flex; padding: 20px; border-radius: 10px;">
+						<div>
+							<!--<img src="https://picsum.photos/100/100" alt="" class="circle" style="margin-right: 10px;">-->
+							<div style="background-color: #d33; color:white;border-radius: 999px; width: 100px; text-align: center; height: 100px; margin-right: 10px;" class="valign-wrapper"><div style="text-align: center; width: 100%; font-size: xx-large;">AL</div></div>
+						</div>
+						<div>
+							<span class="card-title"><a href="studentprofile.html" class="authorpls">Authorname Lastname</a> (author)</span>
+							<span class="card-content">
+								<p><a href="">Industrial Design Engineering - Design for Interaction</a></p>
+								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quos ipsa id, necessitatibus ab magni iusto cupiditate ex. Similique beatae iure repellendus odit quisquam iusto ab aut ducimus sapiente culpa.</p>
+							</span>
+						</div>
+					</div>
+					<div class="card" style="display: flex; padding: 20px; border-radius: 10px;">
+						<div>
+							<img src="https://thispersondoesnotexist.com/image" alt="" class="circle" style="margin-right: 10px;" width="100px">
+						</div>
+						<div>
+							<span class="card-title"><a href="supervisorprofile.html" class="name">Supervisorname Lastname</a> 
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuX_SdeauP7yVLUdmrpjpLmifhRBaCavWKwJk4w9o&s" alt="" width="15px" style="cursor:pointer">
+								 (supervisor)</span>
+							<span class="card-content">
+								<p class="green-text"><i class="material-icons">check_circle</i> Available for thesis supervision (confirmed May 2022 by secretariat)</p>
+								<p><a href="">Industrial Design Engineering - Sustainable Design Engineering</a></p>
+								<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+							</span>
+						</div>
+					</div>
+					<div class="card" style="display: flex; padding: 20px; border-radius: 10px;">
+						<div>
+							<!--<img src="https://picsum.photos/99/99" alt="" class="circle" style="margin-right: 10px;">-->
+							<div style="background-color: #33a; color:white;border-radius: 999px; width: 100px; text-align: center; height: 100px; margin-right: 10px;" class="valign-wrapper"><div style="text-align: center; width: 100%; font-size: xx-large;">SL</div></div>
+
+						</div>
+						<div>
+							<span class="card-title"><a href="supervisorprofile.html" class="name">Supervisorname Lastname</a> 
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuX_SdeauP7yVLUdmrpjpLmifhRBaCavWKwJk4w9o&s" alt="" width="15px" style="cursor:pointer">
+								 (supervisor)</span>
+							<span class="card-content">
+								<p class="yellow-text text-darken-3"><i class="material-icons">help</i> Maybe available for thesis supervision (last supervised thesis: March 2022)</p>
+								<p><a href="">Industrial Design Engineering - Human Centered Design</a></p>
+								<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+							</span>
+						</div>
+					</div>
+					<div class="card" style="display: flex; padding: 20px;">
+						<div>
+							<img src="https://picsum.photos/99/100" alt="" class="circle" style="margin-right: 10px;">
+						</div>
+						<div>
+							<span class="card-title"><a href="supervisorprofile.html" class="name">Sponsor Lastname</a> 
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuX_SdeauP7yVLUdmrpjpLmifhRBaCavWKwJk4w9o&s" alt="" width="15px" style="cursor:pointer">
+								 (Sponsor)</span>
+							<span class="card-content">
+								<p class="red-text"><i class="material-icons">cancel</i> not available for thesis supervision</p>
+								<p><a href="">Industrial Design Engineering - Sustainable Design Engineering</a></p>
+								<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6">
+					<h4 class="blue-text">Graphic Abstract (/poster)</h4>
+					<img src="../Images/placeholder2.png" alt="" class="materialboxed" width="100%" style="box-shadow: #0001 0 2px 10px;">
+				
+					<h4 class="blue-text">Links</h4>
+					<div class="row">
+						<div class="col s2">
+							<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px">
+						</div>
+						<div class="col s10">
+							<b><a href="">My Graduation Project (title) - GitHub</a></b>
+							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nam, quisquam iste architecto neque, aperiam ratione dolore reiciendis sapiente error corrupti! Velit est suscipit accusamus maxime debitis? Velit, qui quaerat.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s2">
+							<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px">
+						</div>
+						<div class="col s10">
+							<b><a href=""><span class="authorpls">Authorname Lastname</span> on GitHub</a></b>
+							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nam, quisquam iste architecto neque, aperiam ratione dolore reiciendis sapiente error corrupti! Velit est suscipit accusamus maxime debitis? Velit, qui quaerat.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s2">
+							<img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px">
+						</div>
+						<div class="col s10">
+							<b><a href=""><span class="authorpls">Authorname Lastname</span> on LinkedIn</a></b>
+							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nam, quisquam iste architecto neque, aperiam ratione dolore reiciendis sapiente error corrupti! Velit est suscipit accusamus maxime debitis? Velit, qui quaerat.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s2">
+							<img src="https://picsum.photos/200/200" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px">
+						</div>
+						<div class="col s10">
+							<b><a href=""><span class="authorpls">Authorname Lastname</span> portfolio</a></b>
+							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nam, quisquam iste architecto neque, aperiam ratione dolore reiciendis sapiente error corrupti! Velit est suscipit accusamus maxime debitis? Velit, qui quaerat.</p>
+						</div>
+					</div>
+
+					<h4 class="blue-text">Cited by</h4>
+					<div style="display: flex;">
+						<div style="margin-right: 10px;">
+							<img src="https://picsum.photos/120/150" alt=""  style="box-shadow: #0001 0 5px 10px; border-radius: 5px">
+						</div>
+						<div>
+							<b><a href="">Title of article citing this one</a></b>
+							<p class="grey-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum excepturi labore iure facere optio delectus ducimus minus, cupiditate, reprehenderit laudantium quas omnis eum nemo! Cum tempore ut officiis maiores dicta.</p>
+						</div>
+					</div>
+					<div style="display: flex;">
+						<div style="margin-right: 10px;">
+							<img src="https://picsum.photos/120/151" alt="" style="box-shadow: #0001 0 5px 10px; border-radius: 5px">
+						</div>
+						<div>
+							<b><a href="">Title of article citing this one</a></b>
+							<p class="grey-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum excepturi labore iure facere optio delectus ducimus minus, cupiditate, reprehenderit laudantium quas omnis eum nemo! Cum tempore ut officiis maiores dicta.</p>
+						</div>
+					</div>
+
+					<h4 class="blue-text">Downloadable files</h4>
+					<div class="row">
+						<div class="col s1">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1200px-PDF_icon.svg.png" alt="" width="50px">
+						</div>
+						<div class="col s11">
+							<b><a href="">Master_graduation_report_Ashley_Hemerik_4543629.pdf</a></b><br>
+							Report<br>
+							<span class="grey-text">59MB - Version 1 - 03-02-2023</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s1">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1200px-PDF_icon.svg.png" alt="" width="50px">
+						</div>
+						<div class="col s11">
+							<b><a href="">Master_graduation_Ashley_Hemerik_4543629_Appendices.pdf</a></b><br>
+							Appendices to the report<br>
+							<span class="grey-text">59MB - Version 1 - 03-02-2023</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s1">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1200px-PDF_icon.svg.png" alt="" width="50px">
+						</div>
+						<div class="col s11">
+							<b><a href="">Master_graduation_Ashley_Hemerik_4543629_Showcase_poster.pdf</a></b><br>
+							Showcase poster<br>
+							<span class="grey-text">59MB - Version 1 - 03-02-2023</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s1">
+							<img src="https://iconarchive.com/download/i96064/iconsmind/outline/File-Video.ico" alt="" width="50px">
+						</div>
+						<div class="col s11">
+							<b><a href="">MasterPresentation.mp4</a></b><br>
+							Presentation video<br>
+							<span class="grey-text">59MB - Version 1 - 03-02-2023</span>
+						</div>
+					</div>
+					
+
+					<!--
+					<h4 class="blue-text">Coordinates</h4>
+					<div style="box-shadow:#0001 0 5px 10px; background-color: white;">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1736.7814835463175!2d4.373251003189156!3d52.00360287906721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b58d401d6c4b%3A0x531543fe94141f70!2sTU%20Delft%20Library!5e0!3m2!1snl!2snl!4v1668518800797!5m2!1snl!2snl" 
+						width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+					</div>-->
+				</div>
+
+				
+			</div>
+
+			<div style="display: flex; justify-content: space-between;">
+
+				<h4 class="blue-text">Report PDF</i></h4>
+				<a href="#modal1" class="btn-flat waves-effect waves-dark blue-text modal-trigger">Advanced report statistics</a>
+			</div>
+
+			<!-- Modal Structure -->
+			<div id="modal1" class="modal">
+				<div class="modal-content">
+					<h4>Advanced report statistics</h4>
+					<div class="row">
+						<div class="col s12 m6">
+							<div style="display: flex;">
+								<ul style="text-align: right; margin-right: 10px">
+									<li><b>Total pages:</b></li>
+									<li><b>Sources Cited:</b></li>
+									<li><b>Academic Sources:</b></li>
+									<li><b>Non-Academic Sources:</b></li>
+								</ul>
+								<ul>
+									<li>841</li>
+									<li>87</li>
+									<li>34</li>
+									<li>43</li>
+								</ul>
+							</div>
+		
+							<h5>Table of Contents</h5>
+							<div style="display: flex;">
+								<ul style="margin-right: 10px">
+									<li><b>Abstract</b></li>
+									<li><b>Intro</b></li>
+									<li><b>Research</b></li>
+									<li><b>&#x09;interviews</b></li>
+									<li><b>&#x09;Tests</b></li>
+									<li><b>&#x09;Observations</b></li>
+									<li><b>Ideation</b></li>
+									<li><b>etc.</b></li>
+								</ul>
+								<ul>
+									<li>2 pages</li>
+									<li>8 pages</li>
+									<li>24 pages</li>
+									<li>4 pages</li>
+									<li>10 pages</li>
+									<li>10 pages</li>
+									<li>12 pages</li>
+									<li>43 pages</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col s12 m6">
+							<h5>Bibliography</h5>
+							<div class="row">
+								<div class="col s2"><img src="https://picsum.photos/50/50" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px"></div><div class="col s10"><b><a href="">Title of the thing</a></b><p>short description of the reference</p></div>
+								<div class="col s2"><img src="https://picsum.photos/50/51" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px"></div><div class="col s10"><b><a href="">Title of the thing</a></b><p>short description of the reference</p></div>
+								<div class="col s2"><img src="https://picsum.photos/50/52" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px"></div><div class="col s10"><b><a href="">Title of the thing</a></b><p>short description of the reference</p></div>
+								<div class="col s2"><img src="https://picsum.photos/50/53" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px"></div><div class="col s10"><b><a href="">Title of the thing</a></b><p>short description of the reference</p></div>
+								<div class="col s2"><img src="https://picsum.photos/50/54" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px"></div><div class="col s10"><b><a href="">Title of the thing</a></b><p>short description of the reference</p></div>
+								<div class="col s2"><img src="https://picsum.photos/50/55" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px"></div><div class="col s10"><b><a href="">Title of the thing</a></b><p>short description of the reference</p></div>
+								<div class="col s2"><img src="https://picsum.photos/50/56" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px"></div><div class="col s10"><b><a href="">Title of the thing</a></b><p>short description of the reference</p></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col hide-on-small-only m3 l2" style="position: -webkit-sticky; position: sticky; top:40px; margin-bottom: 1000px">
+			<span class="smallkeywords desctotitle" style="display: none;"></span>
+			<h6 class="blue-text">Related Theses</h6>
+			<ul>
+				<li style="display: flex; margin-bottom: 5px;" class="desctotitle" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nam, quisquam iste architecto neque, aperiam ratione dolore reiciendis sapiente error corrupti! Velit est suscipit accusamus maxime debitis? Velit, qui quaerat.">
+					<img src="https://picsum.photos/50/70" alt="" style="margin-right: 5px" height="100px" style="box-shadow: #0001 0 5px 10px; border-radius: 5px;">
+					<div>
+						<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<b><a href="entry.html" class="title">Thesis Title</a></b><br>
+						<span class="grey-text subtitle">Subtitle</span>
+						<div class="smallkeywords">
+							<div class="smallchip waves-effect waves-dark">keyword</div> <div class="smallchip waves-effect waves-dark">keyword</div> <div class="smallchip waves-effect waves-dark">keyword</div>
+						</div>
+					</div>
+				</li>
+				<li style="display: flex; margin-bottom: 5px;" class="desctotitle" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nam, quisquam iste architecto neque, aperiam ratione dolore reiciendis sapiente error corrupti! Velit est suscipit accusamus maxime debitis? Velit, qui quaerat.">
+					<img src="https://picsum.photos/50/71" alt="" style="margin-right: 5px" height="100px" style="box-shadow: #0001 0 5px 10px; border-radius: 5px">
+					<div>
+						<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<b><a href="entry.html" class="title">Thesis Title</a></b><br>
+						<span class="grey-text subtitle">Subtitle</span>
+						<div class="smallkeywords">
+							<div class="smallchip waves-effect waves-dark">keyword</div> <div class="smallchip waves-effect waves-dark">keyword</div> <div class="smallchip waves-effect waves-dark">keyword</div>
+						</div>					
+					</div>
+				</li>
+				<li style="display: flex; margin-bottom: 5px;" class="desctotitle" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nam, quisquam iste architecto neque, aperiam ratione dolore reiciendis sapiente error corrupti! Velit est suscipit accusamus maxime debitis? Velit, qui quaerat.">
+					<img src="https://picsum.photos/50/72" alt="" style="margin-right: 5px" height="100px" style="box-shadow: #0001 0 5px 10px; border-radius: 5px">
+					<div>
+						<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<b><a href="entry.html" class="title">Thesis Title</a></b><br>
+						<span class="grey-text subtitle">Subtitle</span>
+						<div class="smallkeywords">
+							<div class="smallchip waves-effect waves-dark">keyword</div> <div class="smallchip waves-effect waves-dark">keyword</div> <div class="smallchip waves-effect waves-dark">keyword</div>
+						</div>					
+					</div>
+				</li>
+				<li style="text-align: right;"><a href="" class="btn-flat waves-effect waves-dark blue-text">See more</a></li>
+			</ul>
+		</div>
+
+		<div style="padding: 0 10px 0 10px;">
+			<embed src="../Powerplants/powerplants.pdf" width="100%" style="height: 98vh;"/>
+		</div>
+
+	</article>
+
+	<!--Footer-->
+	<footer class="page-footer blue" style="margin-top: 1em;">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">dns</i>
+					<a href="#" class="white-text">Other repositories</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">article</i>
+					<a href="" class="white-text">about</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">error</i>
+					<a href="" class="white-text">Disclaimer</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">gavel</i>
+					<a href="" class="white-text">Terms of Use</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">login</i>
+					<a href="" class="white-text">Log In</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div style="display: inline-block;">
+					<i class="material-icons white-text left">block</i>
+					<a href="" class="white-text">Takedown Request</a>
+				</div>
+			</div>
+			<br>
+			&nbsp;
+			
+		</div>
+	</footer>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="../js/materialize.js"></script>
+	<script src="../js/init.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
