@@ -75,8 +75,8 @@
 			<div class="col s12 m4 l2">
 				<img src="https://picsum.photos/200/300" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
 			</div>
-			<div class="col s12 m8 l10">
-				<a href="#!" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+			<div class="col s12 m8 l10" onclick="putline(this,'diapers')">
+				<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
 				<a href="entry.html"><h5 class="blue-text title">Title</h5></a>
 				<h6 class="grey-text subtitle">Subtitle</h6>
 				<p class="grey-text">
@@ -137,7 +137,7 @@
 						<img src="https://picsum.photos/200/301" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
 					</div>
 					<div class="col s12 m8">
-						<a href="#!" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
 						<a href="entry.html"><h5 class="blue-text title">Title</h5></a>
 						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
@@ -154,7 +154,7 @@
 						<img src="https://picsum.photos/200/302" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
 					</div>
 					<div class="col s12 m8">
-						<a href="#!" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
 						<a href="entry.html"><h5 class="blue-text title">Title</h5></a>
 						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
@@ -173,7 +173,7 @@
 						<img src="https://picsum.photos/200/303" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
 					</div>
 					<div class="col s12 m8">
-						<a href="#!" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
 						<a href="entry.html"><h5 class="blue-text title">Title</h5></a>
 						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
@@ -190,7 +190,7 @@
 						<img src="https://picsum.photos/200/250" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
 					</div>
 					<div class="col s12 m8">
-						<a href="#!" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+						<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
 						<a href="entry.html"><h5 class="blue-text title">Title</h5></a>
 						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
@@ -212,8 +212,8 @@
 			<div class="col s12 m4 l2">
 				<img src="https://picsum.photos/200/260" alt="" width="100%" style="box-shadow: #0001 0 5px 10px;">
 			</div>
-			<div class="col s12 m8 l10">
-				<a href="#!" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+			<div class="col s12 m8 l10" onload="putline(this,'Electrical Engineering, Mathematics and Computer Science')">
+				<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
 				<h5 class="blue-text title">Title</h5>
 				<h6 class="grey-text subtitle">Subtitle</h6>
 				<p class="grey-text">
@@ -289,13 +289,14 @@
 		
 		
 		<div class="row">
-			<div class="col s12 m6 l3">
+			<div class="col s12 m6 l4">
 				<div class="card">
 					<div class="card-image">
 						<img src="https://picsum.photos/300/206">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
+						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span></a></span>
 					</div>
 					<div class="card-content">
+						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
 						<div class="chip"><i class="material-icons" style="vertical-align: top;">workspace_premium</i> Trending</div><br>
 						<div class="keywords">
@@ -304,17 +305,18 @@
 						<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
 					</div>
 					<div class="card-action">
-						<a href="#!" class="blue-text">bookmark</a>
+						<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="blue-text">bookmark</a>
 					</div>
 				</div>
 			</div>
-			<div class="col s12 m6 l3">
+			<div class="col s12 m6 l4">
 				<div class="card">
 					<div class="card-image">
 						<img src="https://picsum.photos/300/205">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
+						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span></a></span>
 					</div>
 					<div class="card-content">
+						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
 						<div class="chip"><i class="material-icons" style="vertical-align: top;">workspace_premium</i> Trending</div><br>
 						<div class="keywords">
@@ -323,17 +325,18 @@
 						<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
 					</div>
 					<div class="card-action">
-						<a href="#!" class="blue-text">bookmark</a>
+						<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="blue-text">bookmark</a>
 					</div>
 				</div>
 			</div>
-			<div class="col s12 m6 l3">
+			<div class="col s12 m6 l4">
 				<div class="card">
 					<div class="card-image">
 						<img src="https://picsum.photos/300/210">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
+						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span></a></span>
 					</div>
 					<div class="card-content">
+						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
 						<div class="chip"><i class="material-icons" style="vertical-align: top;">workspace_premium</i> Trending</div><br>
 						<div class="keywords">
@@ -342,26 +345,7 @@
 						<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
 					</div>
 					<div class="card-action">
-						<a href="#!" class="blue-text">bookmark</a>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m6 l3">
-				<div class="card">
-					<div class="card-image">
-						<img src="https://picsum.photos/200/200">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
-					</div>
-					<div class="card-content">
-						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
-						<div class="chip"><i class="material-icons" style="vertical-align: top;">workspace_premium</i> Trending</div><br>
-						<div class="keywords">
-							<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
-						</div>
-						<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
-					</div>
-					<div class="card-action">
-						<a href="#!" class="blue-text">bookmark</a>
+						<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="blue-text">bookmark</a>
 					</div>
 				</div>
 			</div>
@@ -373,13 +357,14 @@
 
 		<h4 class="blue-text" id="bookmarks"><i class="material-icons">bookmarks</i> Your Bookmarked Theses</h4>
 		<div class="row">
-			<div class="col s12 m6 l3">
+			<div class="col s12 m6 l4">
 				<div class="card">
 					<div class="card-image">
 						<img src="https://picsum.photos/301/206">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
+						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span></a></span>
 					</div>
 					<div class="card-content">
+						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
 						<div class="keywords">
 							<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
@@ -391,13 +376,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="col s12 m6 l3">
+			<div class="col s12 m6 l4">
 				<div class="card">
 					<div class="card-image">
 						<img src="https://picsum.photos/301/205">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
+						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span></a></span>
 					</div>
 					<div class="card-content">
+						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
 						<div class="keywords">
 							<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
@@ -409,37 +395,21 @@
 					</div>
 				</div>
 			</div>
-			<div class="col s12 m6 l3">
-				<div class="card">
-					<div class="card-image">
-						<img src="https://picsum.photos/301/210">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
-					</div>
-					<div class="card-content">
-						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
-						<div class="keywords">
-							<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
-						</div>
-						<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
-					</div>
-					<div class="card-action">
-						<a href="#!" class="blue-text">unbookmark</a>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m6 l3">
+			<div class="col s12 m6 l4">
 			</div>
 		</div>
 
 		<h4 class="blue-text" id="history"><i class="material-icons">history</i> History</h4>
 		<div class="row">
-			<div class="col s12 m6 l3">
+			<div class="col s12 m6 l4">
 				<div class="card">
 					<div class="card-image">
 						<img src="https://picsum.photos/298/206">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
+						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span></a></span>
 					</div>
 					<div class="card-content">
+						<!--<a href="entry.html"><h6 class="title">Title</h6></a>-->
+						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
 						<div class="keywords">
 							<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
@@ -447,17 +417,18 @@
 						<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
 					</div>
 					<div class="card-action">
-						<a href="#!" class="blue-text">bookmark</a>
+						<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="blue-text">bookmark</a>
 					</div>
 				</div>
 			</div>
-			<div class="col s12 m6 l3">
+			<div class="col s12 m6 l4">
 				<div class="card">
 					<div class="card-image">
 						<img src="https://picsum.photos/298/205">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
+						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span></a></span>
 					</div>
 					<div class="card-content">
+						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
 						<div class="keywords">
 							<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
@@ -465,17 +436,18 @@
 						<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
 					</div>
 					<div class="card-action">
-						<a href="#!" class="blue-text">bookmark</a>
+						<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="blue-text">bookmark</a>
 					</div>
 				</div>
 			</div>
-			<div class="col s12 m6 l3">
+			<div class="col s12 m6 l4">
 				<div class="card">
 					<div class="card-image">
 						<img src="https://picsum.photos/298/210">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
+						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span></a></span>
 					</div>
 					<div class="card-content">
+						<h6 class="grey-text subtitle">Subtitle</h6>
 						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
 						<div class="keywords">
 							<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
@@ -483,25 +455,7 @@
 						<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
 					</div>
 					<div class="card-action">
-						<a href="#!" class="blue-text">bookmark</a>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m6 l3">
-				<div class="card">
-					<div class="card-image">
-						<img src="https://picsum.photos/298/200">
-						<span class="card-title truncated"><a href="entry.html" style="color:white;text-shadow:black 0 1px 3px"><span class="title">Title</span>: <br><span class="subtitle">subtitle</span></a></span>
-					</div>
-					<div class="card-content">
-						<p class="grey-text"><span class="type">Master Thesis</span> by <a href="studentprofile.html" class="author">Authorname Lastname</a> (<span class="date">03-02-2023</span>)<br><a href="Programme.html" class="programme">IDE - Design for Interaction</a></p>
-						<div class="keywords">
-							<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
-						</div>
-						<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
-					</div>
-					<div class="card-action">
-						<a href="#!" class="blue-text">bookmark</a>
+						<a href="#!" onclick="M.toast({html: 'Added to bookmarks'})" class="blue-text">bookmark</a>
 					</div>
 				</div>
 			</div>

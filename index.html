@@ -28,6 +28,7 @@
 
 <body id="body">
 
+	<!--Header-->
 	<header>
 		<nav class="white" role="navigation">
 			<div class="nav-wrapper container">
@@ -46,6 +47,7 @@
 
 	<article>
 
+		<!--Parralax Image-->
 		<div id="index-banner" class="parallax-container">
 			<div class="section no-pad-bot"></div>
 			<div class="parallax">
@@ -56,6 +58,8 @@
 		<div class="row">
 			<div class="col s12 m9 l10">
 
+
+				<!--Abstract-->
 				<div class="container section scrollspy" id="Abstract">
 					<h3 class="blue-text">Abstract</h3>
 
@@ -66,8 +70,13 @@
 								has not been updated since it switched to digital PDF reports in 2007. Currently, entries only contain a title, author and contributors, programme, date, abstract, 
 								and the PDF to download.</p>
 						</div>
-						<div class="col s12 l4">
+						<div class="col s12 l4" style="text-align: center;">
 							<img class="materialboxed" width="100%" src="Images/reposcreenshot1.jpg">
+							<br>
+							<a href="https://repository.tudelft.nl/islandora/search/?collection=education" target="_blank" class="btn blue">
+								Visit the current repository 
+								<i class="material-icons right">open_in_new</i>
+							</a>
 						</div>
 					</div>
 
@@ -75,9 +84,9 @@
 					<p class="flow-text">While the search engine is fine if you know the author, <a href="#Interviews">users expressed</a> that it's difficult to use the repository to 
 						find inspiration for your own graduation project, see what reports are good or not, or to find out how mentors grade or what projects they usually take on.
 					</p>
-					<p class="flow-text">After uploading, the entry is uninteresting, and doesn't grip the reader's attention. 
+					<p class="flow-text">After uploading, the entry looks boring, and doesn't grip the reader's attention. 
 						<a href="https://openworking.wordpress.com/2021/11/03/rethinking-the-library-repository-a-focus-on-masters-and-doctoral-theses/">
-							The entries are not very visible internally, or externally</a>.</p>
+							The entries are not very visible internally, or externally (like on google scholar)</a>.</p>
 
 					<h4 class="blue-text">The goal</h4>
 					<p class="flow-text">My goal is to redesign the repository to:</p>
@@ -85,24 +94,240 @@
 						<li class="flow-text"><span class="blue-text">▶</span> Allow students to upload (interactive) multimedia to their repository pages.</li>
 						<li class="flow-text"><span class="blue-text">▶</span> Programatically add multimedia to already uploaded repository pages.</li>
 						<li class="flow-text"><span class="blue-text">▶</span> Redesign the user interface with a user centered design approach.</li>
-				</ul>
+					</ul>
 					
 					<h4 class="blue-text">The solution</h4>
-					<p class="flow-text">(TBD)</p>
+					<div class="row">
+						<div class="col s12 l8">
+							<p class="flow-text">My <a href="Prototype 2/index.html" target="_blank">new design</a> features:</p>
+							<ul>
+								<li class="flow-text"><span class="blue-text">▶</span> 
+									'Thumbnail' images, graphical abstracts, posters, embedded videos, and interactive embeds (such as 3D model viewers), 
+									which show what the thesis is about.
+								</li>
+								<li class="flow-text"><span class="blue-text">▶</span> 
+									One or two sentence 'pitches' under titles that allow users to quickly assess interest.
+								</li>
+								<li class="flow-text"><span class="blue-text">▶</span>
+									 Views, bookmark, and download metrics that show how popular a thesis is; Entry awards; featured theses; and supervisor highlights 
+									make it easier for users to find examples of good projects.
+								</li>
+								<li class="flow-text"><span class="blue-text">▶</span> 
+									Supervisor profiles that show all their supervised theses, some information on what they do, 
+									and if they might be available for supervising your project.
+								</li>
+								<li class="flow-text"><span class="blue-text">▶</span> 
+									Publishing theses will no longer be mandatory, so people who aren't proud of their mediocre thesis will shopw up less.
+								</li>
+								<li class="flow-text"><span class="blue-text">▶</span> 
+									Related theses/supervisors/keywords in a sidebar can help a user find more of what they're interested in.
+								</li>
+							</ul>
+						</div>
+						<div class="col s12 l4" style="text-align: center;">
+							<img class="materialboxed z-depth-1" width="100%" src="Images/Digitalprototypescreencaps/entryscreencap.JPG">
+							<br>
+							<a href="Prototype 2/index.html" target="_blank" class="btn blue">
+								Play around with the new design 
+								<i class="material-icons right">open_in_new</i>
+							</a>
+						</div>
+					</div>					
 				</div>
 
+
+				<!--Introduction-->
 				<div class="container section scrollspy" id="Introduction">
 					<h3 class="blue-text">Introduction</h3>
-					<p>Fixme describe situation</p>
-					<p>Fixme describe goal</p>
-					<p>Fixme describe the basic design cycle + Gantt chart</p>
-					<p>Fixme describe what's in the report</p>
-					<p>Fixme describe myself and personal ambitions</p>
-					<p>Fixme describe supervisors</p>
+					<h6>Why?</h6>
+					<p>
+						The TU Delft Library has always stored student theses. They switched to using digital PDF file copies in 2007.
+						For their archiving system, they currently use Islandora 7, 
+						<a href="https://lyrasis.zendesk.com/hc/en-us/articles/360059419231-Q-A-Islandora-Upgrade" target="_blank">which will no longer be supported in 2023</a>,
+						and will therefore no longer be getting any security updates going forward, leaving it vulnerable to hackers.
+						The library therefore has been looking for a new storing system, that also meets the needs of the modern graduation students.
+					</p>
+					<p>
+						Students are enthusiastic about using multimedia and interactive elements in the reporting of their theses. 
+						Some even make their whole thesis 
+						<a href="https://repository.tudelft.nl/islandora/object/uuid%3A98be37d9-3cdd-460f-b5b4-2d80fb96a731?collection=education" 
+						target="_blank" class="tooltipped" data-tooltip="see last page of her PDF for the link">in the form of a website</a>. 
+						These report websites aren't currently able to be archived by the library.
+						The library 
+						<a href="Sources/Requirements - The Next Generation TU Delft Repository.pdf" target="_blank">
+							wants their new system to support all filetypes, and to store files of up to 1 gigabyte.
+						</a>
+						The front-end of the <a href="https://repository.tudelft.nl/islandora/search/?collection=education">current repository</a> (the website that the user sees) only shows 
+						text metadata (like authors, supervisors, date, title, subtitle, abstract, etc.) on an entry.
+						If someone uploads a video or image, the reader has to download it before	it can be watched. 
+					</p>
+					<p>
+						The library's goal is to 
+						<a href="Sources/TU Delft library roadmap.pdf">
+							create an inspirational learning environment, maximise TU research output visibility and impact, and to archive and make research available to all
+						</a>.
+						Currently, the boring theses repository is not inspirational, it's impossible to archive interactive/multimedia reports, and 
+						<a href="Sources/ClareGhorbani.pdf" target="_blank">
+							the repository is not creating enough visibility for theses.
+						</a>
+					</p>
+					<p>The biggest usergroup is students who want to see what a graduation project for their masters is like, or to get inspiration for how to make their report.
+						 But finding reports of only your masters, and finding the good
+						ones, is nearly impossible. <a href="#Interviews">(see "interviews")</a>
+					</p>
+
+					<h6>What?</h6>
+					<p>
+						It is therefore the perfect time for a new design of the repository's front-end.
+						The new design must be able to support and display interactive, and multimedia elements, including full-website reports;
+						the entries must be engaging for the users;
+						the entries must
+						<a href="https://books.google.nl/books?hl=nl&lr=&id=hYSMBAAAQBAJ&oi=fnd&pg=PT6&dq=search+engine+optimization&ots=2c8ETBLlht&sig=gKOomaT8tqgko2nFFHe05pCUDtQ#v=onepage&q=search%20engine%20optimization&f=false">
+							be optimised for search engines</a> (this is calle S.E.O., or "search engine optimization");
+						and it needs to fit the needs of the users.
+					</p>
+					<p>
+						I've discovered that the people who use the repository the most are students who are orienting themselves, trying to find out what a graduation project in their masters 
+						might entail;
+						students who are already busy with their graduation projects who are curious as to what a good graduation report for their masters looks like so they can get inspiration;
+						Students who are about to upload their report. 
+						Researchers also sometimes cite master theses for their work , and headhunters who are looking for specialists fresh from the university also exist.
+						Other important stakeholders are the data maintainers at the library, and the supervisors. (See <a href="#Interviews">"interviews"</a>, and <a href="#doresearcherscitemasterstheses">"Do researchers cite master theses?"</a>)
+					</p>
+
+					<h6>How?</h6>
+					<div class="row">
+						<div class="col s12 m8">
+							<p>
+								I'm going to be using a version of the basic design cycle, that can be found in the 
+								<a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a>. 
+								The Basic design cycle consists of doing research into what is nessecary for the design to be good and creating criteria, which will help you 'synthesize' a good
+								design. You then make a prototype for your design, and test with the users, using their feedback to analyze and reassess, creating a new design/prototype, and so
+								on, until you are confident you have a great design. Usually, your prototypes increase in quality over the cycles.
+							</p>
+							<p>I'll be using quick handdrawn paper prototypes, <a href="https://www.figma.com/" target="_blank">Figma mockups</a>, 
+								and actual websites made in HTML with javascript and CSS that users can click through.
+							</p>
+							<p>I'll be working on this project for 20 weeks, hoping to make a design document that programmers in the library can use to build the new front-end when the
+								new archiving system is implemented. My planning can be seen in <a href="Images/GANT Draft.jpg">this Gantt chart</a>.
+							</p>
+
+							<p>The research questions of my project are:</p>
+							<ul>
+								<li><span class="blue-text">▶</span> What types of (interactive) media can be useful for reporting for the different majors?</li>
+								<li><span class="blue-text">▶</span> How do we encourage students and alumni to add (interactive) media to their reports / the repository?</li>
+								<li><span class="blue-text">▶</span> What do these new (interactive) multimedia reports look like?</li>
+								<li><span class="blue-text">▶</span> Is there a way to (programmatically) add multimedia elements to already published reports?</li>
+								<li><span class="blue-text">▶</span> How do different users use the repository? What are their wants and needs?</li>
+								<li><span class="blue-text">▶</span> How can the design of the repository and its search engine support those usecases?</li>
+								<li><span class="blue-text">▶</span> Does this new repository design fit the wants and needs of its stakeholders?</li>
+							</ul>
+							These were approved in the <a href="Sources/Graduation Project Brief Ashley Hemerik (Redesigning grad repository).pdf">project brief</a>.
+							
+						</div>
+						<div class="col s12 m4">
+							<img src="Images/Basic Design Cycle.png" width="100%" alt="" class="materialboxed">
+						</div>
+					</div>
+
+					<!--
+					<h6>What's in the report?</h6>
+					<p>This report starts with a research section where I go look for which stakeholders exist, what their needs are, and how they use the repository;
+						<br>
+						benchmarking against existing repositories and interactive multimedia websites; 
+						<br>
+						I explore what previous work has already been done in this area;
+						<br>
+						I go into what kinds of (interactive) media can be used to make reports better/more interesting; and what kinds of multimedia we can get from reports that
+						were already uploaded;
+						<br>
+						I map the emotional journey a student goes through before, during, and after graduation;
+						<br>
+						I note down the requirements my design needs to meet;
+						<br>
+						I go into the different ideation techniques I used;
+						<br>
+						I show 4 different concepts I came up with;
+						<br>
+						And I walk through the different cycles of prototypes, and the feedback they got;
+						<br>
+					</p>-->
+
+					<h6>Who?</h6>
+					
+
+					<div class="row">
+						<div class="col s12 l6">
+							<div class="card" style="border-radius: 10px;">
+								<div class="row card-content valign-wrapper">
+									<div class="col s4 m3">
+										<img src="Images/pfps/pp2.jpg" alt="" width="100%" class="circle">
+									</div>
+									<div class="col s8 m9">
+										<span class="card-title">Ashley Hemerik (author)</span>
+										<p>
+											I'm a <a href="https://www.tudelft.nl/onderwijs/opleidingen/masters/dfi/msc-design-for-interaction">Design for Interaction</a> student at the TU Delft.
+											I've also done my bachelors in Industrial Design Engineering there. I've had some experience making videogames from highschool, but when I started making
+											<a href="pathfinderdashboard.com">an application</a> for 
+											<a href="https://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game">a complicated boardgame</a> I love in my 3rd year of my bachelors, 
+											I fell in love with the field of UX design, and how quickly you can iterate and deploy solutions to people's problems.
+										</p>
+										<p>I have become quite skilled in the field, and I'm looking forward to starting a career in UX Design, perhaps at an agency.
+											I'm looking forward to showcasing my skills with this project, and learning even more about interface design along the way.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 l6">
+							<div class="card" style="border-radius: 10px;">
+								<div class="row card-content valign-wrapper">
+									<div class="col s4 m3 l2">
+										<img src="Images/pfps/ErikTempelman.jpg" alt="" width="100%" class="circle">
+									</div>
+									<div class="col s8 m9 l10">
+										<span class="card-title">Erik Tempelman (chair)</span>
+										<p>Erik is specialized in materials, manufacturing, and design. When one of his graduation students created a website-as-report, he
+											got enthusiastic about improving the repository to support such innovations in reporting.
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="card" style="border-radius: 10px;">
+								<div class="row card-content valign-wrapper">
+									<div class="col s4 m3 l2">
+										<img src="Images/pfps/JeffLove.webp" alt="" width="100%" class="circle">
+									</div>
+									<div class="col s8 m9 l10">
+										<span class="card-title">Jeff Love (supervisor)</span>
+										<p>Jeff is an expert in data management and open science. He works at the 
+											<a href="https://delftdesignlabs.org/future-libraries-lab/">future libraries lab</a> where he investigates the ways people produce 
+											and interact with digitized cultural artifacts: 3D scans, maps and especially texts.
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="card" style="border-radius: 10px;">
+								<div class="row card-content valign-wrapper">
+									<div class="col s4 m3 l2">
+										<img src="Images/pfps/ArmandGuicherit.png" alt="" width="100%" class="circle">
+									</div>
+									<div class="col s8 m9 l10">
+										<span class="card-title">Armand Guicherit (company supervisor)</span>
+										<p>Armand knows all the inner workings of the library, and what the needs of the workers there entail.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
+
+				<!--Who uses the Repository? What do they need?-->
 				<div class="container section scrollspy" id="Analysis">
-					<h3 class="blue-text">Research and Analysis</h3>
+					<h3 class="blue-text">Who uses the Repository? What do they need?</h3>
 					<p>In order to make designs for the repository, I first need to know who uses it, how, what problems they encounter, and what their needs are.</p>
 					
 					<h4 class="blue-text scrollspy section" id="Interviews">Interviews</h4>
@@ -234,354 +459,6 @@
 										<source src="Images/interviews/Interview Ruud Balkenende.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 									</video> 
-								</div>
-							</div>
-						</div>
-
-
-						<div class="col m12 l6">
-							<div class="card">
-								<div class="card-content">
-									<span class="card-title">Interview with <a href="https://www.linkedin.com/in/michel-beerens-4446027/">Michel Beerens</a> (NewMedia Centre), 
-										<a href="https://newmediacentre.tudelft.nl/contact/">Roland van Rooijen</a> (NewMedia Lab), 
-										<a href="https://www.linkedin.com/in/arno-freeke-61a07aaa/">Arno Freeke</a> (VR Zone)</span>
-									<div class="row valign-wrapper">
-										<div class="col s10">
-											<p>Michel, Roland, and Arno talked about the modern possibilities in embedded interactive multimedia, as well as graphical viewers of the macro level of the 
-												repository entry. From the futuristic, reports as VR museums, to the more recognisable like Mac's 'Coverflow' file previews. </p>
-											<p>We also talked about the importance of an interesting presentation when browsing information</p>
-											<audio controls>
-												<source src="Images/interviews/interview michel, roland, arno.aac" type="audio/aac">
-											Your browser does not support the audio element.
-											</audio> 
-										</div>
-										<div class="col s2">
-											<img src="Images/pfps/MichelBeerens.jpg" alt="" class="circle responsive-img">
-											<img src="Images/pfps/RolandVanRooijen.jpg" alt="" class="circle responsive-img">
-											<img src="Images/pfps/ArnoFreeke.jpg" alt="" class="circle responsive-img">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col m12 l6">
-							<div class="card">
-								<div class="card-content">
-									<span class="card-title">Interview with <a href="https://www.linkedin.com/in/aidavdwetering/">Aida</a> - Aerospace Engineering student</span>
-									<div class="row valign-wrapper">
-										<div class="col s10">
-											<p>I asked Aida over text about the tools aerospace engineers used, and what a typical project looks like. Aida has made multiple programmes
-												for optimizing airplane components herself, some with graphical user interfaces, and some not.
-											</p>
-											<p>She explained how aerospace engineers often string tools together, and how they create their own when designing airplanes. 
-												We discussed if these could be embedded into digital reports, and what their output would look like.
-											</p>
-											<p>Aida thinks that tools for preliminary designs could be embedded, and would be interesting for readers to play around with,
-												but when it comes to analysis and advanced designs, the programs get incredibly complex, and only the output will be interesting
-												for the reader.
-											</p>
-										</div>
-										<div class="col s2">
-											<img src="Images/pfps/aida.jpg" alt="" class="circle responsive-img">
-										</div>
-									</div>									
-									<ul class="collapsible">
-										<li>
-											<div class="collapsible-header"><i class="material-icons blue-text">chat</i>See chat conversation</div>
-											<div class="collapsible-body center row">
-												
-												<p class="ash">Klein vraagje, die simulator/calculator van hoe de vinnen in een jet engine moeten staan en hoe lang ze moeten zijn etc. Waarin heb je die gemaakt, en zou het mogelijk zijn om die ineen website te embedden? En zo nee, zou het makkelijk zijn om het zo te maken dat het wel te embedden is?</p>
-
-												<p class="ash">(Niet dat ik wil dat je het doet, ik ben gewoon benieuwd of het mogelijk is)</p>
-
-												<p class="ash"> Mijn afstudeerproject gaat overinteractive embedded multimedia in afstudeerverslagen</p>
-
-												<p class="aida">Bedoel je als in staartvleugels?</p>
-
-												<p class="ash">Ik denk het wel :)</p>
-
-												<p class="aida">Of bedoel je daadwerkelijk in een turbine/compressor?</p>
-
-												<p class="ash">Ik denk die</p>
-
-												<p class="aida">Dit is vrij eenvoudig</p>
-
-												<p class="aida">Je had er een programma voor geschreven</p>
-
-												<p class="aida">Dit is absoluut hel</p>
-
-												<p class="aida">Wel... Like 10 programma's wearing a trenchcoat pretending to be one</p>
-
-												<p class="aida">En dat was niet echt pretty want het is echt super super ingewikkeld</p>
-
-												<p class="ash">Haha alright</p>
-
-												<p class="aida">[Het turbine optimalisatie programma] Voor deze - het kan maar het is het echt niet waard</p>
-
-												<p class="aida">[Het staartvleugel optimalisatie programma] Voor deze: dat is prima te doen, en ik zou zelfs zeggen leuk te visualiseren :)</p>
-
-												<p class="ash">Okay, nice :)</p>
-
-												<p class="ash">Goed om te weten. Thanks :)</p>
-
-												<p class="ash">Stel, je kon verslagen maken als een website, had je het dan een webapp gemaakt? Of moet de backend gekke programmeertalen hebben waardoor je denkt "ze downloaden het maar"?</p>
-
-												<p class="ash">Ik heb geen idee hoe lastig dit soort shit is en wat voor talen er allemaal gebruikt worden in engineering</p>
-
-												<p class="aida">Helaas het laatste.</p>
-
-												<p class="aida">Wil je specifics?</p>
-
-												<p class="ash">Misschien? Is er een tool/taal/programma die vaak gebruikt word in aerospace?</p>
-
-												<p class="aida"> Bij engineering hangt het dus echt af van de scope van het type project.</p>
-
-												<p class="aida">Eigenlijk kan het op één van de twee dingen neerkomen: een 'preliminary design', waar je eigenlijk alles zo goed als van scratch maakt (exclusief libraries enzo die je gebruikt). Vaak zijn dit soort projecten wat kleiner in schaal, wat minder precies en meer om een algemeen idee te krijgen.</p>
-
-												<p class="aida">Dit soort dingen worden vaak gemaakt als excel sheet (liever niet) of in iets als python, matlab of soms java(script). Deze programma's zijn vaak eenvoudige command-line programmas die input en output regelen als een csv/text bestand, of het meteen in de terminal schrijven. De daadwerkelijke analyse die je uit dit soort programma's haalt is vaak vrij eenvoudig, met weinig daadwerkelijke outputs. De iteratietijd en development tijd is dan ook vaak veel belangrijker dan dat het heel makkelijk te gebruiken is; het is gemaakt voor één specifiek doel, en wordt dan vaak ook niet verder gebruikt.</p>
-
-												<p class="aida"> de tweede soort engineering project qua software is een daadwerkelijke analyse: Denk hierbij aan windtunnelsoftware, multi-dimensionale optimalisatie, finite-element stress modeling voor bijvoorbeeld load-dragende onderdelen.</p>
-
-												<p class="aida">Voordat je echt een ding goed wil analyseren heb je vaak al een preliminary design gedaan met zo'n simpelere tool als eerder beschreven, want de daadwerkelijke degrees of freedom zijn anders echt te groot. Je begint niet gelijk in een CAD software als je een vliegtuig wil ontwerpen, je berekent eerst ongeveer hoe groot de vleugeloppervlak enzo moeten zijn externally.</p>
-
-												<p class="aida">Zo'n analytisch ontwerp is vaak meer de details: dit zijn dingen die makkelijker te 'standardiseren' zijn, dingen die vaak worden gedaan. Daar bestaat dus vaak ook wel standaard software voor. Het is vaak dan ook minder programmeren, en meer gewoon simulaties runnen en simuleren.</p>
-
-												<p class="aida">Dit soort tools hebben vaak hun eigen manier van export; in engineering is het vaak helaas parseable text bestanden, maar soms heb je json of xml achtige dingen, of soms zelf daadwerkelijik beeld.</p>
-
-												<p class="aida">Bij grotere projecten wordt het alleen pas echt fucky, waar je dus een rare interchange krijgt van verschillende bestaande grote tools die eigenlijk als een soort human centipede aan elkaar gebeund zijn. Zo dus dat turbomachinery ontwerp ding. We hadden een stuk FORTRAN code die een simpele configuratie bedacht aan de hand van wat parameters, een cad parser die dat omzette in een geomery code, een CFD die dat dan simuleerde- overkoepeld door een optimalisatiealgoritme dat de parameters en de resultaten gebruikte om een optimum te vinden.</p>
-
-												<p class="aida">Hoe communiceren deze dingen? HEEL SOMS is er daadwerkelijk een API. Meestal is het helaas een bash/python programma die de output bestanden van het ene programma interpreteert en omzet naar input bestanden voor de volgende en het programma runt.</p>
-
-												<p class="aida">het is echt NIET sexy</p>
-
-												<p class="aida">dus voor dat soort dingen is het het vaak ABSOLUUT niet waard om een gui te maken</p>
-
-												<p class="aida">tenzij je deze dingen echt vaak herhaald.</p>
-
-												<p class="aida">*herhaalt.</p>
-
-												<p class="aida">En dan specifiek handmatig herhaalt. Want meestal zijn dit soort dingen grotendeels geautomatiseerd.</p>
-
-												<p class="aida">Als ik zelf wat algoritmes schrijf die ik graag wil hergebruiken, maak ik liever iets met daadwerkelijk een goeie API zodat ik het makkelijker kan integreren in een toekomstig project zonder dat het allemaal bestanden hoeft te schrijven die een ander ding weer moet interpreteren. Het is vaak veel belangrijker om een programma modulair te kunnen gebruiken dan het makkelijk als mens te kunenn gebruiken.</p>
-
-												<p class="aida">geeft dat wat licht?</p>
-
-												<p class="aida">sorry voor de wall of text</p>
-
-												<p class="aida">het is niet een leuk io antwoord, maar helaas wel vaak wat de praktijk is :(</p>
-
-												<p class="aida">ik wil graag ook nice gui tools</p>
-
-												<p class="ash">Haha nee dit is echt super handig, grote blij</p>
-
-												<p class="ash">Super bedankt</p>
-
-												<p class="aida">maar in kort: vaak is de analyse zelf vrij eenvoudig, dus de output/input door een gui maakt wat minder uit omdat je het toch in een excel sheet gooit en dan wat plotjes genereerd.</p>
-
-												<p class="aida">Wat veel belangrijker is, is dat je het kan integreren in een grotere pipeline.</p>
-
-												<p class="ash">Alright, goed om te weten</p>
-
-												<p class="ash">Dus de output is vaak: "dit is het beste ontwerp en het genereerd wel 7 aerospaces!"?</p>
-
-												<p class="ash">Of like, 2 newton weerstand, of zoiets? (Ik heb nog nooit een aerospace verslag gezien 😅)</p>
-
-												<p class="aida">Goeie voorbeelden voor preliminary designs</p>
-
-												<p class="aida">Voor uiteindelijke designs is het vaak juist het omgekeerde; GIGANTISCHE arrays aan herhaalde data</p>
-
-												<p class="aida">'schroef 1 moet 2.22mm dik zijn. Schroef 2 moet [...]. Schroef 344843 moet...'</p>
-
-												<p class="ash">Oh help</p>
-
-												<p class="ash">Okay, dat is goed om te weten!</p>
-
-												<p class="ash">Super bedankt!</p>
-
-												<p class="aida">Maar zelden, zelden iets ertussen</p>
-
-												<p class="aida">Yusss</p>
-
-												<p class="aida">Maar yeah- voor tools die je vaak op een specifieke manier (her)gebruikt is het logisch om een goeie Gui te hebben. Als je een duidelijke input, en een duidelijke (vaste) uitput hebt, en je vaak handmatig een input moet geven.</p>
-
-												<p class="aida">Echter, wat je vaak ook hebt is dat de input die je hebt nèt anders is. Zeg dat je programma graag massa als input wil. Echter, je hebt nu een ander programma dat je dichtheid geeft, en je kiest een volume.</p>
-
-												<p class="aida">Dan is het veel makkelijker om even snel een bruggetje te beunen dan om je UI een stuk ingewikkelder te maken om die flexibiliteit te hebben</p>
-
-												<p class="aida">En dan eindig je vaak met een klein python programma dat het ene programma runt, de output omzet naar massa, als input geeft voor de volgende, en weer doorgaat</p>
-
-												<p class="aida">De daadwerkelijke degrees of freedom zijn ZO GROOT dat je praktische niet voor elke mogelijkheid een Gui kan maken</p>
-
-												<p class="aida">Je kan voor één specifiek ding een grafisch element toevoegen.. maar als je vraag nu net iets verandert moet je echt veeeeeeel aanpassen</p>
-
-												<p class="aida">Dit is natuurlijk een triviaal voorbeeld. Sterker nog, als je zon duidelijk gedefinieerde input-outout hebt, kan het je vaak juist tegenwerken. Zeg dat ik nu bijvoorbeeld een can de outputs weet, maar een input niet. Als ik het programma niet aan kan passen moet ik iteratief te werk; ik gok een waarde van de massa, kijk wat voor output eruit komt. En dat blijf je herhalen tot je de waarde van de massa hebt gevonden waar je output uit komt. Dat heet in de engineering volksmond 'iteraten'.</p>
-
-												<p class="aida">Dit moet je niet handmatig willen doen. Daar zijn algoritmes voor</p>
-
-												<p class="aida">Maar dan moet je wel een programma in-out hebben</p>
-
-												<p class="aida">Waar zon iteratie-algoritme mee kan communiceren</p>
-
-												<p class="aida">Om deze reden wordt vaak de distinction gemaakt tussen verschillende soorten variabelen: Je hebt je 'Unknowns': Dingen die je niet weet, maar wilt berekenen/nodig hebt om andere waardes te berekenen</p>
-
-												<p class="aida">je hebt je 'Knowns': Waardes die je weet omdat ze de solution van een andere som zijn.</p>
-
-												<p class="aida">je hebt uitendelijk je 'parameters': Dit zijn dingen die je kiest, waaruit de andere dingen uiteindelijk volgen</p>
-
-												<p class="aida">Belangrijke distinction tussen parameters en knowns is dus dat je je parameters kiest; zeg 'ik wil een vliegtuig dat 200 mensen kan dragen, en het moet 4000 km kunnen vliegen'</p>
-
-												<p class="aida">Deze data kan er dan toe leiden dat je bijvoorbeeld 'minimaal 20 meter breden vleugels nodig hebt'</p>
-
-												<p class="aida">In deze context leiden je parameters direct naar je unknown</p>
-
-												<p class="aida">maar! Als je bijvoorbeeld nu de vleugelbreedte nodig hebt om de massa van het vliegtuig te berekenen dan wordt de vleugelspan je 'known', en gebruik je die om de massa te bepalen</p>
-
-												<p class="aida">Alles is dus SUPER gekoppeld</p>
-
-												<p class="aida">het aantal parameters is vaak VEEL kleiner dan het aantal knowns in the grand scheme of things.</p>
-
-												<p class="aida">heel veel dingen bepaal je dus impliciet, en niet expliciet</p>
-
-												<p class="aida">en nu om het nog fuckier te maken; in dit voorbeel leiden je parameters dus netjes direct to een output</p>
-
-												<p class="aida">maar stel je voor dat ik nu dezelfde tools heb, maar ik weet alleen dat 'mijn vliegtuig moet 200 mensen kunnen dragen en maximaal 40 000 kg wegen'</p>
-
-												<p class="aida">je hebt nu niet de input van de vliegafstand. Je moet dus nu het HELE ding omdraaien en iteratief bepalen</p>
-
-												<p class="aida">En dit soort dingen gebeuren VAAK in aerospace</p>
-
-												<p class="aida">weet niet hoe vaak dit soort dingen in io of andere engineering vlakken gebeuren, maar je eisen veranderen hier voortdurend. alles moet hyperflexibel zijn, en snel te itereren zijn.</p>
-
-												<p class="aida">Dus dan alweer, de focus meer op flexibiliteit en pipeline dan op stroomlijn.</p>
-
-												<p class="aida">Ik denk dat dat de belangrijkste punten zijn die ik kan maken ^-</p>
-
-												<p class="aida">hopelijk geeft dat een beetje ene idee!</p>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="col m12 l6">
-							<div class="card">
-								<div class="card-content">
-									<span class="card-title">Rapid fire interviews at <a href="http://koornbeurs.nl">youth association 'de Koornbeurs'</a></span>
-									<div class="row valign-wrapper">
-										<div class="col s10">
-											<p>De Koornbeurs is a place where students with many different majors gather. To get a quick interview of what projects at different faculties
-												look like, what digital tools they use, and what sort of media and interactive elements could improve their reports.
-											</p>
-											<ul>
-												<li><b class="blue-text">Mathematics</b> uses Java, Geogebra, and LaTeX to write equations. It could be improved by adding 
-												the models in interactive elements so the reader can play with the parameters.</li>
-												<li><b class="blue-text">Computer Science</b> often uses Python, Java, or C. Projects often let the student frame the problem, design an
-													app with certain features, build the solution, and run benchmark tests to see if it was successful. Reports can be improved if you could
-													see the codebase, architecture, and if the solution could be embedded.
-												</li>
-												<li><b class="blue-text">Life Science and Technology</b> almost never uploads to the repository for fear of plagiarism</li>
-												<li><b class="blue-text">Physiscs</b> projects often consist of doing/repeating experiments in real life. Their reports often don't stray far
-													from the standard scientific paper format. It can be improved with embedded videos of the experiment, embedded python models, animated diagrams, 
-													and dynamic graphs. They often use Python, and up till a few years ago, Matlab.</li>
-												<li><b class="blue-text">Biomedical Engineering</b> projects often involve (re)designing medical appliances. They use Solidworks, Matlab, and specialised 
-													programs. Their reports could be enhanced with CAD models, embedded matlab models, animations, and videos of tests.</li>
-												<li><b class="blue-text">Electrical Engineering</b> projects are often about framing problems and creating an electrical circuit for it. They often
-													use Matlab Simulink, pSpice, and Oscilloscopes. Having an embedded applet where a reader can play around with their electric circuits could greatly
-													improve engagement with the report.</li>
-											</ul>
-										</div>
-										<div class="col s2">
-											<img src="Images/pfps/kelder.jpeg" alt="" class="circle responsive-img">
-										</div>
-									</div>									
-									<ul class="collapsible">
-										<li>
-											<div class="collapsible-header"><i class="material-icons blue-text">note_alt</i>See notes</div>
-											<div class="collapsible-body center row">
-												<div style="text-align: left;">
-													<p><i>AN: The acoustics of the busy bar made audio recording not feasable.</i></p>
-													<p><b class="blue-text">WISKUNDE</b></p>
-													<p> 
-													Java<br>
-													Eclipse<br>
-													Overleaf latex<br>
-													Geogebra<br>
-													<br>
-													Lit reviews<br>
-													Model van voorganger, haar code bekijken en verslag bekijken<br>
-													Een model ia iets in java<br>
-													Dat kan embedded<br>
-													Met parameters spelen<br>
-													De werkelijkheid namaken maar dan versimpeld<br>
-													Maken van dienstregeling voor ns</p>
-													
-													<p><b class="blue-text">COMPUTER SCIENCE</b></p>
-													<p>Thesis is a problem,create software to fix it, benchmark to show it's fixed<br>
-													If you could feature the code in a way, if you could show system architecture, <br>
-													<br>
-													Language doesn't matter<br>
-													Java or python usually, or C<br>
-													<br>
-													Big part is if you figure out what the problem is, what feature you choose, if it actually solves the problem, if the features make sense<br>
-													Choosing the right problem and features.</p>
-													
-													<p><b class="blue-text">LIFE SCIENCE AND TECHNOLOGY</b></p>
-													<p>Moet intern blijven<br>
-													Alles onderdeel van lopende research<br>
-													Het word te snel gestolen.<br>
-													Scripties zijn interne documenten</p>
-													
-													<p><b class="blue-text">NATUURKUNDE</b></p>
-													<p>professor geeft een onderwerp<br>
-													Experimentjes waar het antwoord al van bekendis<br>
-													Vooral programmeren in python<br>
-													Data verzamelen met grafiekjes<br>
-													Standaard paper<br>
-													Fysieke opstellingen meetapparatuur, sensors<br>
-													Python latex<br>
-													Maple bij werktuigbouwkunde<br>
-													Python en matlab word aangeleerd, matlab vroeger nu python<br>
-													
-													Dynamische grafieken moeten er in. Natuurkunde is heel erg papers schrijven<br>
-													Als je met een website aankomt gaat niemand er iets mee doen</p>
-													
-													<p><b class="blue-text">BIOMEDICAL ENGINEERING</b></p>
-													<p>slecht zicht op wat een project is<br>
-													Beeldvormingsalgoritmes<br>
-													Apparaatjes herontwerpen<br>
-													Mensonderzoek<br>
-													<br>
-													Matlab<br>
-													Solidworks<br>
-													Krita of paint3d<br>
-													Latex<br>
-													<br>
-													Tussenstappen in ontwerp laten zien, misschien als slideshow<br>
-													3d modellen<br>
-													Animaties</p>
-													
-													
-													<p><b class="blue-text">ELECTROTECHNIEK</b></p>
-													<p>Bsc project is werken in tweetallen, onderdeel van een groter project<br>
-													Droge schemas electrische circuits<br>
-													Radio zender en ontvanger, <br>
-													Zoek de requirements, ga ontwerpen, ga het bouwen<br>
-													<br>
-													Circuit simuleren programma pSpice<br>
-													Meten met oscilloscoop<br>
-													Matlab voor plotjes uit data<br>
-													matlab sIMULINK<br>
-													Latex<br>
-													<br>
-													Parameters mee spelen<br>
-													<br>
-													Compiler, daar zou het interessant zijn als gebruikers een programmatje mogen typen en de stappen kunnen zien.</p>
-												</div>
-											</div>
-										</li>
-									</ul>
 								</div>
 							</div>
 						</div>
@@ -723,10 +600,336 @@
 						<li><span class="blue-text">▶</span> The search bar works quite well.</li>
 					</ul>
 
+					<h4 class="blue-text">The Student's User Journey</h4>
+					<p>To illustrate the different struggles that students have with the repository, the different ways they use it, and the emotions they go through throughout their 
+						graduation journey, I made the following journey map:
+					</p>
+					<a href="Images/Student User Journey.png" class="btn blue right" target="_blank">See it in full resolution here <i class="material-icons right">open_in_new</i></a>
+					<br>
+					<img src="Images/Student User Journey.png" alt="" width="100%" height="200px" class="materialboxed">
+
+					<h4 class="blue-text" id="doresearcherscitemasterstheses">Do researchers cite master theses?</h4>
+					<p>In order to find out if researchers use the student theses repository, we can check if they cite theses from it.</p>
+					<p>With <a href="https://harzing.com/resources/publish-or-perish">Harzinger's 'publish or perish' application</a> we can check data from 
+						<a href="https://scholar.google.com">Google Scholar</a> (a scientific paper search engine) on how often theses from the repository get cited.
+						<a href="Images/PoPCites.csv">The data</a> shows that 60 master theses in total have been cited at all, for a total of 164 times.</p>
+					<p>A study has been done on bachelor theses that were cited from a different repository.
+						In their paper <a href="https://www.tandfonline.com/doi/full/10.1080/10691316.2014.929065">"Who is Citing Undergraduate Theses in Institutional Digital Repositories? 
+						Implications for Scholarship and Information Literacy"</a>, Sean Stone and Sara Lowe found that the vast majority of undergraduate theses only get cited once, twice, 
+						or not at all. But when one gets cited, it is in someone else's thesis 33% of the time, and in a peer reviewed publication 24% of the time.
+					</p>
+					<div class="row">
+						<div class="col s12 m4"><img src="Images/publishorperish.jpg" width="100%" class="materialboxed"></div>
+						<div class="col s12 m4"><img src="Images/Citations per paper.jpg" width="100%" class="materialboxed"></div>
+						<div class="col s12 m4"><img src="Images/Types of citations.jpg" width="100%" class="materialboxed"></div>
+					</div>
+
+					<h4 class="blue-text">A look behind the scenes with an Editor</h4>
+					<p>When a student uploads their thesis to the system, there is often a lot that is filled in wrong. Therefore, the library employs editors who check the
+						upload submissions before they're shown on the repository. I learned that the things that often go wrong are:</p>
+					<ul>
+						<li><span class="blue-text">▶</span> A lot of metadata is not filled in, or incorrect (things like awarding institution (which is always the TU), or coordinates).</li>
+						<li><span class="blue-text">▶</span> Email adresses and phone numbers are not allowed due to privacy laws, so they'll have to be removed from PDFs.</li>
+						<li><span class="blue-text">▶</span> Only images (.jpg/.png/.tiff), videos (.mp4), and PDFs are allowed currently, so other files need to be removed.</li>
+					</ul>
+
+					<h4 class="blue-text">Conclusions: Stakeholders, Usecases, and Problems</h4>
+					<div class="row">
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The pre-graduation student</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p>This student hasn't started their graduation yet, but they would like to get inspired by the projects others in their master track have created.
+												They might also want to see what supervisors often mentor projects on their favorite topic, or what kind of project their favorite professor often supervises.
+												They could also look into what quality level is often expected from a graduation, and what a graduation report looks like.
+											</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The reporting student.png" alt="" width="100%"></div>
+									</div>
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">Inspiration page</div>
+									<div class="chip">Search by quality</div>
+									<div class="chip">Search by track</div>
+									<div class="chip">Search by topic</div>
+									<div class="chip">Search by supervisor</div>
+								</div>
+							</div>
+						</div>
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The mid-graduation student</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p>This student has a project and supervisor team ready, but they haven't thought about reporting yet. They want to see what other students in their track,
+												that did projects on the same topic, or worked under the same mentor made. They want to see quality reports, so they can copy the best practices from that
+												report.
+											</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The midgraduation student.png" alt="" width="100%"></div>
+									</div>
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">Search by quality</div>
+									<div class="chip">Search by track</div>
+									<div class="chip">Search by topic</div>
+									<div class="chip">Search by supervisor</div>
+								</div>
+							</div>
+						</div>
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The reporting student</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p>This student is making their master thesis report. They want to make their report engaging, and have plug and play support for these multimedia elements.
+											</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The pregraduate.png" alt="" width="100%"></div>
+									</div>
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">Support for many different media</div>
+									<div class="chip">Clear and guiding UI</div>
+								</div>
+							</div>
+						</div>
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The uploader</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p>This student is about to upload their report to the repository, they are very stressed, as it's in the last weeks of their graduation, and they still
+												need to make a presentation.
+											</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The uploader.png" alt="" width="100%"></div>
+									</div>
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">Easy and fast uploading</div>
+									<div class="chip">Clear and guiding UI</div>
+								</div>
+							</div>
+						</div>
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The alumnus</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p>This person has graduated, their report is on the repository. They might want to share their page with friends or potential employers if they're proud
+												of it, or they might want to hide or improve their page if they aren't.
+											</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The alumnus.png" alt="" width="100%"></div>
+									</div>
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">A presentation to be proud of</div>
+									<div class="chip">Editing their entry</div>
+									<div class="chip">Sharing</div>
+									<div class="chip">Their report to be findable</div>
+								</div>
+							</div>
+						</div>
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The targeted downloader</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p>This person knows exactly whose report they are going to download. They don't care about other people's report, they just want to go to the right entry
+												and download the report. Most people who use the repository are targeted downloaders.
+											</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The targeted downloader.png" alt="" width="100%"></div>
+									</div>
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">Search by name</div>
+									<div class="chip">Quick downloading</div>
+									<div class="chip">Clear UI</div>
+								</div>
+							</div>
+						</div>
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The data maintainers</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p>Keeping the repository up and providing access to thousands of papers for decades is no small task.
+												The library staff wants theses to be findable, but they also have to worry about privacy, legal issues, and certain technologies, media, and dependencies
+												becoming	deprecated. Moreover, not all uploaders use the same practices when adding metadata to their entries, which can cause their system to become
+												less useful.
+											</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The data maintainer.png" alt="" width="100%"></div>
+									</div>
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">Findable reports</div>
+									<div class="chip">Deprecation-proof reports</div>
+									<div class="chip">Guiding for metadata when uploading</div>
+								</div>
+							</div>
+						</div>
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The researcher</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p><a href="https://sci-hub.se/10.1353/pla.2003.0062">Master theses are more cited than one might think.</a> researchers and other students looking to cite
+												master theses are redirected from Google Scholar to the TU repository. They need to be able to see at a glance if the paper they are looking at will
+												be citable.
+											</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The Researcher.png" alt="" width="100%"></div>
+									</div>
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">Reports findable with Google Scholar</div>
+									<div class="chip">Judge report usefulness at a glance (relevance, academic rigor, quality)</div>
+									<div class="chip">Easily citable</div>
+								</div>
+							</div>
+						</div>
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The new theses fan*</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p>Multiple interviewees have expressed interest in seeing what sort of great new research is on the repository, but with how boring it currently is
+												and how cumbersome it is to download large reports and look through them, this usecase doesn't really exist yet.
+											</p>
+											<p>Highlighting new theses of quality by track and topic, either through a homepage or mailing list, could inspire a lot of people.</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The new Research Fan.png" alt="" width="100%"></div>
+									</div>
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">A feed of quality/featured new theses</div>
+									<div class="chip">Search by quality</div>
+									<div class="chip">Search by Topic</div>
+									<div class="chip">Search by track</div>
+									<p><i>* This stakeholder currently doesn't really exist yet, but I hope to make people generally interested in the research on the repository.</i></p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The headhunter</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p>The headhunter wants to see who recently graduated in a certain field, and get in contact with them.</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The Headhunter.png" alt="" width="100%"></div>
+									</div>
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">Search by master programme</div>
+									<div class="chip">Search by topic</div>
+									<div class="chip">Filter by date</div>
+									<div class="chip">Easily get in contact with the Author</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">The supervisor</span>
+									<div class="row valign-wrapper">
+										<div class="col s9">
+											<p>Currently, the supervisors have very little to do with the repository. But a new design could change that.
+											</p>
+										</div>
+										<div class="col s3"><img src="Images/personas/The Supervisor.png" alt="" width="100%"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<i class="grey-text">images by uplyak on freepik</i>
+
+					<h5 class="blue-text">List of Requirements</h5>
+					<div class="row">
+						<div class="col s12 m4">
+							<ul>
+								<li><b class="blue-text">Must have</b></li>
+								<li><span class="blue-text">▶</span> Users must be able to easily find theses of quality</li>
+								<li><span class="blue-text">▶</span> Users must be able to easily find papers of their study programme</li>
+								<li><span class="blue-text">▶</span> Users must be able to easily find papers on certain topics</li>
+								<li><span class="blue-text">▶</span> Users must be able to browse papers in a way that lets them judge interest at a glance</li>
+							</ul>
+						</div>
+						<div class="col s12 m4">
+							<ul>
+								<li><b class="blue-text">Should have</b></li>
+								<li><span class="blue-text">▶</span> Users must be able to easily find papers by a certain supervisor</li>
+								<li><span class="blue-text">▶</span> Users must be able to decide if they're interested in a thesis within 5 seconds</li>
+								<li><span class="blue-text">▶</span> UI must help to spark 'curiosity' in theses</li>
+								<li><span class="blue-text">▶</span> Users must not report feeling 'lost' (or similar emotion) when uploading</li>
+								<li><span class="blue-text">▶</span> User must feel like the UI relieves anxiety when uploading</li>
+								<li><span class="blue-text">▶</span> Users must be able to find the download button within 5 seconds of the page loading.</li>
+							</ul>
+						</div>
+						<div class="col s12 m4">
+							<ul>
+								<li><b class="blue-text">Could have</b></li>
+								<li><span class="blue-text">▶</span> Researcher must be able to judge wether a theses might be useful for their work (to the extent one can when not 
+									reading the report) (moreso than just reading the abstract)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<!--What can we do with Repositories and Media-->
+				<div class="container section scrollspy" id="whatcanwedowithmedia">
+					<h3 class="blue-text">What can we do with Repositories and Media?</h3>
+					<h4 class="blue-text">The benefits of media in reporting</h4>
+					<p>
+						The goal of a graduation project often includes teaching a student to conduct and report a piece of research on their own 
+						<a href="http://dx.doi.org/10.5430/ijhe.v2n1p1" target="_blank" style="font-size: small;">(source)</a>.
+						Reporting is a big part of the project, a survey of master thesis graders showed that communicative competence was rated "very important", and in the top 50% of aspects
+						a report is graded on 
+						<a href="https://doi.org/10.1080/02602938.2011.638738" target="_blank" style="font-size: small;">(source)</a>.
+					</p>
+					<p>
+						Teaching students how to report on their research has always been important, 
+						but over the years, universities have also started teaching how to communicate your research to non-scientists 
+						<a href="http://doi.org/10.1119/bfy.2015.pr.018" target="_blank" style="font-size: small;">(source)</a>.
+						Video is becoming an effective, and increasingly popular and recognised medium for formal
+						<a href="http://doi.org/10.1002/asi.22717" target="_blank" style="font-size: small;">(source)</a>
+						 and informal information spreading 
+						<a href="http://doi.org/10.1119/bfy.2015.pr.018" target="_blank" style="font-size: small;">(source)</a>.
+						A study showed that videos, as well as plain language summaries improve comprehension, percieved understanding, enjoyment, and the desire to learn more, in both
+						scientifically educated, and non scientifically educated people
+						<a href="https://doi.org/10.1371/journal.pone.0224697" target="_blank" style="font-size: small;">(source)</a>.
+						Other forms of art has also become an increasingly prevalent way of research communication
+						<a href="https://doi.org/10.1016/j.tree.2016.06.004" target="_blank" style="font-size: small;">(source)</a>
+						, and the TU Library has recently had a science-communication-through-art exhibit
+						in the main hall
+						<a href="https://www.tudelft.nl/library/over-de-library/tu-delft-library-presenteert/art-embedded-learning-in-technical-higher-education" target="_blank" style="font-size: small;">(source)</a>.
+					</p>
+					<p>
+						The TU Delft Library wants to achieve an inspirational learning environment, more visibility for masters theses, and for students to be proud of what they publish
+						<a href="https://tu-delft.foleon.com/tu-delft/library-roadmap-2020-2024/cover/" target="_blank" style="font-size: small;">(source)</a>.
+						Students are also enthusiastic about a 'show don't tell' way of showing off their work; they also hope that this can help them find a job after their graduation
+						<a href="#Interviews" style="font-size: small;">(see interviews)</a>.
+						
+						The Library wants to achieve this with interactive media
+						<a href="https://tu-delft.foleon.com/tu-delft/library-roadmap-2020-2024/cover/" target="_blank" style="font-size: small;">(source)</a>.
+						While it is not proven that using media (specifically graphical abstracts) increase a work's visibility 
+						<a href="http://doi.org/10.3390/molecules21091247" target="_blank" style="font-size: small;">(source)</a>, it does provide all the other
+						benefits mentioned above.
+					</p>
+
 					<h4 class="blue-text">Benchmarking</h4>
 					<p>I looked at other online repositories for inspiration and best practices.</p>
 	
-
 					<div class="row">
 						<div class="col s12 m6 l4">
 							<div class="card">
@@ -839,23 +1042,6 @@
 						
 					</div>
 
-					<h4 class="blue-text">Do researchers cite master theses?</h4>
-					<p>In order to find out if researchers use the student theses repository, we can check if they cite theses from it.</p>
-					<p>With <a href="https://harzing.com/resources/publish-or-perish">Harzinger's 'publish or perish' application</a> we can check data from 
-						<a href="https://scholar.google.com">Google Scholar</a> (a scientific paper search engine) on how often theses from the repository get cited.
-						<a href="Images/PoPCites.csv">The data</a> shows that 60 master theses in total have been cited at all, for a total of 164 times.</p>
-					<p>A study has been done on bachelor theses that were cited from a different repository.
-						In their paper <a href="https://www.tandfonline.com/doi/full/10.1080/10691316.2014.929065">"Who is Citing Undergraduate Theses in Institutional Digital Repositories? 
-						Implications for Scholarship and Information Literacy"</a>, Sean Stone and Sara Lowe found that the vast majority of undergraduate theses only get cited once, twice, 
-						or not at all. But when one gets cited, it is in someone else's thesis 33% of the time, and in a peer reviewed publication 24% of the time.
-					</p>
-					<div class="row">
-						<div class="col s12 m4"><img src="Images/publishorperish.jpg" width="100%" class="materialboxed"></div>
-						<div class="col s12 m4"><img src="Images/Citations per paper.jpg" width="100%" class="materialboxed"></div>
-						<div class="col s12 m4"><img src="Images/Types of citations.jpg" width="100%" class="materialboxed"></div>
-					</div>
-					
-					
 
 					<h4 class="blue-text">Previous work</h4>
 					<h5 class="blue-text">Rethinking the student theses repository</h5>
@@ -883,16 +1069,8 @@
 					</ul>
 					<h6 class="blue-text">Their presentation slideshow:</h6>
 					<div class="container">
-						<embed src="Images/ClareGhorbani.pdf" width="100%" height="500px"/>
+						<embed src="Sources/ClareGhorbani.pdf" width="100%" height="500px"/>
 					</div>
-
-					<h5 class="blue-text">A look behind the scenes with an Editor</h5>
-					<p>When a student uploads their thesis to the system, there is often a lot that is filled in wrong:</p>
-					<ul>
-						<li>Email adresses and phone numbers are not allowed due to privacy laws, so they'll have to be removed from PDFs.</li>
-						<li>A lot of metadata is not filled in, or incorrect (things like awarding institution (which is always the TU), or coordinates).</li>
-						<li>Only images (.jpg/.png/.tiff), videos (.mp4), and PDFs are allowed.</li>
-					</ul>
 
 					<h5 class="blue-text">Designing with existing metadata</h5>
 					<div class="row">
@@ -960,6 +1138,7 @@
 						</span>, I could credit her, and show her credentials and context without taking up
 						too much space or distracting from the report.
 					</p>
+					<p>Linking to different articles on the same website also helps with search engine optimization.</p>
 
 					<h5 class="blue-text">Table of contents as a navigational menu</h5>
 					<p>Graduation reports are long, and it can be easy to scroll past someone, or forget where you were when coming back to a report. A table of contents next to
@@ -1029,101 +1208,102 @@
 						<div id="ar-prompt">
 								<img src="https://modelviewer.dev/shared-assets/icons/hand.png">
 						</div>
-				</model-viewer>-->
-				<h6 class="blue-text">CAD Viewers</h6>
-				<p>A lot of projects from the 3ME and IDE faculties involve CAD drawings. <a href="https://www.3dcontentcentral.com/">3DContentCentral</a>
-					has an <a href="https://www.cadtek.com/how-to-embed-3d-model/">embeddable CAD model viewer</a> that allows for things like wireframe viewing, and section views.
-					Engineering students could explain their designs much better with this interactive tool, and readers can examine the author's works in a much more engaging way.</p>
-					<iframe id="PreviewFrame3D" 
-					src="http://www.3dcontentcentral.com/external-site-embed.aspx?format=3D&amp;catalogid=171&amp;modelid=700045&amp;width=250&amp;height=250&amp;edraw=true" 
-					name="PreviewFrame3D" width="100%" height="300" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
+					</model-viewer>-->
+					<h6 class="blue-text">CAD Viewers</h6>
+					<p>A lot of projects from the 3ME and IDE faculties involve CAD drawings. <a href="https://www.3dcontentcentral.com/">3DContentCentral</a>
+						has an <a href="https://www.cadtek.com/how-to-embed-3d-model/">embeddable CAD model viewer</a> that allows for things like wireframe viewing, and section views.
+						Engineering students could explain their designs much better with this interactive tool, and readers can examine the author's works in a much more engaging way.</p>
+						<iframe id="PreviewFrame3D" 
+						src="http://www.3dcontentcentral.com/external-site-embed.aspx?format=3D&amp;catalogid=171&amp;modelid=700045&amp;width=250&amp;height=250&amp;edraw=true" 
+						name="PreviewFrame3D" width="100%" height="300" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
 
-				<h5 class="blue-text">Bespoke embedded 3D applications</h5>
-				<div class="row">
-					<div class="col s12 m7">
-						<p>Three.js is a powerful framework for allowing interactive 3D scenes. Many people have made entire videogames with it.
-							If a student wishes to create a bespoke interactive 3D application to explain their project.
-						</p>
-						<p>The three.js website contains a lot of examples and links to in-browsers 3D applications.</p>
-						<a href="https://threejs.org/" class="btn-large blue" target="_blank">Visit the Three.js Website for many examples  <i class="material-icons right">open_in_new</i></a>
-					</div>
-					
-					<div class="col s12 m5">
-						<img class="materialboxed" src="Images/threeJS projects.jpg" alt="" width="100%">
-					</div>
-				</div>
-
-				<h6 class="blue-text">Graduation report as a museum</h6>
-				<div class="row">
-					<div class="col s12 m6">
-						<img class="materialboxed" src="Images/shutdowngallery.jpg" alt="screenshot of the shutdown gallery" width="100%">
-						<br>
-						<div class="sketchfab-embed-wrapper"> 
-							<iframe title="VR Gallery_KR01_M" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" 
-							allow="autoplay; fullscreen; xr-spatial-tracking" width="100%" height="300px"
-							xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/e5a86e9d8f584a1992b5bb6d0765d4d2/embed?autostart=1&camera=0&preload=1"> 
-							</iframe> 
+					<h5 class="blue-text">Bespoke embedded 3D applications</h5>
+					<div class="row">
+						<div class="col s12 m7">
+							<p>Three.js is a powerful framework for allowing interactive 3D scenes. Many people have made entire videogames with it.
+								If a student wishes to create a bespoke interactive 3D application to explain their project.
+							</p>
+							<p>The three.js website contains a lot of examples and links to in-browsers 3D applications.</p>
+							<a href="https://threejs.org/" class="btn-large blue" target="_blank">Visit the Three.js Website for many examples  <i class="material-icons right">open_in_new</i></a>
+						</div>
+						
+						<div class="col s12 m5">
+							<img class="materialboxed" src="Images/threeJS projects.jpg" alt="" width="100%">
 						</div>
 					</div>
-					<div class="col s12 m6">
-						<p>If the student has a lot of 3d models or spaces to show, they could decide to make a virtual museum instead of a linear report. The shutdown gallery
-							is a project that creates a virtual gallery the user's avatar can walk through and take in the artworks.
-						</p>
-						<p>This could even be in virtual reality.</p>
-						<p>Another way to use the concept of a virtual museum is for allowing readers to walk through a museum of different TU Delft projects, they could walk
-							through a gallery of 3D models, and stop by the ones that interest them.
-						</p>
-						<a href="https://shutdown.gallery/" class="btn-large blue" target="_blank">Visit the Shutdown Gallery online
-							<i class="material-icons right">open_in_new</i></a>
-					</div>
-				</div>
-				
-				<h6 class="blue-text">Web XR (eXtended Reality, Virtual Reality, Augmented Reality, and Mixed Reality)</h6>
-				<div class="row">
-					<div class="col s12 m6 l8">
-						<p>Virtual Reality, Augmented Reality, and Mixed Reality (together known as eXtended Reality, XR) are becoming more and more accessible and they are used
-						more and more by engineers and scientists. <a href="https://immersiveweb.dev/">Web XR</a> 
-						makes XR now usable straight out of people's browsers, making XR experiences for explanations very possible.</p>
-						<p>XR could be used to view student made 3D models immersively. This could be especially useful for architecture students to show the buildings they've designed,
-							or any student that designs a space.
-						</p>
-						<a href="https://mixedreality.mozilla.org/hello-webxr/" class="btn-large blue" target="_blank">Visit the Firefox Web XR demo 
-							<i class="material-icons right">open_in_new</i></a>
-					</div>
-					<div class="col s12 m6 l4">
-						<iframe width="100%" height="300px" src="https://www.youtube.com/embed/uXBDogyGXTQ" title="YouTube video player" frameborder="0" 
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col s12 m6">
-					<iframe width="100%" height="300px" src="https://www.youtube.com/embed/PxdBiCfXuQ4" title="YouTube video player" frameborder="0" 
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					<div class="col s12 m6">
-						<p>Adobe has experimented with viewing PDFs in virtual reality by somehow turning images into 360 degree panoramic images, and overlaying the relevant text onto them.</p>
-					</div>
-				</div>
 
-				<h5 class="blue-text">Embedding Python/Java/C/etc projects and compilers.</h5>
-				<!--<p>Python has become one of the most powerful and customisable tools for an engineer. Its ease of using libraries and its versatility often makes
-					it the tool of choice for a student who needs to do large calculations. The ability to embed a student's python scripts to their report, and have the reader
-					try out their code, and play around with it, will be incredibly valuable in explaining their projects.
-				</p>
-				<p>One way to embed python to a website is with the <a href="http://trinket.io">Trinket</a> editor, which can be seen below. With this, readers can check
-					out a student's code, see its results when the program runs, and play around with the code and the parameters to gain a better understanding.
-				</p>
-				<iframe src="https://trinket.io/embed/python/3d8d7ce66b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" loading="lazy"></iframe>-->
-				<p>Almost all faculties use programming, and for many students their custom made program is a massive part of their graduation project.
-					Python has become one of the most powerful and customisable tools for an engineer, with its ease of using libraries and its versatility making it the engineer's
-					favorite advanced calculator. Java is used incredibly often by computer scientists and mathematicians. C is used a lot by electrical engineers programming embedded
-					systems. The ability to embed a student's python scripts to their report, and have the reader
-					try out their code, and play around with its paramaeters, will be incredibly valuable in explaining their projects.
-				</p>
-				<p><a href="http://jdoodle.com">JDoodle</a> is a powerful online IDE and compiler that can run 79 of the most common programming languages, and it can be embedded
-				into someone's online report or repository page.</p>
-				<div data-pym-src='https://www.jdoodle.com/plugin' data-language="java"
-    data-version-index="4" data-libs="mavenlib1, mavenlib2">
+					<h6 class="blue-text">Graduation report as a museum</h6>
+					<div class="row">
+						<div class="col s12 m6">
+							<img class="materialboxed" src="Images/shutdowngallery.jpg" alt="screenshot of the shutdown gallery" width="100%">
+							<br>
+							<div class="sketchfab-embed-wrapper"> 
+								<iframe title="VR Gallery_KR01_M" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" 
+								allow="autoplay; fullscreen; xr-spatial-tracking" width="100%" height="300px"
+								xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/e5a86e9d8f584a1992b5bb6d0765d4d2/embed?autostart=1&camera=0&preload=1"> 
+								</iframe> 
+							</div>
+						</div>
+						<div class="col s12 m6">
+							<p>If the student has a lot of 3d models or spaces to show, they could decide to make a virtual museum instead of a linear report. The shutdown gallery
+								is a project that creates a virtual gallery the user's avatar can walk through and take in the artworks.
+							</p>
+							<p>This could even be in virtual reality.</p>
+							<p>Another way to use the concept of a virtual museum is for allowing readers to walk through a museum of different TU Delft projects, they could walk
+								through a gallery of 3D models, and stop by the ones that interest them.
+							</p>
+							<a href="https://shutdown.gallery/" class="btn-large blue" target="_blank">Visit the Shutdown Gallery online
+								<i class="material-icons right">open_in_new</i></a>
+						</div>
+					</div>
+					
+					<h6 class="blue-text">Web XR (eXtended Reality, Virtual Reality, Augmented Reality, and Mixed Reality)</h6>
+					<div class="row">
+						<div class="col s12 m6 l8">
+							<p>Virtual Reality, Augmented Reality, and Mixed Reality (together known as eXtended Reality, XR) are becoming more and more accessible and they are used
+							more and more by engineers and scientists. <a href="https://immersiveweb.dev/">Web XR</a> 
+							makes XR now usable straight out of people's browsers, making XR experiences for explanations very possible.</p>
+							<p>XR could be used to view student made 3D models immersively. This could be especially useful for architecture students to show the buildings they've designed,
+								or any student that designs a space.
+							</p>
+							<a href="https://mixedreality.mozilla.org/hello-webxr/" class="btn-large blue" target="_blank">Visit the Firefox Web XR demo 
+								<i class="material-icons right">open_in_new</i></a>
+						</div>
+						<div class="col s12 m6 l4">
+							<iframe width="100%" height="300px" src="https://www.youtube.com/embed/uXBDogyGXTQ" title="YouTube video player" frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m6">
+						<iframe width="100%" height="300px" src="https://www.youtube.com/embed/PxdBiCfXuQ4" title="YouTube video player" frameborder="0" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="col s12 m6">
+							<p>Adobe has experimented with viewing PDFs in virtual reality by somehow turning images into 360 degree panoramic images, and overlaying the relevant text onto them.</p>
+						</div>
+					</div>
+
+					<h5 class="blue-text">Embedding Python/Java/C/etc projects and compilers.</h5>
+					<!--<p>Python has become one of the most powerful and customisable tools for an engineer. Its ease of using libraries and its versatility often makes
+						it the tool of choice for a student who needs to do large calculations. The ability to embed a student's python scripts to their report, and have the reader
+						try out their code, and play around with it, will be incredibly valuable in explaining their projects.
+					</p>
+					<p>One way to embed python to a website is with the <a href="http://trinket.io">Trinket</a> editor, which can be seen below. With this, readers can check
+						out a student's code, see its results when the program runs, and play around with the code and the parameters to gain a better understanding.
+					</p>
+					<iframe src="https://trinket.io/embed/python/3d8d7ce66b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" loading="lazy"></iframe>-->
+					<p>Almost all faculties use programming, and for many students their custom made program is a massive part of their graduation project.
+						Python has become one of the most powerful and customisable tools for an engineer, with its ease of using libraries and its versatility making it the engineer's
+						favorite advanced calculator. Java is used incredibly often by computer scientists and mathematicians. C is used a lot by electrical engineers programming embedded
+						systems. The ability to embed a student's python scripts to their report, and have the reader
+						try out their code, and play around with its paramaeters, will be incredibly valuable in explaining their projects.
+					</p>
+					<p>
+						<a href="http://jdoodle.com">JDoodle</a> is a powerful online IDE and compiler that can run 79 of the most common programming languages, and it can be embedded
+						into someone's online report or repository page.
+					</p>
+					<div data-pym-src='https://www.jdoodle.com/plugin' data-language="java"	data-version-index="4" data-libs="mavenlib1, mavenlib2">
 public class MyClass {
 	public static void main(String args[]) {
 		int x=10;
@@ -1133,328 +1313,345 @@ public class MyClass {
 		System.out.println("Sum of x+y = " + z);
 	}
 }
-  </div>
-  <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
-
-				<h4 class="blue-text">What can we do with existing reports?</h4>
-				<p>Providing support for students to add multimedia elements is important, but just as important is trying to add multimedia elements retroactively 
-					to the vast amount of already existing reports.
-				</p>
-				<div class="row">
-					<div class="col s12 m6 l3">
-						<img src="Images/legacyreport.png" alt="" class="materialboxed" width="100%">
 					</div>
-					<div class="col s12 m6 l9">
-						<h5 class="blue-text">Extracting Images</h5>
-						<p>Almost all reports have figures. <a href="https://tools.pdf24.org/en/extract-images#s=1664275367447">Extracting Images from a PDF is quite easy</a>.
-							By showing the images in the PDF, either on a slideshow, or in an overview, a reader can quickly glance if the thesis will be interesting, or contain what they're
-							looking for.</p>
-						<h5 class="blue-text">Wordclouds</h5>
-						<img src="Images/wordcloud.jpg" alt="" class="materialboxed right" width="200px">
-						<p>You can <a href="https://www.wordclouds.com/">make wordclouds from PDFs</a> without too much trouble. A wordcloud is an image with a the most often used words from
-						the report scattered throughout, with the most frequent words being larger. This can illustrate to a reader at a glance what might be in the text of the report.</p>
-						<h5 class="blue-text">Displaying and Extracting Links</h5>
-						<p><a href="https://www.systoolsgroup.com/how-to/extract-and-export-hyperlinks-from-pdf/">You can extract links from PDFs</a>. This can be used to embed linked media,
-						such as showing a video when a student might have a youtube link in their report; or to create a bibliography of the used sources.</p>
-						<img src="Images/linkpreview.png" alt="" class="materialboxed right" height="100px">
-						<p>A bibliography could be made more interesting by showing how often the sources have been cited, if they're academic works or not, and showing link previews, like
-							those that can often be seen in chat applications, as shown here.
-						</p>
-						<p>Links can already be added in the current PURE system. These links, along with extracted ones could be displayed with the title, description, and image from
-							the meta tags from that link, (see the image for an example).
-						</p>
-						<h5 class="blue-text">Viewers for existing files</h5>
-						<p>You can already open an on-site PDF reader, but it's hidden, small, and not many people know about it. Making it larger and opened by default will make
-							the entry feel a lot more interactive.
-						</p>
-						<p>Some faculties demand that a student also uploads a 'showcase' of their graduation project to the repository. These can be incredibly valuable, as they're
-							essentially already media abstracts. They are often videos, or posters. These should be displayed right next to the abstract, or even before it.
-						</p>
-						<h5 class="blue-text">Related items</h5>
-						<p>You can use the existing repository items to our advantage. With keywords, words in the title and abstract, and other works by contributors, you can create
-							a list of related articles, related supervisors, etc. 
-						</p>
-						<h5 class="blue-text">Summarize abstracts into 'pitches'</h5>
-						<p>Search results currently show the abstract as a description, because of how long these are, they get truncated, and become useless. 
-							<a href="https://quillbot.com/summarize">AI technology can summarize</a> 
-							these long abstracts into shorter versions that will miss some information, but will give the user scrolling through the search results a much better idea of what
-							is in the report. The results look very promising.
-						</p>
-						<h5 class="blue-text">Coordinates into google maps embeds</h5>
-						<p>The Current Pure system already allows for adding coordinates to your entry. We can use that to show a little widget from google maps that shows the location,
-							such as this one.
-						</p>
-						<div style="box-shadow:#0001 0 5px 10px; background-color: white; width: fit-content;">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1736.7814835463175!2d4.373251003189156!3d52.00360287906721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b58d401d6c4b%3A0x531543fe94141f70!2sTU%20Delft%20Library!5e0!3m2!1snl!2snl!4v1668518800797!5m2!1snl!2snl" 
-							width="400px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+					<script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+
+					<h4 class="blue-text">Interviews</h4>
+					<div class="row">
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<div class="card-title">What media would be useful in different Masters programmes?</div>
+									<div class="row valign-wrapper">
+										<div class="col s10">
+											<p>
+												<a href="http://koornbeurs.nl">Youth association 'de Koornbeurs'</a> is a place where students with many different majors gather.
+												To get an idea of what projects at different faculties
+												look like, what digital tools they use, and what sort of media and interactive elements could improve their reports, I did a few rapid fire interviews
+												with masters students there. Here are the conclusions:
+											</p>
+											<ul>
+												<li><b class="blue-text">Mathematics</b> uses Java, Geogebra, and LaTeX to write equations. It could be improved by adding 
+												the models in interactive elements so the reader can play with the parameters.</li>
+												<li><b class="blue-text">Computer Science</b> often uses Python, Java, or C. Projects often let the student frame the problem, design an
+													app with certain features, build the solution, and run benchmark tests to see if it was successful. Reports can be improved if you could
+													see the codebase, architecture, and if the solution could be embedded.
+												</li>
+												<li><b class="blue-text">Life Science and Technology</b> almost never uploads to the repository for fear of plagiarism</li>
+												<li><b class="blue-text">Physiscs</b> projects often consist of doing/repeating experiments in real life. Their reports often don't stray far
+													from the standard scientific paper format. It can be improved with embedded videos of the experiment, embedded python models, animated diagrams, 
+													and dynamic graphs. They often use Python, and up till a few years ago, Matlab.</li>
+												<li><b class="blue-text">Biomedical Engineering</b> projects often involve (re)designing medical appliances. They use Solidworks, Matlab, and specialised 
+													programs. Their reports could be enhanced with CAD models, embedded matlab models, animations, and videos of tests.</li>
+												<li><b class="blue-text">Electrical Engineering</b> projects are often about framing problems and creating an electrical circuit for it. They often
+													use Matlab Simulink, pSpice, and Oscilloscopes. Having an embedded applet where a reader can play around with their electric circuits could greatly
+													improve engagement with the report.</li>
+											</ul>
+											<ul class="collapsible">
+												<li>
+													<div class="collapsible-header"><i class="material-icons blue-text">note_alt</i>See interview notes</div>
+													<div class="collapsible-body center row">
+														<div style="text-align: left;">
+															<p><i>AN: The acoustics of the busy bar made audio recording not feasable.</i></p>
+															<p><b class="blue-text">WISKUNDE</b></p>
+															<p> 
+															Java<br>
+															Eclipse<br>
+															Overleaf latex<br>
+															Geogebra<br>
+															<br>
+															Lit reviews<br>
+															Model van voorganger, haar code bekijken en verslag bekijken<br>
+															Een model ia iets in java<br>
+															Dat kan embedded<br>
+															Met parameters spelen<br>
+															De werkelijkheid namaken maar dan versimpeld<br>
+															Maken van dienstregeling voor ns</p>
+															
+															<p><b class="blue-text">COMPUTER SCIENCE</b></p>
+															<p>Thesis is a problem,create software to fix it, benchmark to show it's fixed<br>
+															If you could feature the code in a way, if you could show system architecture, <br>
+															<br>
+															Language doesn't matter<br>
+															Java or python usually, or C<br>
+															<br>
+															Big part is if you figure out what the problem is, what feature you choose, if it actually solves the problem, if the features make sense<br>
+															Choosing the right problem and features.</p>
+															
+															<p><b class="blue-text">LIFE SCIENCE AND TECHNOLOGY</b></p>
+															<p>Moet intern blijven<br>
+															Alles onderdeel van lopende research<br>
+															Het word te snel gestolen.<br>
+															Scripties zijn interne documenten</p>
+															
+															<p><b class="blue-text">NATUURKUNDE</b></p>
+															<p>professor geeft een onderwerp<br>
+															Experimentjes waar het antwoord al van bekendis<br>
+															Vooral programmeren in python<br>
+															Data verzamelen met grafiekjes<br>
+															Standaard paper<br>
+															Fysieke opstellingen meetapparatuur, sensors<br>
+															Python latex<br>
+															Maple bij werktuigbouwkunde<br>
+															Python en matlab word aangeleerd, matlab vroeger nu python<br>
+															
+															Dynamische grafieken moeten er in. Natuurkunde is heel erg papers schrijven<br>
+															Als je met een website aankomt gaat niemand er iets mee doen</p>
+															
+															<p><b class="blue-text">BIOMEDICAL ENGINEERING</b></p>
+															<p>slecht zicht op wat een project is<br>
+															Beeldvormingsalgoritmes<br>
+															Apparaatjes herontwerpen<br>
+															Mensonderzoek<br>
+															<br>
+															Matlab<br>
+															Solidworks<br>
+															Krita of paint3d<br>
+															Latex<br>
+															<br>
+															Tussenstappen in ontwerp laten zien, misschien als slideshow<br>
+															3d modellen<br>
+															Animaties</p>
+															
+															
+															<p><b class="blue-text">ELECTROTECHNIEK</b></p>
+															<p>Bsc project is werken in tweetallen, onderdeel van een groter project<br>
+															Droge schemas electrische circuits<br>
+															Radio zender en ontvanger, <br>
+															Zoek de requirements, ga ontwerpen, ga het bouwen<br>
+															<br>
+															Circuit simuleren programma pSpice<br>
+															Meten met oscilloscoop<br>
+															Matlab voor plotjes uit data<br>
+															matlab sIMULINK<br>
+															Latex<br>
+															<br>
+															Parameters mee spelen<br>
+															<br>
+															Compiler, daar zou het interessant zijn als gebruikers een programmatje mogen typen en de stappen kunnen zien.</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="col s2">
+											<img src="Images/pfps/kelder.jpeg" alt="" class="circle responsive-img">
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
+
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">Interview with <a href="https://www.linkedin.com/in/michel-beerens-4446027/">Michel Beerens</a> (NewMedia Centre), 
+										<a href="https://newmediacentre.tudelft.nl/contact/">Roland van Rooijen</a> (NewMedia Lab), 
+										<a href="https://www.linkedin.com/in/arno-freeke-61a07aaa/">Arno Freeke</a> (VR Zone)</span>
+									<div class="row valign-wrapper">
+										<div class="col s10">
+											<p>Michel, Roland, and Arno talked about the modern possibilities in embedded interactive multimedia, as well as graphical viewers of the macro level of the 
+												repository entry. From the futuristic, reports as VR museums, to the more recognisable like Mac's 'Coverflow' file previews. </p>
+											<p>We also talked about the importance of an interesting presentation when browsing information</p>
+											<audio controls>
+												<source src="Images/interviews/interview michel, roland, arno.aac" type="audio/aac">
+											Your browser does not support the audio element.
+											</audio> 
+										</div>
+										<div class="col s2">
+											<img src="Images/pfps/MichelBeerens.jpg" alt="" class="circle responsive-img">
+											<img src="Images/pfps/RolandVanRooijen.jpg" alt="" class="circle responsive-img">
+											<img src="Images/pfps/ArnoFreeke.jpg" alt="" class="circle responsive-img">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col m12 l6">
+							<div class="card">
+								<div class="card-content">
+									<span class="card-title">Interview with <a href="https://www.linkedin.com/in/aidavdwetering/">Aida</a> - Aerospace Engineering student</span>
+									<div class="row valign-wrapper">
+										<div class="col s10">
+											<p>I asked Aida over text about the tools aerospace engineers used, and what a typical project looks like. Aida has made multiple programmes
+												for optimizing airplane components herself, some with graphical user interfaces, and some not.
+											</p>
+											<p>She explained how aerospace engineers often string tools together, and how they create their own when designing airplanes. 
+												We discussed if these could be embedded into digital reports, and what their output would look like.
+											</p>
+											<p>Aida thinks that tools for preliminary designs could be embedded, and would be interesting for readers to play around with,
+												but when it comes to analysis and advanced designs, the programs get incredibly complex, and only the output will be interesting
+												for the reader.
+											</p>
+										</div>
+										<div class="col s2">
+											<img src="Images/pfps/aida.jpg" alt="" class="circle responsive-img">
+										</div>
+									</div>									
+									<ul class="collapsible">
+										<li>
+											<div class="collapsible-header"><i class="material-icons blue-text">chat</i>See chat conversation</div>
+											<div class="collapsible-body center row">
+												<p class="ash">Klein vraagje, die simulator/calculator van hoe de vinnen in een jet engine moeten staan en hoe lang ze moeten zijn etc. Waarin heb je die gemaakt, en zou het mogelijk zijn om die ineen website te embedden? En zo nee, zou het makkelijk zijn om het zo te maken dat het wel te embedden is?</p>
+												<p class="ash">(Niet dat ik wil dat je het doet, ik ben gewoon benieuwd of het mogelijk is)</p>
+												<p class="ash"> Mijn afstudeerproject gaat overinteractive embedded multimedia in afstudeerverslagen</p>
+												<p class="aida">Bedoel je als in staartvleugels?</p>
+												<p class="ash">Ik denk het wel :)</p>
+												<p class="aida">Of bedoel je daadwerkelijk in een turbine/compressor?</p>
+												<p class="ash">Ik denk die</p>
+												<p class="aida">Dit is vrij eenvoudig</p>
+												<p class="aida">Je had er een programma voor geschreven</p>
+												<p class="aida">Dit is absoluut hel</p>
+												<p class="aida">Wel... Like 10 programma's wearing a trenchcoat pretending to be one</p>
+												<p class="aida">En dat was niet echt pretty want het is echt super super ingewikkeld</p>
+												<p class="ash">Haha alright</p>
+												<p class="aida">[Het turbine optimalisatie programma] Voor deze - het kan maar het is het echt niet waard</p>
+												<p class="aida">[Het staartvleugel optimalisatie programma] Voor deze: dat is prima te doen, en ik zou zelfs zeggen leuk te visualiseren :)</p>
+												<p class="ash">Okay, nice :)</p>
+												<p class="ash">Goed om te weten. Thanks :)</p>
+												<p class="ash">Stel, je kon verslagen maken als een website, had je het dan een webapp gemaakt? Of moet de backend gekke programmeertalen hebben waardoor je denkt "ze downloaden het maar"?</p>
+												<p class="ash">Ik heb geen idee hoe lastig dit soort shit is en wat voor talen er allemaal gebruikt worden in engineering</p>
+												<p class="aida">Helaas het laatste.</p>
+												<p class="aida">Wil je specifics?</p>
+												<p class="ash">Misschien? Is er een tool/taal/programma die vaak gebruikt word in aerospace?</p>
+												<p class="aida"> Bij engineering hangt het dus echt af van de scope van het type project.</p>
+												<p class="aida">Eigenlijk kan het op één van de twee dingen neerkomen: een 'preliminary design', waar je eigenlijk alles zo goed als van scratch maakt (exclusief libraries enzo die je gebruikt). Vaak zijn dit soort projecten wat kleiner in schaal, wat minder precies en meer om een algemeen idee te krijgen.</p>
+												<p class="aida">Dit soort dingen worden vaak gemaakt als excel sheet (liever niet) of in iets als python, matlab of soms java(script). Deze programma's zijn vaak eenvoudige command-line programmas die input en output regelen als een csv/text bestand, of het meteen in de terminal schrijven. De daadwerkelijke analyse die je uit dit soort programma's haalt is vaak vrij eenvoudig, met weinig daadwerkelijke outputs. De iteratietijd en development tijd is dan ook vaak veel belangrijker dan dat het heel makkelijk te gebruiken is; het is gemaakt voor één specifiek doel, en wordt dan vaak ook niet verder gebruikt.</p>
+												<p class="aida"> de tweede soort engineering project qua software is een daadwerkelijke analyse: Denk hierbij aan windtunnelsoftware, multi-dimensionale optimalisatie, finite-element stress modeling voor bijvoorbeeld load-dragende onderdelen.</p>
+												<p class="aida">Voordat je echt een ding goed wil analyseren heb je vaak al een preliminary design gedaan met zo'n simpelere tool als eerder beschreven, want de daadwerkelijke degrees of freedom zijn anders echt te groot. Je begint niet gelijk in een CAD software als je een vliegtuig wil ontwerpen, je berekent eerst ongeveer hoe groot de vleugeloppervlak enzo moeten zijn externally.</p>
+												<p class="aida">Zo'n analytisch ontwerp is vaak meer de details: dit zijn dingen die makkelijker te 'standardiseren' zijn, dingen die vaak worden gedaan. Daar bestaat dus vaak ook wel standaard software voor. Het is vaak dan ook minder programmeren, en meer gewoon simulaties runnen en simuleren.</p>
+												<p class="aida">Dit soort tools hebben vaak hun eigen manier van export; in engineering is het vaak helaas parseable text bestanden, maar soms heb je json of xml achtige dingen, of soms zelf daadwerkelijik beeld.</p>
+												<p class="aida">Bij grotere projecten wordt het alleen pas echt fucky, waar je dus een rare interchange krijgt van verschillende bestaande grote tools die eigenlijk als een soort human centipede aan elkaar gebeund zijn. Zo dus dat turbomachinery ontwerp ding. We hadden een stuk FORTRAN code die een simpele configuratie bedacht aan de hand van wat parameters, een cad parser die dat omzette in een geomery code, een CFD die dat dan simuleerde- overkoepeld door een optimalisatiealgoritme dat de parameters en de resultaten gebruikte om een optimum te vinden.</p>
+												<p class="aida">Hoe communiceren deze dingen? HEEL SOMS is er daadwerkelijk een API. Meestal is het helaas een bash/python programma die de output bestanden van het ene programma interpreteert en omzet naar input bestanden voor de volgende en het programma runt.</p>
+												<p class="aida">het is echt NIET sexy</p>
+												<p class="aida">dus voor dat soort dingen is het het vaak ABSOLUUT niet waard om een gui te maken</p>
+												<p class="aida">tenzij je deze dingen echt vaak herhaald.</p>
+												<p class="aida">*herhaalt.</p>
+												<p class="aida">En dan specifiek handmatig herhaalt. Want meestal zijn dit soort dingen grotendeels geautomatiseerd.</p>
+												<p class="aida">Als ik zelf wat algoritmes schrijf die ik graag wil hergebruiken, maak ik liever iets met daadwerkelijk een goeie API zodat ik het makkelijker kan integreren in een toekomstig project zonder dat het allemaal bestanden hoeft te schrijven die een ander ding weer moet interpreteren. Het is vaak veel belangrijker om een programma modulair te kunnen gebruiken dan het makkelijk als mens te kunenn gebruiken.</p>
+												<p class="aida">geeft dat wat licht?</p>
+												<p class="aida">sorry voor de wall of text</p>
+												<p class="aida">het is niet een leuk io antwoord, maar helaas wel vaak wat de praktijk is :(</p>
+												<p class="aida">ik wil graag ook nice gui tools</p>
+												<p class="ash">Haha nee dit is echt super handig, grote blij</p>
+												<p class="ash">Super bedankt</p>
+												<p class="aida">maar in kort: vaak is de analyse zelf vrij eenvoudig, dus de output/input door een gui maakt wat minder uit omdat je het toch in een excel sheet gooit en dan wat plotjes genereerd.</p>
+												<p class="aida">Wat veel belangrijker is, is dat je het kan integreren in een grotere pipeline.</p>
+												<p class="ash">Alright, goed om te weten</p>
+												<p class="ash">Dus de output is vaak: "dit is het beste ontwerp en het genereerd wel 7 aerospaces!"?</p>
+												<p class="ash">Of like, 2 newton weerstand, of zoiets? (Ik heb nog nooit een aerospace verslag gezien 😅)</p>
+												<p class="aida">Goeie voorbeelden voor preliminary designs</p>
+												<p class="aida">Voor uiteindelijke designs is het vaak juist het omgekeerde; GIGANTISCHE arrays aan herhaalde data</p>
+												<p class="aida">'schroef 1 moet 2.22mm dik zijn. Schroef 2 moet [...]. Schroef 344843 moet...'</p>
+												<p class="ash">Oh help</p>
+												<p class="ash">Okay, dat is goed om te weten!</p>
+												<p class="ash">Super bedankt!</p>
+												<p class="aida">Maar zelden, zelden iets ertussen</p>
+												<p class="aida">Yusss</p>
+												<p class="aida">Maar yeah- voor tools die je vaak op een specifieke manier (her)gebruikt is het logisch om een goeie Gui te hebben. Als je een duidelijke input, en een duidelijke (vaste) uitput hebt, en je vaak handmatig een input moet geven.</p>
+												<p class="aida">Echter, wat je vaak ook hebt is dat de input die je hebt nèt anders is. Zeg dat je programma graag massa als input wil. Echter, je hebt nu een ander programma dat je dichtheid geeft, en je kiest een volume.</p>
+												<p class="aida">Dan is het veel makkelijker om even snel een bruggetje te beunen dan om je UI een stuk ingewikkelder te maken om die flexibiliteit te hebben</p>
+												<p class="aida">En dan eindig je vaak met een klein python programma dat het ene programma runt, de output omzet naar massa, als input geeft voor de volgende, en weer doorgaat</p>
+												<p class="aida">De daadwerkelijke degrees of freedom zijn ZO GROOT dat je praktische niet voor elke mogelijkheid een Gui kan maken</p>
+												<p class="aida">Je kan voor één specifiek ding een grafisch element toevoegen.. maar als je vraag nu net iets verandert moet je echt veeeeeeel aanpassen</p>
+												<p class="aida">Dit is natuurlijk een triviaal voorbeeld. Sterker nog, als je zon duidelijk gedefinieerde input-outout hebt, kan het je vaak juist tegenwerken. Zeg dat ik nu bijvoorbeeld een can de outputs weet, maar een input niet. Als ik het programma niet aan kan passen moet ik iteratief te werk; ik gok een waarde van de massa, kijk wat voor output eruit komt. En dat blijf je herhalen tot je de waarde van de massa hebt gevonden waar je output uit komt. Dat heet in de engineering volksmond 'iteraten'.</p>
+												<p class="aida">Dit moet je niet handmatig willen doen. Daar zijn algoritmes voor</p>
+												<p class="aida">Maar dan moet je wel een programma in-out hebben</p>
+												<p class="aida">Waar zon iteratie-algoritme mee kan communiceren</p>
+												<p class="aida">Om deze reden wordt vaak de distinction gemaakt tussen verschillende soorten variabelen: Je hebt je 'Unknowns': Dingen die je niet weet, maar wilt berekenen/nodig hebt om andere waardes te berekenen</p>
+												<p class="aida">je hebt je 'Knowns': Waardes die je weet omdat ze de solution van een andere som zijn.</p>
+												<p class="aida">je hebt uitendelijk je 'parameters': Dit zijn dingen die je kiest, waaruit de andere dingen uiteindelijk volgen</p>
+												<p class="aida">Belangrijke distinction tussen parameters en knowns is dus dat je je parameters kiest; zeg 'ik wil een vliegtuig dat 200 mensen kan dragen, en het moet 4000 km kunnen vliegen'</p>
+												<p class="aida">Deze data kan er dan toe leiden dat je bijvoorbeeld 'minimaal 20 meter breden vleugels nodig hebt'</p>
+												<p class="aida">In deze context leiden je parameters direct naar je unknown</p>
+												<p class="aida">maar! Als je bijvoorbeeld nu de vleugelbreedte nodig hebt om de massa van het vliegtuig te berekenen dan wordt de vleugelspan je 'known', en gebruik je die om de massa te bepalen</p>
+												<p class="aida">Alles is dus SUPER gekoppeld</p>
+												<p class="aida">het aantal parameters is vaak VEEL kleiner dan het aantal knowns in the grand scheme of things.</p>
+												<p class="aida">heel veel dingen bepaal je dus impliciet, en niet expliciet</p>
+												<p class="aida">en nu om het nog fuckier te maken; in dit voorbeel leiden je parameters dus netjes direct to een output</p>
+												<p class="aida">maar stel je voor dat ik nu dezelfde tools heb, maar ik weet alleen dat 'mijn vliegtuig moet 200 mensen kunnen dragen en maximaal 40 000 kg wegen'</p>
+												<p class="aida">je hebt nu niet de input van de vliegafstand. Je moet dus nu het HELE ding omdraaien en iteratief bepalen</p>
+												<p class="aida">En dit soort dingen gebeuren VAAK in aerospace</p>
+												<p class="aida">weet niet hoe vaak dit soort dingen in io of andere engineering vlakken gebeuren, maar je eisen veranderen hier voortdurend. alles moet hyperflexibel zijn, en snel te itereren zijn.</p>
+												<p class="aida">Dus dan alweer, de focus meer op flexibiliteit en pipeline dan op stroomlijn.</p>
+												<p class="aida">Ik denk dat dat de belangrijkste punten zijn die ik kan maken ^-</p>
+												<p class="aida">hopelijk geeft dat een beetje ene idee!</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<h4 class="blue-text">What can we do with existing reports?</h4>
+					<p>Providing support for students to add multimedia elements is important, but just as important is trying to add multimedia elements retroactively 
+						to the vast amount of already existing reports.
+					</p>
+					<div class="row">
+						<div class="col s12 m6 l3">
+							<img src="Images/legacyreport.png" alt="" class="materialboxed" width="100%">
+						</div>
+						<div class="col s12 m6 l9">
+							<h5 class="blue-text">Extracting Images</h5>
+							<p>Almost all reports have figures. <a href="https://tools.pdf24.org/en/extract-images#s=1664275367447">Extracting Images from a PDF is quite easy</a>.
+								By showing the images in the PDF, either on a slideshow, or in an overview, a reader can quickly glance if the thesis will be interesting, or contain what they're
+								looking for.</p>
+							<h5 class="blue-text">Wordclouds</h5>
+							<img src="Images/wordcloud.jpg" alt="" class="materialboxed right" width="200px">
+							<p>You can <a href="https://www.wordclouds.com/">make wordclouds from PDFs</a> without too much trouble. A wordcloud is an image with a the most often used words from
+							the report scattered throughout, with the most frequent words being larger. This can illustrate to a reader at a glance what might be in the text of the report.</p>
+							<h5 class="blue-text">Displaying and Extracting Links</h5>
+							<p><a href="https://www.systoolsgroup.com/how-to/extract-and-export-hyperlinks-from-pdf/">You can extract links from PDFs</a>. This can be used to embed linked media,
+							such as showing a video when a student might have a youtube link in their report; or to create a bibliography of the used sources.</p>
+							<img src="Images/linkpreview.png" alt="" class="materialboxed right" height="100px">
+							<p>A bibliography could be made more interesting by showing how often the sources have been cited, if they're academic works or not, and showing link previews, like
+								those that can often be seen in chat applications, as shown here.
+							</p>
+							<p>Links can already be added in the current PURE system. These links, along with extracted ones could be displayed with the title, description, and image from
+								the meta tags from that link, (see the image for an example).
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<h5 class="blue-text">Viewers for existing files</h5>
+							<p>You can already open an on-site PDF reader, but it's hidden, small, and not many people know about it. Making it larger and opened by default will make
+								the entry feel a lot more interactive.
+							</p>
+							<p>Some faculties demand that a student also uploads a 'showcase' of their graduation project to the repository. These can be incredibly valuable, as they're
+								essentially already media abstracts. They are often videos, or posters. These should be displayed right next to the abstract, or even before it.
+							</p>
+							<h5 class="blue-text">Related articles/profiles/items</h5>
+							<p>You can use the existing repository items to our advantage. With keywords, words in the title and abstract, and other works by contributors, you can create
+								a list of related articles, related supervisors, etc. 
+							</p>
+							<h5 class="blue-text">Summarize abstracts into 'pitches'</h5>
+							<p>Search results currently show the abstract as a description, because of how long these are, they get truncated, and become useless. 
+								<a href="https://quillbot.com/summarize">AI technology can summarize</a> 
+								these long abstracts into shorter versions that will miss some information, but will give the user scrolling through the search results a much better idea of what
+								is in the report. The results look very promising.
+							</p>
+							<div class="container">
+								<img src="Images/Summarizer.png" alt="" class="materialboxed z-depth-1" width="100%">
+							</div>
+							<h5 class="blue-text">Coordinates into google maps embeds</h5>
+							<div style="box-shadow:#0001 0 5px 10px; background-color: white; width: fit-content;" class="left">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1736.7814835463175!2d4.373251003189156!3d52.00360287906721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b58d401d6c4b%3A0x531543fe94141f70!2sTU%20Delft%20Library!5e0!3m2!1snl!2snl!4v1668518800797!5m2!1snl!2snl" 
+								width="400px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+							</div>
+							<p style="margin-left: 10px">
+								The Current Pure system already allows for adding coordinates to your entry. We can use that to show a little widget from google maps that shows the location,
+								such as this one.
+							</p>
+						</div>						
 					</div>
 				</div>
 
 
-
-				<h4 class="blue-text">Research conclusions</h4>
-				<h5 class="blue-text">Stakeholders, Usecases, and Problems</h5>
-				<div class="row">
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The pre-graduation student</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p>This student hasn't started their graduation yet, but they would like to get inspired by the projects others in their master track have created.
-											They might also want to see what supervisors often mentor projects on their favorite topic, or what kind of project their favorite professor often supervises.
-											They could also look into what quality level is often expected from a graduation, and what a graduation report looks like.
-										</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The reporting student.png" alt="" width="100%"></div>
-								</div>
-								<h6 class="blue-text">Needs</h6>
-								<div class="chip">Inspiration page</div>
-								<div class="chip">Search by quality</div>
-								<div class="chip">Search by track</div>
-								<div class="chip">Search by topic</div>
-								<div class="chip">Search by supervisor</div>
-							</div>
-						</div>
-					</div>
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The mid-graduation student</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p>This student has a project and supervisor team ready, but they haven't thought about reporting yet. They want to see what other students in their track,
-											that did projects on the same topic, or worked under the same mentor made. They want to see quality reports, so they can copy the best practices from that
-											 report.
-										</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The midgraduation student.png" alt="" width="100%"></div>
-								</div>
-								<h6 class="blue-text">Needs</h6>
-								<div class="chip">Search by quality</div>
-								<div class="chip">Search by track</div>
-								<div class="chip">Search by topic</div>
-								<div class="chip">Search by supervisor</div>
-							</div>
-						</div>
-					</div>
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The reporting student</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p>This student is making their master thesis report. They want to make their report engaging, and have plug and play support for these multimedia elements.
-										</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The pregraduate.png" alt="" width="100%"></div>
-								</div>
-								<h6 class="blue-text">Needs</h6>
-								<div class="chip">Support for many different media</div>
-								<div class="chip">Clear and guiding UI</div>
-							</div>
-						</div>
-					</div>
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The uploader</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p>This student is about to upload their report to the repository, they are very stressed, as it's in the last weeks of their graduation, and they still
-											need to make a presentation.
-										</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The uploader.png" alt="" width="100%"></div>
-								</div>
-								<h6 class="blue-text">Needs</h6>
-								<div class="chip">Easy and fast uploading</div>
-								<div class="chip">Clear and guiding UI</div>
-							</div>
-						</div>
-					</div>
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The alumnus</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p>This person has graduated, their report is on the repository. They might want to share their page with friends or potential employers if they're proud
-											of it, or they might want to hide or improve their page if they aren't.
-										</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The alumnus.png" alt="" width="100%"></div>
-								</div>
-								<h6 class="blue-text">Needs</h6>
-								<div class="chip">A presentation to be proud of</div>
-								<div class="chip">Editing their entry</div>
-								<div class="chip">Sharing</div>
-								<div class="chip">Their report to be findable</div>
-							</div>
-						</div>
-					</div>
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The targeted downloader</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p>This person knows exactly whose report they are going to download. They don't care about other people's report, they just want to go to the right entry
-											and download the report. Most people who use the repository are targeted downloaders.
-										</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The targeted downloader.png" alt="" width="100%"></div>
-								</div>
-								<h6 class="blue-text">Needs</h6>
-								<div class="chip">Search by name</div>
-								<div class="chip">Quick downloading</div>
-								<div class="chip">Clear UI</div>
-							</div>
-						</div>
-					</div>
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The data maintainers</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p>Keeping the repository up and providing access to thousands of papers for decades is no small task.
-											The library staff wants theses to be findable, but they also have to worry about privacy, legal issues, and certain technologies, media, and dependencies
-											 becoming	deprecated. Moreover, not all uploaders use the same practices when adding metadata to their entries, which can cause their system to become
-											 less useful.
-										</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The data maintainer.png" alt="" width="100%"></div>
-								</div>
-								<h6 class="blue-text">Needs</h6>
-								<div class="chip">Findable reports</div>
-								<div class="chip">Deprecation-proof reports</div>
-								<div class="chip">Guiding for metadata when uploading</div>
-							</div>
-						</div>
-					</div>
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The researcher</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p><a href="https://sci-hub.se/10.1353/pla.2003.0062">Master theses are more cited than one might think.</a> researchers and other students looking to cite
-											master theses are redirected from Google Scholar to the TU repository. They need to be able to see at a glance if the paper they are looking at will
-											be citable.
-										</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The Researcher.png" alt="" width="100%"></div>
-								</div>
-								<h6 class="blue-text">Needs</h6>
-								<div class="chip">Reports findable with Google Scholar</div>
-								<div class="chip">Judge report usefulness at a glance (relevance, academic rigor, quality)</div>
-								<div class="chip">Easily citable</div>
-							</div>
-						</div>
-					</div>
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The new theses fan*</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p>Multiple interviewees have expressed interest in seeing what sort of great new research is on the repository, but with how boring it currently is
-											and how cumbersome it is to download large reports and look through them, this usecase doesn't really exist yet.
-										</p>
-										<p>Highlighting new theses of quality by track and topic, either through a homepage or mailing list, could inspire a lot of people.</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The new Research Fan.png" alt="" width="100%"></div>
-								</div>
-								<h6 class="blue-text">Needs</h6>
-								<div class="chip">A feed of quality/featured new theses</div>
-								<div class="chip">Search by quality</div>
-								<div class="chip">Search by Topic</div>
-								<div class="chip">Search by track</div>
-								<p><i>* This stakeholder currently doesn't really exist yet, but I hope to make people generally interested in the research on the repository.</i></p>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The headhunter</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p>The headhunter wants to see who recently graduated in a certain field, and get in contact with them.</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The Headhunter.png" alt="" width="100%"></div>
-								</div>
-								<h6 class="blue-text">Needs</h6>
-								<div class="chip">Search by master programme</div>
-								<div class="chip">Search by topic</div>
-								<div class="chip">Filter by date</div>
-								<div class="chip">Easily get in contact with the Author</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col m12 l6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">The supervisor</span>
-								<div class="row valign-wrapper">
-									<div class="col s9">
-										<p>Currently, the supervisors have very little to do with the repository. But a new design could change that.
-										</p>
-									</div>
-									<div class="col s3"><img src="Images/personas/The Supervisor.png" alt="" width="100%"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<i class="grey-text">images by uplyak on freepik</i>
-
-				<h5 class="blue-text">The Student's User Journey</h5>
-				<p>To illustrate the different struggles that students have with the repository, the different ways they use it, and the emotions they go through throughout their 
-					graduation journey, I made the following journey map:
-				</p>
-				<a href="Images/Student User Journey.png" class="btn blue right" target="_blank">See it in full resolution here <i class="material-icons right">open_in_new</i></a>
-				<br>
-				<img src="Images/Student User Journey.png" alt="" width="100%" height="200px" class="materialboxed">
-				<h5 class="blue-text">List of Requirements</h5>
-				<div class="row">
-					<div class="col s12 m4">
-						<ul>
-							<li><b class="blue-text">Must have</b></li>
-							<li><span class="blue-text">▶</span> Users must be able to easily find theses of quality</li>
-							<li><span class="blue-text">▶</span> Users must be able to easily find papers of their study programme</li>
-							<li><span class="blue-text">▶</span> Users must be able to easily find papers on certain topics</li>
-							<li><span class="blue-text">▶</span> Users must be able to browse papers in a way that lets them judge interest at a glance</li>
-						</ul>
-					</div>
-					<div class="col s12 m4">
-						<ul>
-							<li><b class="blue-text">Should have</b></li>
-							<li><span class="blue-text">▶</span> Users must be able to easily find papers by a certain supervisor</li>
-							<li><span class="blue-text">▶</span> Users must be able to decide if they're interested in a thesis within 5 seconds</li>
-							<li><span class="blue-text">▶</span> UI must help to spark 'curiosity' in theses</li>
-							<li><span class="blue-text">▶</span> Users must not report feeling 'lost' (or similar emotion) when uploading</li>
-							<li><span class="blue-text">▶</span> User must feel like the UI relieves anxiety when uploading</li>
-							<li><span class="blue-text">▶</span> Users must be able to find the download button within 5 seconds of the page loading.</li>
-						</ul>
-					</div>
-					<div class="col s12 m4">
-						<ul>
-							<li><b class="blue-text">Could have</b></li>
-							<li><span class="blue-text">▶</span> Researcher must be able to judge wether a theses might be useful for their work (to the extent one can when not 
-								reading the report) (moreso than just reading the abstract)</li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-
-
+				<!--Ideation-->
 				<div class="container section scrollspy" id="Ideation">
 					<h3 class="blue-text">Ideation</h3>
 					<p>Now it's time to come up with ideas. During the research phase I already came up with a lot of ideas. 
@@ -1546,9 +1743,9 @@ public class MyClass {
 				</div>
 
 
-
+				<!--Concepts-->
 				<div class="container section scrollspy" id="Concepts">
-					<h3 class="blue-text">Concepts</h3>
+					<h3 class="blue-text">4 Concepts</h3>
 					<p>Now that I have multiple ideas, it's time to put them together into concepts. I decided to turn my concepts into themes, which are focused on different users.
 					</p>
 					<ul>
@@ -1596,7 +1793,7 @@ public class MyClass {
 								<li><span class="blue-text">▶</span> All figures in the report are collected and shown in a small window for a quick overview of the quality level of figures.</li>
 							</ul>
 						</div>
-						<div class="col s12 m4 l2">
+						<div class="col s12 m4 l2" style="text-align: center;">
 							<img src="Images/Concepts/Figma - for Exploring Students.svg" alt="" class="materialboxed" width="100%">
 							<a href="Images/Concepts/Figma - for Exploring Students.svg" class="btn blue" target="_blank">View concept</a>
 						</div>
@@ -1628,7 +1825,7 @@ public class MyClass {
 								<li><span class="blue-text">▶</span> Highlighting the presentation video and product showcase, along with the report's figures</li>
 							</ul>
 						</div>
-						<div class="col s12 m4 l2">
+						<div class="col s12 m4 l2" style="text-align: center;">
 							<img src="Images/Concepts/Figma - for Alumni and Scouts.svg" alt="" class="materialboxed" width="100%">
 							<a href="Images/Concepts/Figma - for Alumni and Scouts.svg" class="btn blue" target="_blank">View concept</a>
 						</div>
@@ -1648,7 +1845,7 @@ public class MyClass {
 								<li><span class="blue-text">▶</span> A section that shows where the report has been cited already.</li>
 							</ul>
 						</div>
-						<div class="col s12 m4 l2">
+						<div class="col s12 m4 l2" style="text-align: center;">
 							<img src="Images/Concepts/Figma - for Researchers.svg" alt="" class="materialboxed" width="100%">
 							<a href="Images/Concepts/Figma - for Researchers.svg" class="btn blue" target="_blank">View concept</a>
 						</div>
@@ -1680,19 +1877,35 @@ public class MyClass {
 					</div>
 					
 				
-					<h5 class="blue-text">The Homepage</h5>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex similique necessitatibus harum qui consectetur, quaerat aperiam, accusamus sapiente minus rem 
-						recusandae! Commodi et ad sapiente, animi rem sequi voluptatibus eaque.
-					</p>
-				
-					<h5 class="blue-text">The Search page</h5>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex similique necessitatibus harum qui consectetur, quaerat aperiam, accusamus sapiente minus rem 
-						recusandae! Commodi et ad sapiente, animi rem sequi voluptatibus eaque.
-					</p>
+					<h5 class="blue-text">The homepage and search page</h5>
+					<div class="row">
+						<div class="col s12 m4 l6">
+							<p>The homepage and search page will not be much different for the 3 website concepts. The homepage features collections of theses by programme,
+								search query, keyword, whether they've won a prize, your bookmarked theses, etc.
+							</p>
+							<p>The search page features some of the most used filter settings right beneath the search bar, such as filtering by programme, including bachelors reports,
+								including reports under embargo, and publishing year. The thesis previews contain a 'thumbnail' image, view and download metrics, keywords as clickable tags, and a
+								short "pitch"
+								.They can be sorted by relevance, popularity, or date.
+							</p>
+						</div>
+						<div class="col s6 m4 l3" style="text-align: center;">
+							<img src="Images/Concepts/Figma Homepage Small.JPG" alt="" class="materialboxed" width="100%">
+							<br>
+							<a href="Images/Concepts/Figma - Homepage.svg" class="btn blue" target="_blank">View concept</a>
+						</div>
+						<div class="col s6 m4 l3" style="text-align: center;">
+							<img src="Images/Concepts/Figma - search.svg" alt="" class="materialboxed" width="100%"><br>
+							<a href="Images/Concepts/Figma - search.svg" class="btn blue" target="_blank">View concept</a>
+						</div>
+					</div>
+					
 				</div>
 
+				
+				<!--Figma Prototyping-->
 				<div class="container section scrollspy" id="Prototyping">
-					<h3 class="blue-text">Prototyping</h3>
+					<h3 class="blue-text">The Figma Prototypes</h3>
 					<p>For presentation, testing, inspiration, and validation purposes, I made some prototypes, both in Figma for the website wireframes, and Unity for the VR demo
 					</p>
 					
@@ -1702,6 +1915,13 @@ public class MyClass {
 					<a href="https://www.figma.com/file/PU5RXxcq9iqhLuHpn9bLUk/Concept-Wireframes?node-id=214%3A839" class="btn blue">click here to view it on Figma
 						<i class="material-icons right">open_in_new</i>
 					</a>
+					<p>To explain the design choices I made in this prototype, I've created a video walkthrough of the design.</p>
+					<div class="container">
+						<video width="100%" controls>
+						<source src="Images/Figma Prototype Walkthrough Compressed.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+						</video> 
+					</div>
 
 					<h4 class="blue-text">VR Museum mockup</h4>
 					<div class="col s12 m7">
@@ -1757,6 +1977,8 @@ public class MyClass {
 					</div>
 				</div>
 
+
+				<!--Concept Selection-->
 				<div class="container section scrollspy" id="ConceptSelection">
 					<h3 class="blue-text">Concept selection</h3>
 					<p>I decided to go with the concept aimed at students, because from my research, I found that they were by far the biggest user group.
@@ -1765,8 +1987,10 @@ public class MyClass {
 					</p>
 				</div>
 
+
+				<!--Paper Prototype-->
 				<div class="container section scrollspy" id="Iteration">
-					<h3 class="blue-text">Iteration</h3>
+					<h3 class="blue-text">The Paper Prototype</h3>
 					<h4 class="blue-text">New Requirements</h4>
 					<p>
 						The Library is looking for a new system. A team has written up a list of wishes and requirements for this system, which also impacts my design. The most interesting
@@ -1829,7 +2053,7 @@ public class MyClass {
 						</div>
 					</div>
 
-					<h4 class="blue-text">User feedback on the concept</h4>
+					<h4 class="blue-text">The prototype</h4>
 					<p>To start off with the iteration of the student concept, I made a mockup on paper. I chose to go for a low-tech solution on paper, even though I'm pretty comofortable
 						with Figma, so the participants could see that they should comment on the content of the elements, not how big they are, or where they're placed.
 					</p>
@@ -1847,166 +2071,234 @@ public class MyClass {
 							<img src="Images/paperprototypes/Uploadpage.jpg" alt="" class="materialboxed" width="100%">
 						</div>
 					</div>
-					<p>I interviewed a PhD student who recently graduated, a sofware engineering master student, and an applied psychology master student. I walked them through the
+					<p>I again made a video walkthrough of the prototype to explain some of the design choices I made</p>
+					<div class="container">
+						<video width="100%" controls>
+							<source src="Images/paperprototypes/Paper Prototype Walkthrough.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+						</video> 
+					</div>
+					
+					<h3 class="blue-text">Feedback</h3>
+					<p>I interviewed a PhD student who recently graduated, a sofware engineering master student, an applied psychology master student,
+						and a Design for Interaction master student. I walked them through the
 						prototypes, and asked for their opinions on the elements, and their overall concepts.
 					</p>
-					<ul class="collapsible">
-						<li>
-							<div class="collapsible-header"><i class="material-icons blue-text">note_alt</i> See the interview notes.</div>
-							<div class="collapsible-body center row">
-								<div style="text-align: left;">
-									<b class="blue-text">#1 - 3me PhD student</b> <br>
-									New in keyword<br>
-									Wil customizable zijn. <br>
-									PhD theses er ook in, filter er op<br>
-									Presentatie is een hele goeie<br>
-									Bookmarks gebruiken hangt er vanaf<br>
-									Mandalay - zou wss importeren in een reference manager<br>
-									Bibliography een centrale rol! <br>
-									Cited by is ook cool<br>
-									Promoter, professor die er achter staat!<br>
-									Cited by kan hoger, belangrijke metric van goedheid.<br>
-									Libks after rhe fact  and other works zijn minder interessant. Cited by bovenaan<br>
-									Maximum characters in de abstract<br>
-									300 pitch, 600 abstract<br>
-									Images kan grafieken of graphic abstract worden<br>
-									Optie voor graphical abstract checkmark. Dat word de thumbnail<br>
-									Zeg: graphcial abstract optional<br>
-									<br>
-									<b class="blue-text">#2 - CGE Software Engineering master student</b><br>
-									Reroll keyword<br>
-									Like new in keyword<br>
-									Best theses sounds weird<br>
-									Rank by number of citations, don't like the word best theses<br>
-									<br>
-									Filter for Dutch/English!!!<br>
-									Not sure how often I use bookmarks, never use it on google scholar<br>
-									Like number of views/downloads, like to sort by that<br>
-									Click on keywords<br>
-									<br>
-									Really like the supervisors, wanna see what they're involved in<br>
-									Pdf viewer is nice, but maybe not important<br>
-									Presentation is cool<br>
-									Table of contents is not interesting, it's usually the same<br>
-									Love keywords<br>
-									How are you going to deal with things outside the repository<br>
-									Figures<br>
-									LinkedIn, GitHub is nice for related link<br>
-									Cited by is not that interesting<br>
-									<br>
-									Question mark help for all Things would be chefs kiss<br>
-									It would be great to "save as draft"<br>
-									Zip for the code would be great.<br>
-									Or Link to github.<br>
-									<br>
-									<b class="blue-text">#3 - applied cognitive psychology master student</b><br>
-									Good keyword search is important (AND OR etc)<br>
-									Some filter on the homepage<br>
-									Most cited/ Most viewed, not "Best"<br>
-									Search by supervisor/ sponsor/overseer<br>
-									Who does what kind of things is important<br>
-									What does a thumbnail look like if there are no images<br>
-									Featured theses and prize winners are overlapping<br>
-									Change up the keywords<br>
-									Instead of 'new', 'trending', or 'most impact'<br>
-									'best of this year'<br>
-									Overview of popular keywords<br>
-									Trending keywords<br>
-									Don't have too much on the landing page<br>
-									Homepage should be 'stuff to get inspired by'<br>
-									Suggested keywords based on searches<br>
-									<br>
-									PhD theses in there please<br>
-									"Peer reviewed"/"published"<br>
-									Searching by faculty might not make sense<br>
-									Just having the year might make more sense.<br>
-									Put the DOI in the search results (for research purposes only)<br>
-									Popularity values may bot be interesting to show<br>
-									Good title + subtitle = no pitch needed<br>
-									Keep the pitch as straight to the point as possible<br>
-									There may be redundancies between title subtitle keywords and pitch<br>
-									Search by supervisor, interesting for university internally as well<br>
-									Grades would be relevant, some indication of quality.<br>
-									Download button on the search results is not nessecary<br>
-									<br>
-									Page does not mean a lot (for a TOC)<br>
-									Having a TOC overview is nice, but you may not be able to get a lot out of it<br>
-									If they want an overview, they're gonna look at the paper<br>
-									Related theses are good<br>
-									Supervisors and related things they've done<br>
-									Bibliography is not relevant unless you know what they're citing from it, depends on who uses it<br>
-									Abstract first, not a pitch (having both feels silly)<br>
-									If it's only 3 images, do it chronologically, if theres 100, cluster them<br>
-									It might get a bit too crowded<br>
-									If you're interested in other works, you'd click on the author<br>
-									Bibliography is already in the pdf<br>
-									<br>
-									Make it a multi-step thing, otherwise it would be overwhelming<br>
-									Legal information, consent forms, etc.<br>
-									Drag and drop is good<br>
-									The help option for everything is good<br>
-									Full data for reproducibility!!!<br>
-									<br>
-									The bad theses will not show up if people are allowed not to show their theses.<br>
-									<br>
-									<b class="blue-text">#4 - design for interaction master student</b><br>
-									voelt als spotify / netflix / reddit<br>
-									interessantzou bij nieuw kijken. wat is actueel<br>
-									best theses is handig als je al bezig bent, goed voor benchmarken, niet voor orienteren<br>
-									zou al vrij snel naar de search bar gaan<br>
-									weet al dat ie op critical design wilt afstuderen qua onderwerp<br>
-									zoeken naar supervisors die daarmee te maken hebben.<br>
-									cards layout is chill<br>
-									add view more / clickable 'prize winners' title<br>
-									zou niet downloaden vanuit preview.<br>
-									keywords clickable in de search previews<br>
-									<br>
-									(Maak supervisor profiel design !!)<br>
-									<br>
-									Wat de author heeft gedaan is belangrijk voor familie en headhunters<br>
-									Cited by, Related theses, en Bibliography is handig als je aan het benchmarken bent<br>
-									TOC is handig om te weten of je meteen naar de conclusie wilt skippen<br>
-									Cited By, Related theses, en Bibliography kan allemaal in één element<br>
-									abstract en pitch kunnen er niet allebij zijn. (abstract mag weg, zit al in de paper).<br>
-									TOC kan weg, of verstopt<br>
-									Figures en de pitch doen ongeveer het zelfde, prefer pitch.<br>
-									poster/graphic abstract is beter dan figures. Alleen als het <br>
-									TOC en Bibliography samen voegen als "Report Statistics"?<br>
-									Kan de views/citations/bookmarks/views verstoppen in een hamburger menu / uitvouwer. <br>
-									takedown request.<br>
-									<br>
-									AI generated pitch suggestion. -> AI generated pitch voor legacy reports.<br>
-									helpt bij de privacy timeline.<br>
-									vergeet embargo opties niet<br>
-									Preview window in het uploadscherm<br>
-									keuze voor display template in uploadscherm.<br>
-									kleurcombinatie<br>
-								</div>
-							</div>
-						</li>
-					</ul>
+
+					<div class="row">
+						<div class="col s12 m6">
+							<ul class="collapsible">
+								<li>
+									<div class="collapsible-header"><i class="material-icons blue-text">note_alt</i> 3ME PhD Student interview notes.</div>
+									<div class="collapsible-body center row">
+										<div style="text-align: left;">
+											<b class="blue-text">#1 - 3me PhD student</b> <br>
+											New in keyword<br>
+											Wil customizable zijn. <br>
+											PhD theses er ook in, filter er op<br>
+											Presentatie is een hele goeie<br>
+											Bookmarks gebruiken hangt er vanaf<br>
+											Mandalay - zou wss importeren in een reference manager<br>
+											Bibliography een centrale rol! <br>
+											Cited by is ook cool<br>
+											Promoter, professor die er achter staat!<br>
+											Cited by kan hoger, belangrijke metric van goedheid.<br>
+											Libks after rhe fact  and other works zijn minder interessant. Cited by bovenaan<br>
+											Maximum characters in de abstract<br>
+											300 pitch, 600 abstract<br>
+											Images kan grafieken of graphic abstract worden<br>
+											Optie voor graphical abstract checkmark. Dat word de thumbnail<br>
+											Zeg: graphcial abstract optional<br>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col s12 m6">
+							<ul class="collapsible">
+								<li>
+									<div class="collapsible-header"><i class="material-icons blue-text">note_alt</i> CGE Software Engineering master student interview notes.</div>
+									<div class="collapsible-body center row">
+										<div style="text-align: left;">
+											<b class="blue-text">#2 - CGE Software Engineering master student</b><br>
+											Reroll keyword<br>
+											Like new in keyword<br>
+											Best theses sounds weird<br>
+											Rank by number of citations, don't like the word best theses<br>
+											<br>
+											Filter for Dutch/English!!!<br>
+											Not sure how often I use bookmarks, never use it on google scholar<br>
+											Like number of views/downloads, like to sort by that<br>
+											Click on keywords<br>
+											<br>
+											Really like the supervisors, wanna see what they're involved in<br>
+											Pdf viewer is nice, but maybe not important<br>
+											Presentation is cool<br>
+											Table of contents is not interesting, it's usually the same<br>
+											Love keywords<br>
+											How are you going to deal with things outside the repository<br>
+											Figures<br>
+											LinkedIn, GitHub is nice for related link<br>
+											Cited by is not that interesting<br>
+											<br>
+											Question mark help for all Things would be chefs kiss<br>
+											It would be great to "save as draft"<br>
+											Zip for the code would be great.<br>
+											Or Link to github.<br>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m6">
+							<ul class="collapsible">
+								<li>
+									<div class="collapsible-header"><i class="material-icons blue-text">note_alt</i> Applied Cognitive Psychology master student interview notes.</div>
+									<div class="collapsible-body center row">
+										<div style="text-align: left;">
+											<b class="blue-text">#3 - applied cognitive psychology master student</b><br>
+											Good keyword search is important (AND OR etc)<br>
+											Some filter on the homepage<br>
+											Most cited/ Most viewed, not "Best"<br>
+											Search by supervisor/ sponsor/overseer<br>
+											Who does what kind of things is important<br>
+											What does a thumbnail look like if there are no images<br>
+											Featured theses and prize winners are overlapping<br>
+											Change up the keywords<br>
+											Instead of 'new', 'trending', or 'most impact'<br>
+											'best of this year'<br>
+											Overview of popular keywords<br>
+											Trending keywords<br>
+											Don't have too much on the landing page<br>
+											Homepage should be 'stuff to get inspired by'<br>
+											Suggested keywords based on searches<br>
+											<br>
+											PhD theses in there please<br>
+											"Peer reviewed"/"published"<br>
+											Searching by faculty might not make sense<br>
+											Just having the year might make more sense.<br>
+											Put the DOI in the search results (for research purposes only)<br>
+											Popularity values may bot be interesting to show<br>
+											Good title + subtitle = no pitch needed<br>
+											Keep the pitch as straight to the point as possible<br>
+											There may be redundancies between title subtitle keywords and pitch<br>
+											Search by supervisor, interesting for university internally as well<br>
+											Grades would be relevant, some indication of quality.<br>
+											Download button on the search results is not nessecary<br>
+											<br>
+											Page does not mean a lot (for a TOC)<br>
+											Having a TOC overview is nice, but you may not be able to get a lot out of it<br>
+											If they want an overview, they're gonna look at the paper<br>
+											Related theses are good<br>
+											Supervisors and related things they've done<br>
+											Bibliography is not relevant unless you know what they're citing from it, depends on who uses it<br>
+											Abstract first, not a pitch (having both feels silly)<br>
+											If it's only 3 images, do it chronologically, if theres 100, cluster them<br>
+											It might get a bit too crowded<br>
+											If you're interested in other works, you'd click on the author<br>
+											Bibliography is already in the pdf<br>
+											<br>
+											Make it a multi-step thing, otherwise it would be overwhelming<br>
+											Legal information, consent forms, etc.<br>
+											Drag and drop is good<br>
+											The help option for everything is good<br>
+											Full data for reproducibility!!!<br>
+											<br>
+											The bad theses will not show up if people are allowed not to show their theses.<br>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col s12 m6">
+							<ul class="collapsible">
+								<li>
+									<div class="collapsible-header"><i class="material-icons blue-text">note_alt</i> Design for Interaction master student interview notes.</div>
+									<div class="collapsible-body center row">
+										<div style="text-align: left;">
+											<b class="blue-text">#4 - design for interaction master student</b><br>
+											voelt als spotify / netflix / reddit<br>
+											interessantzou bij nieuw kijken. wat is actueel<br>
+											best theses is handig als je al bezig bent, goed voor benchmarken, niet voor orienteren<br>
+											zou al vrij snel naar de search bar gaan<br>
+											weet al dat ie op critical design wilt afstuderen qua onderwerp<br>
+											zoeken naar supervisors die daarmee te maken hebben.<br>
+											cards layout is chill<br>
+											add view more / clickable 'prize winners' title<br>
+											zou niet downloaden vanuit preview.<br>
+											keywords clickable in de search previews<br>
+											<br>
+											(Maak supervisor profiel design !!)<br>
+											<br>
+											Wat de author heeft gedaan is belangrijk voor familie en headhunters<br>
+											Cited by, Related theses, en Bibliography is handig als je aan het benchmarken bent<br>
+											TOC is handig om te weten of je meteen naar de conclusie wilt skippen<br>
+											Cited By, Related theses, en Bibliography kan allemaal in één element<br>
+											abstract en pitch kunnen er niet allebij zijn. (abstract mag weg, zit al in de paper).<br>
+											TOC kan weg, of verstopt<br>
+											Figures en de pitch doen ongeveer het zelfde, prefer pitch.<br>
+											poster/graphic abstract is beter dan figures. Alleen als het <br>
+											TOC en Bibliography samen voegen als "Report Statistics"?<br>
+											Kan de views/citations/bookmarks/views verstoppen in een hamburger menu / uitvouwer. <br>
+											takedown request.<br>
+											<br>
+											AI generated pitch suggestion. -> AI generated pitch voor legacy reports.<br>
+											helpt bij de privacy timeline.<br>
+											vergeet embargo opties niet<br>
+											Preview window in het uploadscherm<br>
+											keuze voor display template in uploadscherm.<br>
+											kleurcombinatie<br>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>				
+
 					<p>The opinions on different elements varied greatly because of how different the expectations for the reports are in different faculties.</p>
 					<b>The main takeaway points were:</b>
-					<ul>
-						<li><span class="blue-text">▶</span> Choose keywords on the homepage / show the most used keywords or something</li>
-						<li><span class="blue-text">▶</span> new/trending/popular in keyword/faculty/programme </li>
-						<li><span class="blue-text">▶</span> presentation and poster/graphic abstract are very important </li>
-						<li><span class="blue-text">▶</span> maybe a most cited/viewed/downloaded/bookmarked instead of 'best theses'</li>
-						<li><span class="blue-text">▶</span> keywords on the supervisors to show what they're about</li>
-						<li><span class="blue-text">▶</span> linkedIn & GitHub for the author</li>
-						<li><span class="blue-text">▶</span> a help icon for everything</li>
-						<li><span class="blue-text">▶</span> download button in the search result is not nessecary </li>
-						<li><span class="blue-text">▶</span> TOC and Bibliography could be combined into "report statistics(?)", and collapsed by default</li>
-						<li><span class="blue-text">▶</span> No abstract and pitch at the same time on the page</li>
-						<li><span class="blue-text">▶</span> No 'Other works' section. If you're interested in other works, you'd click on the author</li>
-						<li><span class="blue-text">▶</span> 'downloadable files' element. </li>
-						<li><span class="blue-text">▶</span> upload page could be a multi-step thing </li>
-					</ul>
+					<div class="row">
+						<div class="col s12 m4">
+							<ul>
+								<li><i>Homepage</i></li>
+								<li><span class="blue-text">▶</span> Choose keywords on the homepage, or show the most used keywords somehow.</li>
+								<li><span class="blue-text">▶</span> Add functionality to browse "new/trending/popular in keyword/faculty/programme"</li>
+								<li><span class="blue-text">▶</span> maybe a most cited/viewed/downloaded/bookmarked instead of 'best theses'.</li>
+							</ul>
+						</div>
+						<div class="col s12 m4">
+							<ul>
+								<li><i>Entry page</i></li>
+								<li><span class="blue-text">▶</span> Presentation and poster/graphic abstract are very important, make sure they are on top.</li>
+								<li><span class="blue-text">▶</span> Add keywords on the supervisors to show what they're about.</li>
+								<li><span class="blue-text">▶</span> LinkedIn & GitHub links for the author would be great.</li>
+								<li><span class="blue-text">▶</span> Table of Contents and Bibliography could be combined into "report statistics(?)", and collapsed by default.</li>
+								<li><span class="blue-text">▶</span> No abstract and pitch at the same time on the page.</li>
+								<li><span class="blue-text">▶</span> No 'Other works' section. If you're interested in other works, you'd click on the author.</li>
+								<li><span class="blue-text">▶</span> Add a 'downloadable files' element to the entry.</li>
+							</ul>
+						</div>
+						<div class="col s12 m4">
+							<ul>
+								<li><i>Search page</i></li>
+								<li><span class="blue-text">▶</span> A download button in the search result is not nessecary.</li>
+							</ul>
+						</div>
+					</div>
+					
+						<!--<li><i>Upload page</i></li>-->
+						<!--<li><span class="blue-text">▶</span> Upload page could be divided into multiple steps </li>-->
+						<!--<li><span class="blue-text">▶</span> a help icon for everything</li>-->
+					
 				</div>
 
+
+				<!--HTML Prototype-->
 				<div class="container section scrollspy" id="Prototyping2">
-					<h3 class="blue-text">Prototyping</h3>
-					<p>I created a digital prototype in HTML showcasing 9 types of pages</p>
+					<h3 class="blue-text">The HTML Prototype</h3>
+					<p>With the knowledge gained from the paper prototypes, I created a digital prototype in HTML showcasing 9 types of pages</p>
 					<div class="row">
 						<div class="col s4" style="text-align: center;">
 							<a href="/Prototype/index.html" target="_blank">A homepage</a>
@@ -2061,17 +2353,27 @@ public class MyClass {
 						</div>
 					</div>
 
+					<p>I used the <a href="materializecss.com">Materialize CSS</a> library for a quick plug and play style solution that provides modern feeling, and allows for
+					customization with my own CSS on top. I opted to go for a dodger blue color scheme, as it fits nicely with the TU Delft branding.</p>
+					
+					<p>I again made a video walkthrough of the prototype to explain some of the design decisions.</p>
+					<div class="container">
+						<video width="100%" controls>
+							<source src="Images/HTML prototype Walkthrough Compressed.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+						</video> 
+					</div>
+
 					<h4 class="blue-text">Feasibility review with the library's senior developer</h4>
 					<p>I went over my digital prototype with <a href="https://nl.linkedin.com/in/andjela-tomic-a7982931">Andjela Tomic</a> to check if the implementations of
 						the ideas I've had was feasible. She said it was all very feasible, though some things might take more time than others. She was excited to build the concept
 						for real, and warned me that the biggest challenge was convincing the bureaucrats to let us implement it, not the making of the website.
 					</p>
 
-					<h4 class="blue-text">Feedback on the digital prototype</h4>
+					<h4 class="blue-text">Feedback on the HTML prototype</h4>
 					<p>I went over the design with three IDE students with experience in UI/UX design and who are either close to starting their graduation and orienting themselves,
 						or have already started and are interested in benchmarking their theses against others, and let them speak about anything that came to mind for them.
 					</p>
-					<p>The results can be seen here</p>
 
 					<div class="row">
 						<div class="col s12 l4">
@@ -2234,9 +2536,7 @@ public class MyClass {
 						</div>
 					</div>
 					
-
-
-					<b>But the main takeaway points were:</b>
+					<b>The main takeaway points were:</b>
 					<div class="row">
 						<div class="col s12 m6">
 							<ul>
@@ -2283,24 +2583,72 @@ public class MyClass {
 					</ul>
 				</div>
 
-				<div class="container section scrollspy" id="Evaluation">
-					<h3 class="blue-text">Evaluation</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, commodi voluptatum. Iste reprehenderit praesentium fuga magni soluta repudiandae repellendus 
-						optio sint dolor quasi sapiente suscipit, molestias natus. Qui, rem aliquam.</p>
+				<!--Final Prototype-->
+				<div class="container section scrollspy" id="FinalConcept">
+					<h3 class="blue-text">Final Prototype</h3>
+					<p>Fixme: THE PAGES BELOW ARE A WORK IN PROGRESS</p>
+					<a href="Prototype 2/index.html" class="btn blue" target="_blank">See Homepage <i class="material-icons right">open_in_new</i></a><br><br>
+					<a href="Prototype 2/search.html" class="btn blue" target="_blank">See search page <i class="material-icons right">open_in_new</i></a><br><br>
+					<a href="Prototype 2/entry.html" class="btn blue" target="_blank">See thesis entry <i class="material-icons right">open_in_new</i></a><br><br>
+					<a href="Prototype 2/AugmentedEntry.html" class="btn blue" target="_blank">See website-as-report entry <i class="material-icons right">open_in_new</i></a><br><br>
+					<a href="Prototype 2/studentprofile.html" class="btn blue" target="_blank">See student profile <i class="material-icons right">open_in_new</i></a><br><br>
+					<a href="Prototype 2/supervisorprofile.html" class="btn blue" target="_blank">See supervisor profile <i class="material-icons right">open_in_new</i></a><br><br>
+					<a href="Prototype 2/Programme.html" class="btn blue" target="_blank">See programme page <i class="material-icons right">open_in_new</i></a><br><br>
+					<a href="Prototype 2/Keyword.html" class="btn blue" target="_blank">See keyword page <i class="material-icons right">open_in_new</i></a><br><br>
+					<a href="Prototype 2/UploadPage.html" class="btn blue" target="_blank">See Upload page <i class="material-icons right">open_in_new</i></a><br><br>
 				</div>
 
-				<div class="container section scrollspy" id="FinalConcept">
-					<h3 class="blue-text">Final Concept</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, commodi voluptatum. Iste reprehenderit praesentium fuga magni soluta repudiandae repellendus 
-						optio sint dolor quasi sapiente suscipit, molestias natus. Qui, rem aliquam.</p>
+				<!--Evaluation-->
+				<div class="container section scrollspy" id="Evaluation">
+					<h3 class="blue-text">Evaluation</h3>
+					<p>Fixme show student feedback and library worker feedback</p>
+					<p>Fixme Evaluate myself?</p>
 				</div>
 				
+				<!--Design Document-->
 				<div class="container section scrollspy" id="DesignDocument">
 					<h3 class="blue-text">Design Document</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, commodi voluptatum. Iste reprehenderit praesentium fuga magni soluta repudiandae repellendus 
-						optio sint dolor quasi sapiente suscipit, molestias natus. Qui, rem aliquam.</p>
+					<p>Fixme talk about how I want to make a design document so I can give that to programmers at the library so they know what to build even after I'm gone.</p>
+				</div>
+
+				<!--Conclusions-->
+				<div class="container section scrollspy" id="Conclusions">
+					<h3 class="blue-text">Conclusions</h3>
+					<h4 class="blue-text">Answers to the research questions</h4>
+					<blockquote>What types of (interactive) media can be useful for reporting for the different majors?</blockquote>
+					<p>fixme talk about videos for experiments and prototypes, CAD models for physical engineers, zip files for software, diagrams for systems, etc.</p>
+					
+					<blockquote>How do we encourage students and alumni to add (interactive) media to their reports / the repository?</blockquote>
+					<p>Fixme talk about the upload fields</p>
+
+					<blockquote>What do these new (interactive) multimedia reports look like?</blockquote>
+					<p>Fixme talk about downloadable programs, videos, images, etc.</p>
+										
+					<blockquote>Is there a way to (programmatically) add multimedia elements to already published reports?</blockquote>
+					<p>Fixme talk about wordclouds, scraping images, scraping video links, scraping other links, etc.</p>
+										
+					<blockquote>How do different users use the repository? What are their wants and needs?</blockquote>
+					<p>Fixme talk about orienting students, benchmarking students, uploaders, researchers, headhunters, and their needs</p>
+
+					<blockquote>How can the design of the repository and its search engine support those usecases?</blockquote>
+					<p>Fixme talk about programme pages, profile pages and the information they have, awards, and featureds</p>
+
+					<blockquote>Does this new repository design fit the wants and needs of its stakeholders?</blockquote>
+					<p>Fixme see above</p>
+
+				</div>
+
+				<!--Discussion-->
+				<div class="container section scrollspy" id="Discussion">
+					<h3 class="blue-text">Discussion</h3>
+					<h4 class="blue-text">Privacy concerns</h4>
+					<p>fixme talk about alumni profiles, limited published time, takedown requests, privacy options, etc.</p>
+
+					<h4 class="blue-text">Upload and publishing encouragement</h4>
+					<p>fixme talk about how I currently don't know if the multiple upload fields and privacy options actually work.</p>
 				</div>
 				
+				<!--References-->
 				<div class="container section scrollspy" id="References">
 					<h3 class="blue-text">References</h3>
 					<table>
@@ -2320,20 +2668,26 @@ public class MyClass {
 				</div>
 
 			</div>
+
+			<!--ScrollSpy Table of Contents-->
 			<div class="col hide-on-small-only m3 l2" style="position: -webkit-sticky; position: sticky; top:40px;">
 				<ul class="section table-of-contents">
 					<li><a style="border-color: #2196F3 !important" href="#Abstract">Abstract</a></li>
 					<li><a style="border-color: #2196F3 !important" href="#Introduction">Introduction</a></li>
-					<li><a style="border-color: #2196F3 !important" href="#Analysis">Research and Analysis</a></li>
+					<li><a style="border-color: #2196F3 !important" href="#Analysis">Who uses the Repository? What do they Need?</a></li>
+					<li><a style="border-color: #2196F3 !important" href="#whatcanwedowithmedia">What can we do with Repositories and Media?</a></li>
+					<!--<li><a style="border-color: #2196F3 !important" href="#Analysis">Research and Analysis</a></li>-->
 					<li><a style="border-color: #2196F3 !important" href="#Ideation">Ideation</a></li>
-					<li><a style="border-color: #2196F3 !important" href="#Concepts">Concepts</a></li>
-					<li><a style="border-color: #2196F3 !important" href="#Prototyping">Prototyping</a></li>
+					<li><a style="border-color: #2196F3 !important" href="#Concepts">4 Concepts</a></li>
+					<li><a style="border-color: #2196F3 !important" href="#Prototyping">The Figma Prototypes</a></li>
 					<li><a style="border-color: #2196F3 !important" href="#ConceptSelection">Concept selection</a></li>
-					<li><a style="border-color: #2196F3 !important" href="#Iteration">Iteration</a></li>
-					<li><a style="border-color: #2196F3 !important" href="#Prototyping2">Prototyping</a></li>
+					<li><a style="border-color: #2196F3 !important" href="#Iteration">The Paper Prototype</a></li>
+					<li><a style="border-color: #2196F3 !important" href="#Prototyping2">The HTML Prototype</a></li>
+					<li><a style="border-color: #2196F3 !important" href="#FinalConcept">The Final Prototype</a></li>
 					<li><a style="border-color: #2196F3 !important" href="#Evaluation">Evaluation</a></li>
-					<li><a style="border-color: #2196F3 !important" href="#FinalConcept">Final concept</a></li>
 					<li><a style="border-color: #2196F3 !important" href="#DesignDocument">Design Document</a></li>
+					<li><a style="border-color: #2196F3 !important" href="#Conclusions">Conclusions</a></li>
+					<li><a style="border-color: #2196F3 !important" href="#Discussion">Discussion</a></li>
 					<li><a style="border-color: #2196F3 !important" href="#References">References</a></li>
 				</ul>
 			</div>

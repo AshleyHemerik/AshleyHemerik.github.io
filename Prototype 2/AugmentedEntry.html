@@ -18,32 +18,35 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="body">
+<body id="body" onload="start()">
 
 	<header style="background-color: white; box-shadow: 0 2px 7px rgba(0,0,0,0.1); z-index: 999;" class="row">
 		<div class="col m1 l2 hide-on-small-only">
-			<i class="material-icons blue-text" style="padding: 10px;">arrow_back</i>
+			<a href="index.html"><i class="material-icons blue-text" style="padding: 10px;">arrow_back</i></a>
 		</div>
 		<div class="col m10 l8">
 			<div style="display: flex; justify-content: space-between; padding: 10px 0;">
 				<div>
-					<h4 class="blue-text">Title</h4>
-					<h6 class="grey-text">Subtitle</h6>
+					<h4 class="blue-text title">Title</h4>
+					<h6 class="grey-text subtitle">Subtitle</h6>
 					<p class="grey-text">
+						
 						By 
 						<img src="https://thispersondoesnotexist.com/image" alt="" class="circle" width="20px" style="vertical-align: middle;"> 
-						<a href="">Authorname Lastname</a>
+						<a href="studentprofile.html" class="author">Authorname Lastname</a>
 						| 
 						<img src="https://picsum.photos/50/50" alt="" class="circle" width="20px" style="vertical-align: middle;"> 
-						<a href="">Supervisorname Lastname</a> (supervisor)
+						<a href="supervisorprofile.html" class="name">Supervisorname Lastname</a> (supervisor)
 						| 
 						<img src="https://picsum.photos/51/51" alt="" class="circle" width="20px" style="vertical-align: middle;"> 
-						<a href="">Supervisorname Lastname</a> (supervisor)
+						<a href="supervisorprofile.html" class="name">Supervisorname Lastname</a> (supervisor)
 					</p>
-					<p class="grey-text">Master Thesis | 03-02-2023</p>
-					<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
-					<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
-					<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+					<p class="grey-text"><span class="type">Master Thesis</span> | <span class="date">03-02-2023</span></p>
+					<div class="keywords">
+						<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+						<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+						<div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div><div class="chip waves-effect waves-dark">Keyword</div>
+					</div>
 				</div>
 		
 				<div style="text-align: right;">

@@ -18,11 +18,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="body">
+<body id="body" onload="start()">
 
 	<header style="background-color: white; box-shadow: 0 2px 7px rgba(0,0,0,0.1); display: flex; justify-content: space-between;">
 		<div style="width: fit-content; display: inline-block; padding: 20px" class="blue-text">
-			<a href="" class="blue-text">
+			<a href="index.html" class="blue-text">
 				<i class="material-icons left">school</i> 
 				<b class="hide-on-small-only">TU Delft Student Theses Repository</b>
 			</a>
@@ -74,10 +74,10 @@
 					<img src="https://thispersondoesnotexist.com/image" alt="" width="100%" class="circle" style="box-shadow: #0001 0 5px 10px">
 				</div>
 				<div class="col s8 m10">
-					<h1 class="blue-text">Supervisorname Lastname 
+					<h1 class="blue-text"><span class="name">Supervisorname Lastname</span> 
 						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuX_SdeauP7yVLUdmrpjpLmifhRBaCavWKwJk4w9o&s" alt="" width="50px" style="cursor:pointer">
 					</h1>
-					<h4 class="grey-text"><a href="">Industrial Design Engineering - Sustainable Design Engineering</a></h4>
+					<h4 class="grey-text"><a href="Programme.html" class="programme">Industrial Design Engineering - Sustainable Design Engineering</a></h4>
 					<h6 class="grey-text">Available as supervisor?: <i class="material-icons yellow-text text-darken-2" style="vertical-align: middle;">help</i> last published supervised thesis: 09-11-2022</h6>
 				</div>
 			</div>
@@ -153,13 +153,16 @@
 					<img src="https://picsum.photos/200/300" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px;">
 				</div>
 				<div class="col s12 m10">
-					<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
-					<h5 class="blue-text">Title</h5>
-					<h6 class="grey-text">Subtitle</h6>
-					<p class="grey-text"><a href="Programme.html">Design for Interaction</a> Masters Thesis by <a href="">Authorname Lastname</a> | 02-03-2023</p>
+					<a href="#!" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+					<h5 class="blue-text title">Title</h5>
+					<h6 class="grey-text subtitle">Subtitle</h6>
+					<p class="grey-text"><a href="Programme.html" class="programme">Design for Interaction</a> <span class="type">Masters Thesis</span> by 
+						<a href="studentprofile.html" class="author">Authorname Lastname</a> | <span class="date">02-03-2023</span></p>
 					<div class="chip waves-effect waves dark yellow darken-2">Highlighted by supervisor</div><br>
-					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					<div class="keywords">
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+					</div>
+					<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
 					<p style="box-shadow: 0 3px 10px #0003; border-radius: 10px 10px 10px 0; background-color: white; padding: 5px;">
 						<b>Supervisor's note:</b> Authorname did an amazing job highlighting X and Y in a visual manner and did a very deep dive into Z. Definitely worth a read!
 					</p>
@@ -170,12 +173,15 @@
 					<img src="https://picsum.photos/200/301" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px;">
 				</div>
 				<div class="col s12 m10">
-					<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
-					<h5 class="blue-text">Title</h5>
-					<h6 class="grey-text">Subtitle</h6>
-					<p class="grey-text">Masters Thesis by <a href="">Authorname Lastname</a> | 02-03-2023</p>
-					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					<a href="#!" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+					<h5 class="blue-text title">Title</h5>
+					<h6 class="grey-text subtitle">Subtitle</h6>
+					<p class="grey-text"><a href="Programme.html" class="programme">Design for Interaction</a> <span class="type">Masters Thesis</span> by 
+						<a href="studentprofile.html" class="author">Authorname Lastname</a> | <span class="date">02-03-2023</span></p>
+					<div class="keywords">
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+					</div>
+					<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -183,12 +189,15 @@
 					<img src="https://picsum.photos/199/300" alt="" width="100%" style="box-shadow: #0001 0 5px 10px; border-radius: 5px;">
 				</div>
 				<div class="col s12 m10">
-					<a href="" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
-					<h5 class="blue-text">Title</h5>
-					<h6 class="grey-text">Subtitle</h6>
-					<p class="grey-text">Masters Thesis by <a href="">Authorname Lastname</a> | 02-03-2023</p>
-					<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
+					<a href="#!" class="btn-floating blue right"><i class="material-icons">bookmark</i></a>
+					<h5 class="blue-text title">Title</h5>
+					<h6 class="grey-text subtitle">Subtitle</h6>
+					<p class="grey-text"><a href="Programme.html" class="programme">Design for Interaction</a> <span class="type">Masters Thesis</span> by 
+						<a href="studentprofile.html" class="author">Authorname Lastname</a> | <span class="date">02-03-2023</span></p>
+					<div class="keywords">
+						<div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div><div class="chip waves-effect waves dark">Keyword</div>
+					</div>
+					<p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempora. Tempore fugiat magnam aspernatur odit exercitationem odio deleniti debitis voluptatibus ipsum quo. Eveniet dolorum at fuga quos veniam odit sit.</p>
 				</div>
 			</div>
 		</div>
@@ -201,37 +210,52 @@
 				<li style="display: flex;">
 					<img src="http://picsum.photos/50/50" alt="" class="circle" height="50px" style="margin-right: 5px;">
 					<div>
-						<b><a href="">Firstname Lastname</a></b><br>
-						<span class="grey-text"><a href="">IDE-Sustainable Design Engineering</a> | Last supervised thesis: 08-2022 <i class="material-icons green-text">check_circle</i></span><br>
-						<div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div>
+						<b><a href="supervisorprofile.html" class="name">Firstname Lastname</a></b><br>
+						<span class="grey-text"><a href="Programme.html">IDE-Sustainable Design Engineering</a> | Last supervised thesis: 08-2022 <i class="material-icons green-text">check_circle</i></span><br>
+						<div class="smallkeywords">
+							<div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div>
+						</div>
 					</div>
 				</li>
 				<li style="display: flex;">
 					<img src="http://picsum.photos/50/49" alt="" class="circle" height="50px" style="margin-right: 5px;">
 					<div>
-						<b><a href="">Firstname Lastname</a></b><br>
-						<span class="grey-text"><a href="">IDE-Sustainable Design Engineering</a> | Last supervised thesis: 08-2022 <i class="material-icons green-text">check_circle</i></span><br>
-						<div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div>
+						<b><a href="supervisorprofile.html" class="name">Firstname Lastname</a></b><br>
+						<span class="grey-text"><a href="Programme.html">IDE-Sustainable Design Engineering</a> | Last supervised thesis: 08-2022 <i class="material-icons green-text">check_circle</i></span><br>
+						<div class="smallkeywords">
+							<div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div>
+						</div>
 					</div>
 				</li>
 				<li style="display: flex;">
 					<img src="http://picsum.photos/49/50" alt="" class="circle" height="50px" style="margin-right: 5px;">
 					<div>
-						<b><a href="">Firstname Lastname</a></b><br>
-						<span class="grey-text"><a href="">IDE-Sustainable Design Engineering</a> | Last supervised thesis: 08-2022 <i class="material-icons yellow-text text-darken-2">help</i></span><br>
-						<div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div>
+						<b><a href="supervisorprofile.html" class="name">Firstname Lastname</a></b><br>
+						<span class="grey-text"><a href="Programme.html">IDE-Sustainable Design Engineering</a> | Last supervised thesis: 08-2022 <i class="material-icons yellow-text text-darken-2">help</i></span><br>
+						<div class="smallkeywords">
+							<div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div>
+						</div>
 					</div>
 				</li>
 				<li style="display: flex;">
 					<img src="http://picsum.photos/49/49" alt="" class="circle" height="50px" style="margin-right: 5px;">
 					<div>
-						<b><a href="">Firstname Lastname</a></b><br>
-						<span class="grey-text"><a href="">IDE-Sustainable Design Engineering</a> | Last supervised thesis: 08-2022 <i class="material-icons yellow-text text-darken-2">help</i></span><br>
-						<div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div>
+						<b><a href="supervisorprofile.html" class="name">Firstname Lastname</a></b><br>
+						<span class="grey-text"><a href="Programme.html">IDE-Sustainable Design Engineering</a> | Last supervised thesis: 08-2022 <i class="material-icons yellow-text text-darken-2">help</i></span><br>
+						<div class="smallkeywords">
+							<div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div> <div class="smallchip">Keyword</div>
+						</div>
 					</div>
 				</li>
 			</ul>
 		</div>
+
+		
+
+		<span class="title" style="display: none;"></span>
+		<span class="title" style="display: none;"></span>
+		<span class="title" style="display: none;"></span>
+		<span class="title" style="display: none;"></span>
 
 	</article>
 

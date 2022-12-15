@@ -122,3 +122,7 @@ input[type="date"] {
 [type="radio"].with-gap:checked + span::before {
 	border-color: dodgerblue !important;
 }
+
+.card-title a {
+	text-shadow: #000 0 2px 5px, black 0 0 2px !important ;
+}
