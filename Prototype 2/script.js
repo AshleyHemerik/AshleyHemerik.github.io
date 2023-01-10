@@ -71,11 +71,11 @@ function csvloaded () {
 		if(descs[i])
 			descs[i].innerHTML = line[6].substring(0,400);
 		if(keywords[i])
-			keywords[i].innerHTML = ('<a href="Keyword.html"><div class="chip">'+line[7].replaceAll('; ','</div></a><a href="keyword.html"><div class="chip">')+'</div></a>').replace('<div class="chip"></div>','');
+			keywords[i].innerHTML = ('<a href="Keyword.html"><div class="chip">'+line[7].replaceAll('; ','</div></a><a href="Keyword.html"><div class="chip">')+'</div></a>').replace('<div class="chip"></div>','');
 		if(types[i])
 			types[i].innerText = line[9].replace('bachelor','Bachelor').replace('master','Master');
 		if(smallkeywords[i])
-			smallkeywords[i].innerHTML = ('<a href="Keyword.html"><div class="smallchip">'+line[7].replaceAll('; ','</div></a><a href="keyword.html"><div class="smallchip">')+'</div></a>').replace('<div class="smallchip"></div>','');
+			smallkeywords[i].innerHTML = ('<a href="Keyword.html"><div class="smallchip">'+line[7].replaceAll('; ','</div></a><a href="Keyword.html"><div class="smallchip">')+'</div></a>').replace('<div class="smallchip"></div>','');
 
 		if(abstracts[i])
 			abstracts[i].innerHTML = line[6];
@@ -133,11 +133,11 @@ function putline(div, query) {
 		if(descs[i])
 			descs[i].innerHTML = line[6].substring(0,400);
 		if(keywords[i])
-			keywords[i].innerHTML = ('<a href="Keyword.html"><div class="chip">'+line[7].replaceAll('; ','</div></a><a href="keyword.html"><div class="chip">')+'</div></a>').replace('<div class="chip"></div>','');
+			keywords[i].innerHTML = ('<a href="Keyword.html"><div class="chip">'+line[7].replaceAll('; ','</div></a><a href="Keyword.html"><div class="chip">')+'</div></a>').replace('<div class="chip"></div>','');
 		if(types[i])
 			types[i].innerText = line[9].replace('bachelor','Bachelor').replace('master','Master');
 		if(smallkeywords[i])
-			smallkeywords[i].innerHTML = ('<a href="Keyword.html"><div class="smallchip">'+line[7].replaceAll('; ','</div></a><a href="keyword.html"><div class="smallchip">')+'</div></a>').replace('<div class="smallchip"></div>','');
+			smallkeywords[i].innerHTML = ('<a href="Keyword.html"><div class="smallchip">'+line[7].replaceAll('; ','</div></a><a href="Keyword.html"><div class="smallchip">')+'</div></a>').replace('<div class="smallchip"></div>','');
 
 		if(abstracts[i])
 			abstracts[i].innerHTML = line[6];

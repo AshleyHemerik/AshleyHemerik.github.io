@@ -123,6 +123,6 @@ input[type="date"] {
 	border-color: dodgerblue !important;
 }
 
-.card-title a {
+.card-image .card-title a {
 	text-shadow: #000 0 2px 5px, black 0 0 2px !important ;
 }
