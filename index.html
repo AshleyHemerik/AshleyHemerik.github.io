@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Redesigning the TU Repository for Graduation Theses</title>
+	<title>Redesigning the TU Delft Repository for Graduation Theses</title>
 	<meta name="description" content="Ashley Hemerik's graduation project for redesigning the student theses repository for multimedia and modern usecases">
 	<meta name="keywords" content="Graduation, Theses, TU Delft, Interaction Designer, UI designer, UI/UX Designer, Pathfinder Dashboard, Pathfinder, Portfolio, TU Delft">
 	<meta name="author" content="Ashley Hemerik">
@@ -32,9 +32,8 @@
 	<header>
 		<nav class="white" role="navigation">
 			<div class="nav-wrapper container">
-				<a id="logo-container" href="#" class="brand-logo blue-text truncate"><i class="material-icons">school</i>Redesigning the TU Graduation Repository</span></a>
+				<a id="logo-container" href="#" class="brand-logo blue-text truncate"><i class="material-icons">school</i>Redesigning the TU Delft Graduation Repository</span></a>
 				<ul class="right hide-on-med-and-down">
-					<li class="waves-effect waves-dark"><a onclick="downloadAsPDF()" class="blue-text"><i class="material-icons left">download</i>Download as PDF (fixme)</a></li>
 					<li class="waves-effect waves-dark">
 						<a href="https://www.linkedin.com/in/ashley-hemerik-346411226/" class="blue-text" target="_blank">
 							<i class="material-icons left">contact_page</i>
@@ -63,37 +62,47 @@
 				<div class="container section scrollspy" id="Abstract">
 					<h3 class="blue-text">Abstract</h3>
 
-					<h4 class="blue-text">The situation</h4>
+					<h4 class="blue-text">Design Opportunity</h4>
 					<div class="row">
 						<div class="col s12 l8">
-							<p class="flow-text">The <a href="https://repository.tudelft.nl/islandora/search/?collection=education">TU Delft student theses repository</a>
+							<p class="flow-text">The <a href="https://web.archive.org/web/20230120130947/https://repository.tudelft.nl/islandora/search/?collection=education">TU Delft student theses repository</a>
 								has not been updated since it switched to digital PDF reports in 2007. Currently, entries only contain a title, author and contributors, programme, date, abstract, 
 								and the PDF to download.</p>
+								<p class="flow-text">
+									While the search engine is fine if you know the author's name or the title of the thesis you're looking for,
+									 <a href="#Interviews">users expressed</a> that it's difficult to use the repository to 
+									find inspiration for your own graduation project, see what reports are good or not, or to find out what supervisors look for in a project, or what projects they usually take on.
+								</p>
+								<p class="flow-text">After uploading, the entry looks boring, and doesn't grip the reader's attention. Furthermore,
+									<a href="https://web.archive.org/web/20230120131109/https://openworking.wordpress.com/2021/11/03/rethinking-the-library-repository-a-focus-on-masters-and-doctoral-theses/">
+										the entries are not very visible internally, or externally (like on google scholar)
+									</a>.
+								</p>
 						</div>
 						<div class="col s12 l4" style="text-align: center;">
 							<img class="materialboxed" width="100%" src="Images/reposcreenshot1.jpg">
 							<br>
-							<a href="https://repository.tudelft.nl/islandora/search/?collection=education" target="_blank" class="btn blue">
+							<a href="https://web.archive.org/web/20230120130947/https://repository.tudelft.nl/islandora/search/?collection=education" target="_blank" class="btn blue">
 								Visit the current repository 
 								<i class="material-icons right">open_in_new</i>
 							</a>
 						</div>
 					</div>
 
-					<h4 class="blue-text">The problem</h4>
+					<!--<h4 class="blue-text">The problem</h4>
 					<p class="flow-text">While the search engine is fine if you know the author, <a href="#Interviews">users expressed</a> that it's difficult to use the repository to 
 						find inspiration for your own graduation project, see what reports are good or not, or to find out how mentors grade or what projects they usually take on.
 					</p>
 					<p class="flow-text">After uploading, the entry looks boring, and doesn't grip the reader's attention. 
-						<a href="https://openworking.wordpress.com/2021/11/03/rethinking-the-library-repository-a-focus-on-masters-and-doctoral-theses/">
-							The entries are not very visible internally, or externally (like on google scholar)</a>.</p>
+						<a href="https://web.archive.org/web/20230120131109/https://openworking.wordpress.com/2021/11/03/rethinking-the-library-repository-a-focus-on-masters-and-doctoral-theses/">
+							The entries are not very visible internally, or externally (like on google scholar)</a>.</p>-->
 
 					<h4 class="blue-text">The goal</h4>
-					<p class="flow-text">My goal is to redesign the repository to:</p>
+					<p class="flow-text">My goal was to redesign the repository to:</p>
 					<ul>
-						<li class="flow-text"><span class="blue-text">▶</span> Allow students to upload (interactive) multimedia to their repository pages.</li>
-						<li class="flow-text"><span class="blue-text">▶</span> Programatically add multimedia to already uploaded repository pages.</li>
-						<li class="flow-text"><span class="blue-text">▶</span> Redesign the user interface with a user centered design approach.</li>
+						<li class="flow-text"><span class="blue-text">●</span> Allow students to upload (interactive) multimedia to their repository pages.</li>
+						<li class="flow-text"><span class="blue-text">●</span> Programatically add multimedia to already uploaded repository pages.</li>
+						<li class="flow-text"><span class="blue-text">●</span> Redesign the user interface with a user centered design approach.</li>
 					</ul>
 					
 					<h4 class="blue-text">The solution</h4>
@@ -101,25 +110,25 @@
 						<div class="col s12 l8">
 							<p class="flow-text">My <a href="Prototype 2/index.html" target="_blank">new design</a> features:</p>
 							<ul>
-								<li class="flow-text"><span class="blue-text">▶</span> 
+								<li class="flow-text"><span class="blue-text">●</span> 
 									'Thumbnail' images, graphical abstracts, posters, embedded videos, and interactive embeds (such as 3D model viewers), 
 									which show what the thesis is about.
 								</li>
-								<li class="flow-text"><span class="blue-text">▶</span> 
+								<li class="flow-text"><span class="blue-text">●</span> 
 									One or two sentence 'pitches' under titles that allow users to quickly assess interest.
 								</li>
-								<li class="flow-text"><span class="blue-text">▶</span>
+								<li class="flow-text"><span class="blue-text">●</span>
 									 Views, bookmark, and download metrics that show how popular a thesis is; Entry awards; featured theses; and supervisor highlights 
 									make it easier for users to find examples of good projects.
 								</li>
-								<li class="flow-text"><span class="blue-text">▶</span> 
+								<li class="flow-text"><span class="blue-text">●</span> 
 									Supervisor profiles that show all their supervised theses, some information on what they do, 
 									and if they might be available for supervising your project.
 								</li>
-								<li class="flow-text"><span class="blue-text">▶</span> 
-									Publishing theses will no longer be mandatory, so people who aren't proud of their mediocre thesis will shopw up less.
+								<li class="flow-text"><span class="blue-text">●</span> 
+									Publishing theses will no longer be mandatory, so people who aren't proud of their mediocre thesis will show up less.
 								</li>
-								<li class="flow-text"><span class="blue-text">▶</span> 
+								<li class="flow-text"><span class="blue-text">●</span> 
 									Related theses/supervisors/keywords in a sidebar can help a user find more of what they're interested in.
 								</li>
 							</ul>
@@ -141,7 +150,7 @@
 					<h3 class="blue-text">Introduction</h3>
 					<h6>Why?</h6>
 					<p>
-						The TU Delft Library has always stored student theses. They switched to using digital PDF file copies in 2007.
+						The TU Delft Library has been keeping copies of students' graduation theses for a very long time. They switched to using digital PDF file copies in 2007.
 						For their archiving system, they currently use Islandora 7, 
 						<a href="https://lyrasis.zendesk.com/hc/en-us/articles/360059419231-Q-A-Islandora-Upgrade" target="_blank">which will no longer be supported in 2023</a>,
 						and will therefore no longer be getting any security updates going forward, leaving it vulnerable to hackers.
@@ -150,14 +159,14 @@
 					<p>
 						Students are enthusiastic about using multimedia and interactive elements in the reporting of their theses. 
 						Some even make their whole thesis 
-						<a href="https://repository.tudelft.nl/islandora/object/uuid%3A98be37d9-3cdd-460f-b5b4-2d80fb96a731?collection=education" 
+						<a href="http://resolver.tudelft.nl/uuid:98be37d9-3cdd-460f-b5b4-2d80fb96a731" 
 						target="_blank" class="tooltipped" data-tooltip="see last page of her PDF for the link">in the form of a website</a>. 
 						These report websites aren't currently able to be archived by the library.
 						The library 
 						<a href="Sources/Requirements - The Next Generation TU Delft Repository.pdf" target="_blank">
 							wants their new system to support all filetypes, and to store files of up to 1 gigabyte.
 						</a>
-						The front-end of the <a href="https://repository.tudelft.nl/islandora/search/?collection=education">current repository</a> (the website that the user sees) only shows 
+						The front-end of the <a href="https://web.archive.org/web/20230120130947/https://repository.tudelft.nl/islandora/search/?collection=education">current repository</a> (the website that the user sees) only shows 
 						text metadata (like authors, supervisors, date, title, subtitle, abstract, etc.) on an entry.
 						If someone uploads a video or image, the reader has to download it before	it can be watched. 
 					</p>
@@ -199,28 +208,28 @@
 					<div class="row">
 						<div class="col s12 m8">
 							<p>
-								I'm going to be using a version of the basic design cycle, that can be found in the 
-								<a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a>. 
+								I used a version of the basic design cycle, that can be found in the 
+								<a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide on page 45</a>. 
 								The Basic design cycle consists of doing research into what is nessecary for the design to be good and creating criteria, which will help you 'synthesize' a good
 								design. You then make a prototype for your design, and test with the users, using their feedback to analyze and reassess, creating a new design/prototype, and so
 								on, until you are confident you have a great design. Usually, your prototypes increase in quality over the cycles.
 							</p>
-							<p>I'll be using quick handdrawn paper prototypes, <a href="https://www.figma.com/" target="_blank">Figma mockups</a>, 
+							<p>I used quick handdrawn paper prototypes, <a href="https://www.figma.com/" target="_blank">Figma mockups</a>, 
 								and actual websites made in HTML with javascript and CSS that users can click through.
 							</p>
-							<p>I'll be working on this project for 20 weeks, hoping to make a design document that programmers in the library can use to build the new front-end when the
+							<p>I worked on this project for 20 weeks, and made a design document that programmers in the library can use to build the new front-end when the
 								new archiving system is implemented. My planning can be seen in <a href="Images/GANT Draft.jpg">this Gantt chart</a>.
 							</p>
 
 							<p>The research questions of my project are:</p>
 							<ul>
-								<li><span class="blue-text">▶</span> What types of (interactive) media can be useful for reporting for the different majors?</li>
-								<li><span class="blue-text">▶</span> How do we encourage students and alumni to add (interactive) media to their reports / the repository?</li>
-								<li><span class="blue-text">▶</span> What do these new (interactive) multimedia reports look like?</li>
-								<li><span class="blue-text">▶</span> Is there a way to (programmatically) add multimedia elements to already published reports?</li>
-								<li><span class="blue-text">▶</span> How do different users use the repository? What are their wants and needs?</li>
-								<li><span class="blue-text">▶</span> How can the design of the repository and its search engine support those usecases?</li>
-								<li><span class="blue-text">▶</span> Does this new repository design fit the wants and needs of its stakeholders?</li>
+								<li><span class="blue-text">●</span> What types of (interactive) media can be useful for reporting for the different majors?</li>
+								<li><span class="blue-text">●</span> How do we encourage students and alumni to add (interactive) media to their reports / the repository?</li>
+								<li><span class="blue-text">●</span> What do these new (interactive) multimedia reports look like?</li>
+								<li><span class="blue-text">●</span> Is there a way to (programmatically) add multimedia elements to already published reports?</li>
+								<li><span class="blue-text">●</span> How do different users use the repository? What are their wants and needs?</li>
+								<li><span class="blue-text">●</span> How can the design of the repository and its search engine support those usecases?</li>
+								<li><span class="blue-text">●</span> Does this new repository design fit the wants and needs of its stakeholders?</li>
 							</ul>
 							These were approved in the <a href="Sources/Graduation Project Brief Ashley Hemerik (Redesigning grad repository).pdf">project brief</a>.
 							
@@ -328,33 +337,35 @@
 				<!--Who uses the Repository? What do they need?-->
 				<div class="container section scrollspy" id="Analysis">
 					<h3 class="blue-text">Who uses the Repository? What do they need?</h3>
-					<p>In order to make designs for the repository, I first need to know who uses it, how, what problems they encounter, and what their needs are.</p>
+					<p>In order to make designs for the repository, I first needed to know who uses it, how, what problems they encounter, and what their needs are.</p>
 					
 					<h4 class="blue-text scrollspy section" id="Interviews">Interviews</h4>
-					<p>I've interviewed multiple stakeholders and experts on the repository and multimedia.</p>
+					<p>I've interviewed multiple stakeholders and experts on the repository and multimedia. 
+						(see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.91 for more information the method)
+					</p>
 					<div class="row">
 						
 						
 						<div class="col m12 l6">
 							<div class="card">
 								<div class="card-content">
-									<span class="card-title">Interview with <a href="https://www.linkedin.com/in/stephanie-nieuwenhuizen-4691721bb/">Steef</a>
+									<span class="card-title">Interview with 'S'</a>
 										 - recently graduated</span>
 									<div class="row valign-wrapper">
 										<div class="col s10">
-											<p>Steef also tried to benchmark for graduation reports. They tried to see what other people that had the same mentor as them uploaded.
+											<p>'S' also tried to benchmark for graduation reports. They tried to see what other people that had the same mentor as them uploaded.
 												Mentors sometimes have multiple entries for the same person, so this was a no-go. They tried to search by track, and by tags, but tags are
 												case-sensitive, which diminishes their usefulness a lot.
 											</p>
-											<p>Steef also uploaded their report during an incredibly stressful time due to a miscommunication. They are not good at writing, and they would
+											<p>S also uploaded their report during an incredibly stressful time due to a miscommunication. They are not good at writing, and they would
 												have preferred to show their prototype on their entry page instead of their report.
-											</p>
+											</p> <!--
 											<audio controls>
 												<source src="Images/interviews/interview met steef.aac" type="audio/aac">
 											Your browser does not support the audio element.
-											</audio> 
+											</audio> -->
 										</div>
-										<div class="col s2"><img src="Images/pfps/Steef.jpg" alt="" class="circle responsive-img"></div>
+										<div class="col s2"><img src="Images/profile-placeholder.png" alt="" class="circle responsive-img"></div>
 									</div>
 								</div>
 							</div>
@@ -363,8 +374,7 @@
 						<div class="col m12 l6">
 							<div class="card">
 								<div class="card-content">
-									<span class="card-title">Interview with 
-										<a href="https://nl.linkedin.com/in/carolijn-schrijver-4b0674200">Carolijn</a> - recently graduated</span>
+									<span class="card-title">Interview with Carolijn - recently graduated</span>
 									<div class="row valign-wrapper">
 										<div class="col s10">
 											<p>Carolijn tried to see what an IDE-SPD graduation report looked like. She had trouble finding the repository due to its name. She didn't know if she
@@ -388,26 +398,26 @@
 						<div class="col m12 l6">
 							<div class="card">
 								<div class="card-content">
-									<span class="card-title">Interview with <a href="https://www.linkedin.com/in/lennymartinezd/">Lenny</a> - looking into graduation</span>
+									<span class="card-title">Interview with 'L' - looking into graduation</span>
 									<div class="row valign-wrapper">
 										<div class="col s10">
-											<p>Lenny doesn't have a graduation project yet, but he wanted to see what a DFI project graduation project looks like, what quality is expected,
+											<p>'L' doesn't have a graduation project yet, but he wanted to see what a DFI project graduation project looks like, what quality is expected,
 												and what the students mentored by his favorite professors have produced.
 											</p>
 											<p>Searching by keywords and track is again difficult. Searching by professor also proved difficult, as mentors often have multiple entries in the system,
 												so it's difficult to find what they've produced.
 											</p>
 											<p>
-												Lenny mentioned that the repository feels like a mortuarium more than a library. It's where reports are stored when everyone is done with them, it
-												doesn't feel like a place of knowledge that encourages exploration. Lenny would like to see features that highlight the exciting parts of a graduation,
+												'L' mentioned that the repository feels like a mortuarium more than a library. It's where reports are stored when everyone is done with them, it
+												doesn't feel like a place of knowledge that encourages exploration. 'L' would like to see features that highlight the exciting parts of a graduation,
 												such as renders or a prototype, as well as making it easier to share projects with others.
-											</p>
+											</p><!--
 											<audio controls>
 												<source src="Images/interviews/interview with Lenny.aac" type="audio/aac">
 											Your browser does not support the audio element.
-											</audio> 
+											</audio> -->
 										</div>
-										<div class="col s2"><img src="Images/pfps/Lenny.jpg" alt="" class="circle responsive-img"></div>
+										<div class="col s2"><img src="Images/profile-placeholder.png" alt="" class="circle responsive-img"></div>
 									</div>
 								</div>
 							</div>
@@ -427,11 +437,11 @@
 											</p>
 											<p>While he thinks that a live demonstration would be even more valuable for evaluating a student, embracing multimedia to capture the project would
 												go a long way.
-											</p>
+											</p><!--
 											<audio controls>
 												<source src="Images/interviews/interview Chris Verhoeven .aac" type="audio/aac">
 											Your browser does not support the audio element.
-											</audio> 
+											</audio> -->
 										</div>
 										<div class="col s2"><img src="Images/pfps/ChrisVerhoeven.jpg" alt="" class="circle responsive-img"></div>
 									</div>
@@ -454,11 +464,11 @@
 										</div>
 										<div class="col s2"><img src="Images/pfps/RuudBalkenende.webp" alt="" class="circle responsive-img"></div>
 									</div>
-									
+									<!--
 									<video width="100%" controls>
 										<source src="Images/interviews/Interview Ruud Balkenende.mp4" type="video/mp4">
 									Your browser does not support the video tag.
-									</video> 
+									</video> -->
 								</div>
 							</div>
 						</div>
@@ -466,7 +476,7 @@
 						<div class="col m12 l6">
 							<div class="card">
 								<div class="card-content">
-									<span class="card-title">Interview with <a href="https://www.linkedin.com/in/erik-tempelman-959023156/">Erik Tempelman</a> - graduation chair</span>
+									<span class="card-title">Interview with <a href="https://www.tudelft.nl/io/over-io/personen/tempelman-e">Erik Tempelman</a> - graduation chair</span>
 										<div class="row valign-wrapper">
 										<div class="col s10">
 											<p>Erik told me that supervisors have no interaction with the repository during the graduation process at all, except when something goes wrong.</p>
@@ -550,7 +560,7 @@
 						<div class="col m12 l6">
 							<div class="card">
 								<div class="card-content">
-									<span class="card-title">Interview with <a href="https://www.linkedin.com/in/reinhintzen/">Rein Hintzen</a> - entrepreneur and headhunter</span>
+									<span class="card-title">Interview with Rein Hintzen - entrepreneur and headhunter</span>
 									<div class="row valign-wrapper">
 										<div class="col s10">
 											<p>Rein often goes to the repository to search for recently graduated IDE-SPD alumni to recruit for his company. He showed me how he searches 
@@ -577,13 +587,15 @@
 								</div>
 							</div>
 						</div>
+
+						<a href="mailto:ashleyhemerik@gmail.com" class="btn blue"><i class="material-icons left">mail</i>Request access to full interview audio/video</a>
 					</div>
 
 					<h4 class="blue-text">A 
 						<u><a href="https://go.gale.com/ps/i.do?id=GALE%7CA75263363&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=00218499&p=AONE&sw=w&userGroupName=anon%7E17a053b1">
 							User observation</a></u> in the wild</h4>
 					<p>Carolijn was working at her new job, and one of her co-workers told her to look at for his old graduation report in the repository so he could explain some things.
-						I sat down with Carolijn while she did this, and made observations.
+						I sat down with Carolijn while she did this, and made observations. (see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.89 for more information the method)
 					</p>
 					<div class="container">
 						<video width="100%" controls>
@@ -592,12 +604,12 @@
 						</video> 
 					</div>
 					<ul>
-						<li><span class="blue-text">▶</span> 'Education repository' is a vague name. 'Research data' and 'Cultural heritage' are also not self explanatory.</li>
-						<li><span class="blue-text">▶</span> The author filter is useless.</li>
-						<li><span class="blue-text">▶</span> Searching for first and last name brings up the exact thesis you look for.</li>
-						<li><span class="blue-text">▶</span> The abstracts are very long.</li>
-						<li><span class="blue-text">▶</span> If a user is looking for the report, the rest of the page doesn't matter much.</li>
-						<li><span class="blue-text">▶</span> The search bar works quite well.</li>
+						<li><span class="blue-text">●</span> 'Education repository' is a vague name. 'Research data' and 'Cultural heritage' are also not self explanatory.</li>
+						<li><span class="blue-text">●</span> The author filter is useless.</li>
+						<li><span class="blue-text">●</span> Searching for first and last name brings up the exact thesis you look for.</li>
+						<li><span class="blue-text">●</span> The abstracts are very long.</li>
+						<li><span class="blue-text">●</span> If a user is looking for the report, the rest of the page doesn't matter much.</li>
+						<li><span class="blue-text">●</span> The search bar works quite well.</li>
 					</ul>
 
 					<h4 class="blue-text">The Student's User Journey</h4>
@@ -607,6 +619,15 @@
 					<a href="Images/Student User Journey.png" class="btn blue right" target="_blank">See it in full resolution here <i class="material-icons right">open_in_new</i></a>
 					<br>
 					<img src="Images/Student User Journey.png" alt="" width="100%" height="200px" class="materialboxed">
+					<p>
+						From this user journey it becomes clear that the information about graduation is not always in the the most obvious places, which can be improved.
+						If the repository website would feature more information that quickly shows what a thesis is about, and what masters programme it's from, 
+						a lot of frustration can be saved. 
+						The fact that the students need to upload their thesis to the repository before they're done with the presentation means that they're uploading their thesis in
+						a very stressful time. If this was not the case, they could record and add their presentation to their entry, and take the time to add lots of other information
+						to their entry, but now, it feel like a chore that students just want to quickly check off.
+					</p>
+					<p>(see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.129 for more information the method)</p>
 
 					<h4 class="blue-text" id="doresearcherscitemasterstheses">Do researchers cite master theses?</h4>
 					<p>In order to find out if researchers use the student theses repository, we can check if they cite theses from it.</p>
@@ -628,9 +649,9 @@
 					<p>When a student uploads their thesis to the system, there is often a lot that is filled in wrong. Therefore, the library employs editors who check the
 						upload submissions before they're shown on the repository. I learned that the things that often go wrong are:</p>
 					<ul>
-						<li><span class="blue-text">▶</span> A lot of metadata is not filled in, or incorrect (things like awarding institution (which is always the TU), or coordinates).</li>
-						<li><span class="blue-text">▶</span> Email adresses and phone numbers are not allowed due to privacy laws, so they'll have to be removed from PDFs.</li>
-						<li><span class="blue-text">▶</span> Only images (.jpg/.png/.tiff), videos (.mp4), and PDFs are allowed currently, so other files need to be removed.</li>
+						<li><span class="blue-text">●</span> A lot of metadata is not filled in, or incorrect (things like awarding institution (which is always the TU), or coordinates).</li>
+						<li><span class="blue-text">●</span> Email adresses and phone numbers are not allowed due to privacy laws, so they'll have to be removed from PDFs.</li>
+						<li><span class="blue-text">●</span> Only images (.jpg/.png/.tiff), videos (.mp4), and PDFs are allowed currently, so other files need to be removed.</li>
 					</ul>
 
 					<h4 class="blue-text">Conclusions: Stakeholders, Usecases, and Problems</h4>
@@ -779,8 +800,8 @@
 									<span class="card-title">The researcher</span>
 									<div class="row valign-wrapper">
 										<div class="col s9">
-											<p><a href="https://sci-hub.se/10.1353/pla.2003.0062">Master theses are more cited than one might think.</a> researchers and other students looking to cite
-												master theses are redirected from Google Scholar to the TU repository. They need to be able to see at a glance if the paper they are looking at will
+											<p><a href="https://doi.org/10.1353/pla.2003.0062">Master theses are more cited than one might think. (Kushkowski et al., 2003)</a> researchers and other students looking to cite
+												master theses are redirected from Google Scholar to the TU Delft repository. They need to be able to see at a glance if the paper they are looking at will
 												be citable.
 											</p>
 										</div>
@@ -841,11 +862,15 @@
 									<span class="card-title">The supervisor</span>
 									<div class="row valign-wrapper">
 										<div class="col s9">
-											<p>Currently, the supervisors have very little to do with the repository. But a new design could change that.
+											<p>Currently, the supervisors have very little to do with the repository. But a new design could change that. Supervisors would love to show off
+												their supervised projects.
 											</p>
 										</div>
 										<div class="col s3"><img src="Images/personas/The Supervisor.png" alt="" width="100%"></div>
 									</div>
+									
+									<h6 class="blue-text">Needs</h6>
+									<div class="chip">Show off their supervised projects</div>
 								</div>
 							</div>
 						</div>
@@ -854,31 +879,32 @@
 					<i class="grey-text">images by uplyak on freepik</i>
 
 					<h5 class="blue-text">List of Requirements</h5>
+					<p>(see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.125 for more information the method)</p>
 					<div class="row">
 						<div class="col s12 m4">
 							<ul>
 								<li><b class="blue-text">Must have</b></li>
-								<li><span class="blue-text">▶</span> Users must be able to easily find theses of quality</li>
-								<li><span class="blue-text">▶</span> Users must be able to easily find papers of their study programme</li>
-								<li><span class="blue-text">▶</span> Users must be able to easily find papers on certain topics</li>
-								<li><span class="blue-text">▶</span> Users must be able to browse papers in a way that lets them judge interest at a glance</li>
+								<li><span class="blue-text">●</span> Users must be able to easily find theses of quality</li>
+								<li><span class="blue-text">●</span> Users must be able to easily find papers of their study programme</li>
+								<li><span class="blue-text">●</span> Users must be able to easily find papers on certain topics</li>
+								<li><span class="blue-text">●</span> Users must be able to browse papers in a way that lets them judge interest at a glance</li>
 							</ul>
 						</div>
 						<div class="col s12 m4">
 							<ul>
 								<li><b class="blue-text">Should have</b></li>
-								<li><span class="blue-text">▶</span> Users must be able to easily find papers by a certain supervisor</li>
-								<li><span class="blue-text">▶</span> Users must be able to decide if they're interested in a thesis within 5 seconds</li>
-								<li><span class="blue-text">▶</span> UI must help to spark 'curiosity' in theses</li>
-								<li><span class="blue-text">▶</span> Users must not report feeling 'lost' (or similar emotion) when uploading</li>
-								<li><span class="blue-text">▶</span> User must feel like the UI relieves anxiety when uploading</li>
-								<li><span class="blue-text">▶</span> Users must be able to find the download button within 5 seconds of the page loading.</li>
+								<li><span class="blue-text">●</span> Users must be able to easily find papers by a certain supervisor</li>
+								<li><span class="blue-text">●</span> Users must be able to decide if they're interested in a thesis within 5 seconds</li>
+								<li><span class="blue-text">●</span> UI must help to spark 'curiosity' in theses</li>
+								<li><span class="blue-text">●</span> Users must not report feeling 'lost' (or similar emotion) when uploading</li>
+								<li><span class="blue-text">●</span> User must feel like the UI relieves anxiety when uploading</li>
+								<li><span class="blue-text">●</span> Users must be able to find the download button within 5 seconds of the page loading.</li>
 							</ul>
 						</div>
 						<div class="col s12 m4">
 							<ul>
 								<li><b class="blue-text">Could have</b></li>
-								<li><span class="blue-text">▶</span> Researcher must be able to judge wether a theses might be useful for their work (to the extent one can when not 
+								<li><span class="blue-text">●</span> Researcher must be able to judge wether a theses might be useful for their work (to the extent one can when not 
 									reading the report) (moreso than just reading the abstract)</li>
 							</ul>
 						</div>
@@ -892,38 +918,38 @@
 					<h4 class="blue-text">The benefits of media in reporting</h4>
 					<p>
 						The goal of a graduation project often includes teaching a student to conduct and report a piece of research on their own 
-						<a href="http://dx.doi.org/10.5430/ijhe.v2n1p1" target="_blank" style="font-size: small;">(source)</a>.
+						<a href="http://dx.doi.org/10.5430/ijhe.v2n1p1" target="_blank" style="font-size: small;">(de Kleijn et al., 2013)</a>.
 						Reporting is a big part of the project, a survey of master thesis graders showed that communicative competence was rated "very important", and in the top 50% of aspects
 						a report is graded on 
-						<a href="https://doi.org/10.1080/02602938.2011.638738" target="_blank" style="font-size: small;">(source)</a>.
+						<a href="https://doi.org/10.1080/02602938.2011.638738" target="_blank" style="font-size: small;">(Bourke & Holbrook,2011)</a>.
 					</p>
 					<p>
 						Teaching students how to report on their research has always been important, 
 						but over the years, universities have also started teaching how to communicate your research to non-scientists 
-						<a href="http://doi.org/10.1119/bfy.2015.pr.018" target="_blank" style="font-size: small;">(source)</a>.
+						<a href="http://doi.org/10.1119/bfy.2015.pr.018" target="_blank" style="font-size: small;">(O'Leary et al., 2015)</a>.
 						Video is becoming an effective, and increasingly popular and recognised medium for formal
-						<a href="http://doi.org/10.1002/asi.22717" target="_blank" style="font-size: small;">(source)</a>
+						<a href="http://doi.org/10.1002/asi.22717" target="_blank" style="font-size: small;">(Kousha et al., 2012)</a>
 						 and informal information spreading 
-						<a href="http://doi.org/10.1119/bfy.2015.pr.018" target="_blank" style="font-size: small;">(source)</a>.
+						<a href="http://doi.org/10.1119/bfy.2015.pr.018" target="_blank" style="font-size: small;">(O'Leary et al., 2015)</a>.
 						A study showed that videos, as well as plain language summaries improve comprehension, percieved understanding, enjoyment, and the desire to learn more, in both
 						scientifically educated, and non scientifically educated people
-						<a href="https://doi.org/10.1371/journal.pone.0224697" target="_blank" style="font-size: small;">(source)</a>.
+						<a href="https://doi.org/10.1371/journal.pone.0224697" target="_blank" style="font-size: small;">(Bredbenner & Simon, 2019)</a>.
 						Other forms of art has also become an increasingly prevalent way of research communication
-						<a href="https://doi.org/10.1016/j.tree.2016.06.004" target="_blank" style="font-size: small;">(source)</a>
+						<a href="https://doi.org/10.1016/j.tree.2016.06.004" target="_blank" style="font-size: small;">(Lesen et al., 2016)</a>
 						, and the TU Library has recently had a science-communication-through-art exhibit
 						in the main hall
-						<a href="https://www.tudelft.nl/library/over-de-library/tu-delft-library-presenteert/art-embedded-learning-in-technical-higher-education" target="_blank" style="font-size: small;">(source)</a>.
+						<a href="https://web.archive.org/web/20230120145107/https://www.tudelft.nl/library/over-de-library/tu-delft-library-presenteert/art-embedded-learning-in-technical-higher-education" target="_blank" style="font-size: small;">(TU Delft, 2022)</a>.
 					</p>
 					<p>
 						The TU Delft Library wants to achieve an inspirational learning environment, more visibility for masters theses, and for students to be proud of what they publish
-						<a href="https://tu-delft.foleon.com/tu-delft/library-roadmap-2020-2024/cover/" target="_blank" style="font-size: small;">(source)</a>.
+						<a href="Sources/TU Delft library roadmap.pdf" target="_blank" style="font-size: small;">(TU Delft, 2020)</a>.
 						Students are also enthusiastic about a 'show don't tell' way of showing off their work; they also hope that this can help them find a job after their graduation
 						<a href="#Interviews" style="font-size: small;">(see interviews)</a>.
 						
 						The Library wants to achieve this with interactive media
-						<a href="https://tu-delft.foleon.com/tu-delft/library-roadmap-2020-2024/cover/" target="_blank" style="font-size: small;">(source)</a>.
+						<a href="Sources/TU Delft library roadmap.pdf" target="_blank" style="font-size: small;">(TU Delft, 2020)</a>.
 						While it is not proven that using media (specifically graphical abstracts) increase a work's visibility 
-						<a href="http://doi.org/10.3390/molecules21091247" target="_blank" style="font-size: small;">(source)</a>, it does provide all the other
+						<a href="http://doi.org/10.3390/molecules21091247" target="_blank" style="font-size: small;">(Pferschy-Wenzig et al., 2016)</a>, it does provide all the other
 						benefits mentioned above.
 					</p>
 
@@ -1006,11 +1032,11 @@
 								<div class="card-content">
 									<p>The University of Twente's repository doesn't look fancy, but they have features like:
 										<ul>
-											<li><span class="blue-text">▶</span> Top theses on the homepage.</li>
-											<li><span class="blue-text">▶</span> Searching by faculty/domain/programme.</li>
-											<li><span class="blue-text">▶</span> A feature rich advance search function.</li>
-											<li><span class="blue-text">▶</span> Citation generator.</li>
-											<li><span class="blue-text">▶</span> Download, view, and reference statistics per paper.</li>
+											<li><span class="blue-text">●</span> Top theses on the homepage.</li>
+											<li><span class="blue-text">●</span> Searching by faculty/domain/programme.</li>
+											<li><span class="blue-text">●</span> A feature rich advance search function.</li>
+											<li><span class="blue-text">●</span> Citation generator.</li>
+											<li><span class="blue-text">●</span> Download, view, and reference statistics per paper.</li>
 										</ul>
 									</p>
 								</div>
@@ -1028,9 +1054,9 @@
 								<div class="card-content">
 									<p>Wageningen's repository also doesn't look flashy, but they do have great features like:
 										<ul>
-											<li><span class="blue-text">▶</span> Bookmarking entries.</li>
-											<li><span class="blue-text">▶</span> Searching by chair group/study programme.</li>
-											<li><span class="blue-text">▶</span> Comments.</li>
+											<li><span class="blue-text">●</span> Bookmarking entries.</li>
+											<li><span class="blue-text">●</span> Searching by chair group/study programme.</li>
+											<li><span class="blue-text">●</span> Comments.</li>
 										</ul>
 									</p>
 								</div>
@@ -1046,24 +1072,24 @@
 					<h4 class="blue-text">Previous work</h4>
 					<h5 class="blue-text">Rethinking the student theses repository</h5>
 					<p>In their September 2021 presentation, <a href="https://community.data.4tu.nl/members/4turesearchdata/">Connie Clare</a> and 
-						<a href="https://www.tudelft.nl/staff/a.ghorbani/?cHash=4fc6274cfa3ca305262e57bfc2328179">Amineh Ghorbani</a>, have noted that the <b>poor findability</b>; 
+						<a href="https://web.archive.org/web/20230120150030/https://www.tudelft.nl/staff/a.ghorbani/?cHash=4fc6274cfa3ca305262e57bfc2328179">Amineh Ghorbani</a>, have noted that the <b>poor findability</b>; 
 						<b>outdated presentation</b>; and <b>cumbersome upload process</b> is a problem for master students.</p>
 					<p>They have multiple ideas for increasing findability and providing more features to the repository, such as:</p>
 					<ul>
 						<div class="row">
 							<div class="col s12 m6">
-								<li><span class="blue-text">▶</span> Linking to author and supervisor research overviews</li>
-								<li><span class="blue-text">▶</span> Metrics (downloads, views, citations, and <a href="https://www.altmetric.com/">altmetrics</a>)</li>
-								<li><span class="blue-text">▶</span> Embedded report reader like <a href="https://issuu.com/">issuu flipbooks</a></li>
-								<li><span class="blue-text">▶</span> A slideshow of the main figures</li>
-								<li><span class="blue-text">▶</span> Embedded media and simulations</li>
+								<li><span class="blue-text">●</span> Linking to author and supervisor research overviews</li>
+								<li><span class="blue-text">●</span> Metrics (downloads, views, citations, and <a href="https://www.altmetric.com/">altmetrics</a>)</li>
+								<li><span class="blue-text">●</span> Embedded report reader like <a href="https://issuu.com/">issuu flipbooks</a></li>
+								<li><span class="blue-text">●</span> A slideshow of the main figures</li>
+								<li><span class="blue-text">●</span> Embedded media and simulations</li>
 							</div>
 							<div class="col s12 m6">
-								<li><span class="blue-text">▶</span> Graphical / media abstracts</li>
-								<li><span class="blue-text">▶</span> Word clouds</li>
-								<li><span class="blue-text">▶</span> Downloading in extra formats (html, epub, mobi)</li>
-								<li><span class="blue-text">▶</span> Citation grabber</li>
-								<li><span class="blue-text">▶</span> Bibliography maker</li>
+								<li><span class="blue-text">●</span> Graphical / media abstracts</li>
+								<li><span class="blue-text">●</span> Word clouds</li>
+								<li><span class="blue-text">●</span> Downloading in extra formats (html, epub, mobi)</li>
+								<li><span class="blue-text">●</span> Citation grabber</li>
+								<li><span class="blue-text">●</span> Bibliography maker</li>
 							</div>
 						</div>
 					</ul>
@@ -1077,7 +1103,7 @@
 						<div class="col s12 m8">
 							<p>
 								<a href="https://www.researchgate.net/profile/Peter-Kun-3">Péter Kun</a> did a design experiment in 
-								<a href="https://repository.tudelft.nl/islandora/object/uuid:7e914dd9-2b53-4b2c-9061-86087dbb93b9?collection=research">his dissertation</a> 
+								<a href="https://doi.org/10.4233/uuid:7e914dd9-2b53-4b2c-9061-86087dbb93b9">his dissertation</a> 
 								where he and participants, among other things, explored the possibility of the available metadata in the student theses repository for new uses.
 								The result was a <b>concept for an app that used supervisors, and the keywords of the projects they supervised, to help the user find the perfect mentor</b>
 								for their graduation project idea.
@@ -1089,17 +1115,18 @@
 					</div>
 
 					<h4 class="blue-text">Embedded media and interactivity possibilities</h4>
-					<h5 class="blue-text">Hyperlinking, tooltips, and citations</h5>
+					<h5 class="blue-text">Hyperlinking, tooltips, and citations 
+						<u><a href="https://doi.org/10.1002/1097-4571(2000)51:10%3C887::AID-ASI20%3E3.0.CO;2-1">(Kim, 2000)</a></u></h5>
 					<p>I often have to explain that my graduation project is about:</p>
 					<p><i class="gray-text">
 						"redesigning the student theses 
-						<a href="https://en.wikipedia.org/wiki/Content_repository" class="tooltipped" data-position="bottom" 
+						<a href="https://web.archive.org/web/20230120150200/https://en.wikipedia.org/wiki/Content_repository" class="tooltipped" data-position="bottom" 
 						data-tooltip="repositories are essentially digital libraries">repository</a> for 
-						<a href="https://blog.loomly.com/embedded-media-definition/" class="tooltipped" data-position="bottom" 
+						<a href="https://web.archive.org/web/20230120150233/https://blog.loomly.com/embedded-media-definition/" class="tooltipped" data-position="bottom" 
 						data-tooltip="Images, audio, and video that's viewable on a webpage">embedded multimedia</a> and modern 
-						<a href="https://www.usability.gov/how-to-and-tools/methods/use-cases.html" class="tooltipped" data-position="bottom" 
+						<a href="https://web.archive.org/web/20230120150323/https://www.usability.gov/how-to-and-tools/methods/use-cases.html" class="tooltipped" data-position="bottom" 
 						data-tooltip="The way, reason, and context a user might use a product in">usecases</a> with a 
-						<a href="https://en.wikipedia.org/wiki/User-centered_design" class="tooltipped" data-position="bottom" 
+						<a href="https://web.archive.org/web/20230120150352/https://en.wikipedia.org/wiki/User-centered_design" class="tooltipped" data-position="bottom" 
 						data-tooltip="A design approach that focusses on the experience of the user, rather than other stakeholders">user-centered approach</a>."</i> 
 					</p>
 					<p>	My mom doesn't know what most of these words mean. Engineering students often have to use a lot of jargon and buzzwords to get across what they mean
@@ -1109,7 +1136,7 @@
 						data-tooltip="Small bits of information that pop up when hovering your mouse over items. Like me!">Tooltips</abbr> can do this even more quickly without 
 						taking the user off the page.
 					</p>
-					<p><a href="https://slate.com/technology/2014/02/citing-with-hyperlinks-academia-will-change-with-hypercitation.html">Hyperlinking can also be used for citing sources
+					<p><a href="https://web.archive.org/web/20230120150445/https://slate.com/technology/2014/02/citing-with-hyperlinks-academia-will-change-with-hypercitation.html">Hyperlinking can also be used for citing sources
 						concisely</a> without references to the bibliography sprinkled in throughout the report.
 					</p>
 					<p>You can also use hyperlinks to refer to chapters in the report itself. Like <a href="#Introduction">this link that takes you back to the introduction</a>.
@@ -1317,6 +1344,7 @@ public class MyClass {
 					<script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
 
 					<h4 class="blue-text">Interviews</h4>
+					<p>(see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.91 for more information the method)</p>
 					<div class="row">
 						<div class="col m12 l6">
 							<div class="card">
@@ -1445,18 +1473,18 @@ public class MyClass {
 						<div class="col m12 l6">
 							<div class="card">
 								<div class="card-content">
-									<span class="card-title">Interview with <a href="https://www.linkedin.com/in/michel-beerens-4446027/">Michel Beerens</a> (NewMedia Centre), 
+									<span class="card-title">Interview with <a href="https://www.tudelft.nl/staff/m.j.j.beerens/?cHash=141094e5424bb8fa69504c08ada328c3">Michel Beerens</a> (NewMedia Centre), 
 										<a href="https://newmediacentre.tudelft.nl/contact/">Roland van Rooijen</a> (NewMedia Lab), 
-										<a href="https://www.linkedin.com/in/arno-freeke-61a07aaa/">Arno Freeke</a> (VR Zone)</span>
+										<a href="https://www.tudelft.nl/staff/a.freeke/?cHash=1f568cab3d1164a868b7698d0362cf29">Arno Freeke</a> (VR Zone)</span>
 									<div class="row valign-wrapper">
 										<div class="col s10">
 											<p>Michel, Roland, and Arno talked about the modern possibilities in embedded interactive multimedia, as well as graphical viewers of the macro level of the 
 												repository entry. From the futuristic, reports as VR museums, to the more recognisable like Mac's 'Coverflow' file previews. </p>
 											<p>We also talked about the importance of an interesting presentation when browsing information</p>
-											<audio controls>
+											<!--<audio controls>
 												<source src="Images/interviews/interview michel, roland, arno.aac" type="audio/aac">
 											Your browser does not support the audio element.
-											</audio> 
+											</audio> -->
 										</div>
 										<div class="col s2">
 											<img src="Images/pfps/MichelBeerens.jpg" alt="" class="circle responsive-img">
@@ -1471,22 +1499,22 @@ public class MyClass {
 						<div class="col m12 l6">
 							<div class="card">
 								<div class="card-content">
-									<span class="card-title">Interview with <a href="https://www.linkedin.com/in/aidavdwetering/">Aida</a> - Aerospace Engineering student</span>
+									<span class="card-title">Interview with 'A' - Aerospace Engineering student</span>
 									<div class="row valign-wrapper">
 										<div class="col s10">
-											<p>I asked Aida over text about the tools aerospace engineers used, and what a typical project looks like. Aida has made multiple programmes
+											<p>I asked 'A' over text about the tools aerospace engineers used, and what a typical project looks like. 'A' has made multiple programmes
 												for optimizing airplane components herself, some with graphical user interfaces, and some not.
 											</p>
 											<p>She explained how aerospace engineers often string tools together, and how they create their own when designing airplanes. 
 												We discussed if these could be embedded into digital reports, and what their output would look like.
 											</p>
-											<p>Aida thinks that tools for preliminary designs could be embedded, and would be interesting for readers to play around with,
+											<p>'A' thinks that tools for preliminary designs could be embedded, and would be interesting for readers to play around with,
 												but when it comes to analysis and advanced designs, the programs get incredibly complex, and only the output will be interesting
 												for the reader.
 											</p>
 										</div>
 										<div class="col s2">
-											<img src="Images/pfps/aida.jpg" alt="" class="circle responsive-img">
+											<img src="Images/profile-placeholder.png" alt="" class="circle responsive-img">
 										</div>
 									</div>									
 									<ul class="collapsible">
@@ -1583,10 +1611,14 @@ public class MyClass {
 								</div>
 							</div>
 						</div>
+
+					</div>
+					<div class="row">
+						<a href="mailto:ashleyhemerik@gmail.com" class="btn blue"><i class="material-icons left">mail</i>Request access to full interview audio/video</a>
 					</div>
 
 
-					<h4 class="blue-text">What can we do with existing reports?</h4>
+					<h4 class="blue-text section scrollspy" id="whatcanwedowithexistingreports">What can we do with existing reports?</h4>
 					<p>Providing support for students to add multimedia elements is important, but just as important is trying to add multimedia elements retroactively 
 						to the vast amount of already existing reports.
 					</p>
@@ -1604,7 +1636,7 @@ public class MyClass {
 							<p>You can <a href="https://www.wordclouds.com/">make wordclouds from PDFs</a> without too much trouble. A wordcloud is an image with a the most often used words from
 							the report scattered throughout, with the most frequent words being larger. This can illustrate to a reader at a glance what might be in the text of the report.</p>
 							<h5 class="blue-text">Displaying and Extracting Links</h5>
-							<p><a href="https://www.systoolsgroup.com/how-to/extract-and-export-hyperlinks-from-pdf/">You can extract links from PDFs</a>. This can be used to embed linked media,
+							<p><a href="https://web.archive.org/web/20230120151208/https://www.systoolsgroup.com/how-to/extract-and-export-hyperlinks-from-pdf/">You can extract links from PDFs</a>. This can be used to embed linked media,
 							such as showing a video when a student might have a youtube link in their report; or to create a bibliography of the used sources.</p>
 							<img src="Images/linkpreview.png" alt="" class="materialboxed right" height="100px">
 							<p>A bibliography could be made more interesting by showing how often the sources have been cited, if they're academic works or not, and showing link previews, like
@@ -1700,6 +1732,7 @@ public class MyClass {
 								where we written down topics such as 'how to engage with an article', and let everyone braindraw any idea that came into their head in 3 minutes, passing the
 								topic along to the next person when completed. I later took the new ideas I've gained, and put them in my braindrawings.
 							</p>
+							<p>(see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.175, 169, and 167 for more information the method)</p>
 						</div>
 						<div class="col s12 m4">
 							<img src="Images/ideationsession.jpg" alt="" class="materialboxed" width="100%">
@@ -1738,6 +1771,14 @@ public class MyClass {
 								and see which ones would be interesting, and which ones would be redundant, or annoying.
 							</p>
 							<a href="Powerplants/index.html" class="btn blue" target="_blank"><i class="material-icons right">open_in_new</i> Visit the prototype</a>
+							<p>
+								I felt like the wordcloud didn't add much to the entry page, as it's much better to look at a pitch or an abstract. I think the Bibliography personally
+								doesn't add much, but some of my interviewees from other faculties thought it could be very useful. 
+								Related theses is an incredibly useful tool, and it's a shame it's all the way on the bottom. The PDF reader splits up the page, and makes everything below
+								it seem like a footer with non-important information, this should be changed. The report file summary is only useful to an extremely niche subset of people, 
+								it shouldn't take up this much space. I've experimented with multiple ways of showing all figures from the PDF, and I think the small box where they're displayed
+								in a grid view is the simplest, and also the best.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -1749,16 +1790,18 @@ public class MyClass {
 					<p>Now that I have multiple ideas, it's time to put them together into concepts. I decided to turn my concepts into themes, which are focused on different users.
 					</p>
 					<ul>
-						<li><span class="blue-text">▶</span> <b>For exploring students</b>, with a focus on finding quality reports, and getting a glance of what's expected in a report.</li>
-						<li><span class="blue-text">▶</span> <b>For alumni and scouts</b>, with a focus on the author's achievements, skills, and how to contact them.</li>
-						<li><span class="blue-text">▶</span> <b>For researchers</b>, with a focus on a thesis' content, and its academic rigor.</li>
-						<li><span class="blue-text">▶</span> <b>The big TU Delft show</b>, with a focus on flashy media and interactive technology to 'Wow' readers.</li>
+						<li><span class="blue-text">●</span> <b>For exploring students</b>, with a focus on finding quality reports, and getting a glance of what's expected in a report.</li>
+						<li><span class="blue-text">●</span> <b>For alumni and scouts</b>, with a focus on the author's achievements, skills, and how to contact them.</li>
+						<li><span class="blue-text">●</span> <b>For researchers</b>, with a focus on a thesis' content, and its academic rigor.</li>
+						<li><span class="blue-text">●</span> <b>The big TU Delft show</b>, with a focus on flashy media and interactive technology to 'Wow' readers.</li>
 					</ul>
 					
 
 					<h4 class="blue-text">Combining Ideas</h4>
 					<p>I cut out the loose ideas from the braindrawings, and combined them for each concept if I thought they fit.
 					</p>
+					<p>(see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.171 for more information the method)</p>
+
 					<div class="row">
 						<div class="col s6 m3">
 							<img src="Images/Concepts/For Exploring Students.jpg" alt="" class="materialboxed" width="100%">
@@ -1782,15 +1825,15 @@ public class MyClass {
 							</p>
 							<p>This concept features:</p>
 							<ul>
-								<li><span class="blue-text">▶</span> Showing popularity in the form of views, downloads, and bookmarks.</li>
-								<li><span class="blue-text">▶</span> A project 'pitch', to help convey the content in a short amount of words.</li>
-								<li><span class="blue-text">▶</span> A table of contents, with the amount of pages dedicated to each chapter, so students can get a feel for what's 
+								<li><span class="blue-text">●</span> Showing popularity in the form of views, downloads, and bookmarks.</li>
+								<li><span class="blue-text">●</span> A project 'pitch', to help convey the content in a short amount of words.</li>
+								<li><span class="blue-text">●</span> A table of contents, with the amount of pages dedicated to each chapter, so students can get a feel for what's 
 									expected in a report.
 								</li>
-								<li><span class="blue-text">▶</span> The bibliography is shown, and the amount of sources, and how many of them are academic is shown, so students can get 
+								<li><span class="blue-text">●</span> The bibliography is shown, and the amount of sources, and how many of them are academic is shown, so students can get 
 									an idea of how much academic backing is expected.
 								</li>
-								<li><span class="blue-text">▶</span> All figures in the report are collected and shown in a small window for a quick overview of the quality level of figures.</li>
+								<li><span class="blue-text">●</span> All figures in the report are collected and shown in a small window for a quick overview of the quality level of figures.</li>
 							</ul>
 						</div>
 						<div class="col s12 m4 l2" style="text-align: center;">
@@ -1813,16 +1856,16 @@ public class MyClass {
 							</p>
 							<p>This concept features:</p>
 							<ul>
-								<li><span class="blue-text">▶</span> Large section for the author, featuring relevant content from their LinkedIn profile</li>
-								<li><span class="blue-text">▶</span> Large sections for the supervisors, and a 'supervisor portfolio' for them, where headhunters can see who else they've
+								<li><span class="blue-text">●</span> Large section for the author, featuring relevant content from their LinkedIn profile</li>
+								<li><span class="blue-text">●</span> Large sections for the supervisors, and a 'supervisor portfolio' for them, where headhunters can see who else they've
 									supervised
 								</li>
-								<li><span class="blue-text">▶</span> A 'related articles', or a 'what happened next' section, where the alumnus can show what happened with the report after
+								<li><span class="blue-text">●</span> A 'related articles', or a 'what happened next' section, where the alumnus can show what happened with the report after
 									they handed it in, for example, if they recieved any awards, if they got hired at the company they worked with, or their portfolio.
 								</li>
-								<li><span class="blue-text">▶</span> An 'other works' section, that could include the author's bachelor theses.</li>
-								<li><span class="blue-text">▶</span> A comment section where people can say how great the author is.</li>
-								<li><span class="blue-text">▶</span> Highlighting the presentation video and product showcase, along with the report's figures</li>
+								<li><span class="blue-text">●</span> An 'other works' section, that could include the author's bachelor theses.</li>
+								<li><span class="blue-text">●</span> A comment section where people can say how great the author is.</li>
+								<li><span class="blue-text">●</span> Highlighting the presentation video and product showcase, along with the report's figures</li>
 							</ul>
 						</div>
 						<div class="col s12 m4 l2" style="text-align: center;">
@@ -1839,10 +1882,10 @@ public class MyClass {
 							</p>
 							<p>This concept features:</p>
 							<ul>
-								<li><span class="blue-text">▶</span> The abstract and keywords prominently on the top of the page.</li>
-								<li><span class="blue-text">▶</span> A 'Cite' button</li>
-								<li><span class="blue-text">▶</span> A bibliography like in the concept for students.</li>
-								<li><span class="blue-text">▶</span> A section that shows where the report has been cited already.</li>
+								<li><span class="blue-text">●</span> The abstract and keywords prominently on the top of the page.</li>
+								<li><span class="blue-text">●</span> A 'Cite' button</li>
+								<li><span class="blue-text">●</span> A bibliography like in the concept for students.</li>
+								<li><span class="blue-text">●</span> A section that shows where the report has been cited already.</li>
 							</ul>
 						</div>
 						<div class="col s12 m4 l2" style="text-align: center;">
@@ -1864,11 +1907,11 @@ public class MyClass {
 							</p>
 							<p>This concept features:</p>
 							<ul>
-								<li><span class="blue-text">▶</span> A walk-through virtual gallery.</li>
-								<li><span class="blue-text">▶</span> Posters on the wall.</li>
-								<li><span class="blue-text">▶</span> 3D models on the pedestals.</li>
-								<li><span class="blue-text">▶</span> Text like pitches and abstracts can be shown as text plaques next to, or in front of the displays.</li>
-								<li><span class="blue-text">▶</span> Theses with 3D models, or other showcases will be highlighted.</li>
+								<li><span class="blue-text">●</span> A walk-through virtual gallery.</li>
+								<li><span class="blue-text">●</span> Posters on the wall.</li>
+								<li><span class="blue-text">●</span> 3D models on the pedestals.</li>
+								<li><span class="blue-text">●</span> Text like pitches and abstracts can be shown as text plaques next to, or in front of the displays.</li>
+								<li><span class="blue-text">●</span> Theses with 3D models, or other showcases will be highlighted.</li>
 							</ul>
 						</div>
 						<div class="col s12 m4 l2">
@@ -1953,26 +1996,29 @@ public class MyClass {
 								or in person. I presented my concepts and gave them feedback forms with the questions:
 							</p>
 							<ul>
-								<li><span class="blue-text">▶</span> What is your function in the library?</li>
-								<li><span class="blue-text">▶</span> What concerns do you have about the concepts?</li>
-								<li><span class="blue-text">▶</span> What would you like to see in the new repository's design?</li>
-								<li><span class="blue-text">▶</span> Do you have other feedback / tips for me?</li>
+								<li><span class="blue-text">●</span> What is your function in the library?</li>
+								<li><span class="blue-text">●</span> What concerns do you have about the concepts?</li>
+								<li><span class="blue-text">●</span> What would you like to see in the new repository's design?</li>
+								<li><span class="blue-text">●</span> Do you have other feedback / tips for me?</li>
 							</ul>
 							<h5 class="blue-text">Feedback</h5>
-							<p>I compiled the answers from the forms, and in-person feedback from the session. The concerns were:
+							<p>I compiled the answers from the forms, and in-person feedback from the session. The concerns and ideas were:
 							</p>
 							<ul>
-								<li><span class="blue-text">▶</span> All layouts could be used and switched between, but that would require an extra click or login.</li>
-								<li><span class="blue-text">▶</span> The collections on the homepage could be shown in a more interesting way.</li>
-								<li><span class="blue-text">▶</span> Privacy, what happens to reports that people maybe don't want visible/findable on the internet.</li>
-								<li><span class="blue-text">▶</span> Broken links and interactive elements.</li>
-								<li><span class="blue-text">▶</span> Storage size and processing power.</li>
-								<li><span class="blue-text">▶</span> There is maybe too much information on an entry's page.</li>
-								<li><span class="blue-text">▶</span> An 'easy' upload process for students might mean more work for checking on the library's part.</li>
-								<li><span class="blue-text">▶</span> Someone's LinkedIn page is probably no longer relevant after 10 years</li>
-								<li><span class="blue-text">▶</span> A like button could turn it into a popularity context</li>
-								<li><span class="blue-text">▶</span> How much extra time is it going to cost the student and/or faculty?</li>
+								<li><span class="blue-text">●</span> All layouts could be used and switched between, but that would require an extra click or login.</li>
+								<li><span class="blue-text">●</span> The collections on the homepage could be shown in a more interesting way.</li>
+								<li><span class="blue-text">●</span> Privacy: what happens to reports that people maybe don't want visible/findable on the internet.</li>
+								<li><span class="blue-text">●</span> Broken links and interactive elements.</li>
+								<li><span class="blue-text">●</span> Storage size and processing power.</li>
+								<li><span class="blue-text">●</span> There is maybe too much information on an entry's page.</li>
+								<li><span class="blue-text">●</span> An 'easy' upload process for students might mean more work for checking on the library's part.</li>
+								<li><span class="blue-text">●</span> Someone's LinkedIn page is probably no longer relevant after 10 years</li>
+								<li><span class="blue-text">●</span> A like button could turn it into a popularity context</li>
+								<li><span class="blue-text">●</span> How much extra time is it going to cost the student and/or faculty?</li>
 							</ul>
+							<!--Questionnaire v-->
+							<a href="mailto:ashleyhemerik@gmail.com" class="btn blue"><i class="material-icons left">mail</i>request feedback form data</a>
+							<p>(see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.93 for more information the method)</p>
 						</div>
 					</div>
 				</div>
@@ -1993,63 +2039,63 @@ public class MyClass {
 					<h3 class="blue-text">The Paper Prototype</h3>
 					<h4 class="blue-text">New Requirements</h4>
 					<p>
-						The Library is looking for a new system. A team has written up a list of wishes and requirements for this system, which also impacts my design. The most interesting
+						The Library is looking for a new system. A team has written up <a href="Sources/Requirements - The Next Generation TU Delft Repository.pdf">a list of wishes and requirements for this system</a>, which also impacts my design. The most interesting
 						wishes and requirements are:
 					</p>
 					<ul>
-						<li><span class="blue-text">▶</span> Requirement: The repository must be usable by people with disabilities.</li>
-						<li><span class="blue-text">▶</span> Requirement: profile page for authors (and contributors/supervisors?) with all entries and statistics.</li>
-						<li><span class="blue-text">▶</span> Wish: recommendations.</li>
+						<li><span class="blue-text">●</span> Requirement: The repository must be usable by people with disabilities.</li>
+						<li><span class="blue-text">●</span> Requirement: profile page for authors (and contributors/supervisors?) with all entries and statistics.</li>
+						<li><span class="blue-text">●</span> Wish: recommendations.</li>
 						<li><b class="blue-text">Homepage</b></li>
-						<li><span class="blue-text">▶</span> Requirement: Collections.</li>
+						<li><span class="blue-text">●</span> Requirement: Collections.</li>
 						<li><b class="blue-text">Search Results</b></li>
-						<li><span class="blue-text">▶</span> Requirement: Export metadata (.csv/BibTeX/RIS).</li>
+						<li><span class="blue-text">●</span> Requirement: Export metadata (.csv/BibTeX/RIS).</li>
 						<li><b class="blue-text">Entry</b></li>
-						<li><span class="blue-text">▶</span> Requirement: A DOI for each object.</li>
-						<li><span class="blue-text">▶</span> Requirement: Viewable views and downloads, as well as advanced statistics viewable by the uploader.</li>
-						<li><span class="blue-text">▶</span> Requirement: Absolutely no comment section.</li>
-						<li><span class="blue-text">▶</span> Requirement: Licensing information must be displayed.</li>
-						<li><span class="blue-text">▶</span> Requirement: Removal request button.</li>
-						<li><span class="blue-text">▶</span> Wish: Request access on an embargo file.</li>
+						<li><span class="blue-text">●</span> Requirement: A DOI for each object.</li>
+						<li><span class="blue-text">●</span> Requirement: Viewable views and downloads, as well as advanced statistics viewable by the uploader.</li>
+						<li><span class="blue-text">●</span> Requirement: Absolutely no comment section.</li>
+						<li><span class="blue-text">●</span> Requirement: Licensing information must be displayed.</li>
+						<li><span class="blue-text">●</span> Requirement: Removal request button.</li>
+						<li><span class="blue-text">●</span> Wish: Request access on an embargo file.</li>
 						<li><b class="blue-text">Upload page</b></li>
-						<li><span class="blue-text">▶</span> Requirement: Choose licence for each object.</li>
-						<li><span class="blue-text">▶</span> Requirement: Choose embargo date for each object.</li>
-						<li><span class="blue-text">▶</span> Requirement: Save as draft.</li>
-						<li><span class="blue-text">▶</span> Requirement: Replace public files (old versions are still available).</li>
-						<li><span class="blue-text">▶</span> Requirement: Add objects to a collection.</li>
-						<li><span class="blue-text">▶</span> Requirement: Files up to 1GB.</li>
-						<li><span class="blue-text">▶</span> Wish: Upload any filetype.</li>
-						<li><span class="blue-text">▶</span> Wish: Metadata for each file.</li>
+						<li><span class="blue-text">●</span> Requirement: Choose licence for each object.</li>
+						<li><span class="blue-text">●</span> Requirement: Choose embargo date for each object.</li>
+						<li><span class="blue-text">●</span> Requirement: Save as draft.</li>
+						<li><span class="blue-text">●</span> Requirement: Replace public files (old versions are still available).</li>
+						<li><span class="blue-text">●</span> Requirement: Add objects to a collection.</li>
+						<li><span class="blue-text">●</span> Requirement: Files up to 1GB.</li>
+						<li><span class="blue-text">●</span> Wish: Upload any filetype.</li>
+						<li><span class="blue-text">●</span> Wish: Metadata for each file.</li>
 					</ul>
 					<p>Let's also review the most important needs of the other users.</p>
 					<div class="row">
 						<div class="col s12 m6 l3">
 							<b class="blue-text">Pre-graduation students</b>
-							<ul><li><span class="blue-text">▶</span> Filter via programme.</li>
-							<li><span class="blue-text">▶</span> Find supervisors by seeing what topics they do.</li>
-							<li><span class="blue-text">▶</span> Inspiration from previews (in user's field of interest)</li></ul>
+							<ul><li><span class="blue-text">●</span> Filter via programme.</li>
+							<li><span class="blue-text">●</span> Find supervisors by seeing what topics they do.</li>
+							<li><span class="blue-text">●</span> Inspiration from previews (in user's field of interest)</li></ul>
 						</div>
 						<div class="col s12 m6 l3">
 							<b class="blue-text">Mid-graduation students</b>
-							<ul><li><span class="blue-text">▶</span> Filter via programme.</li>
-							<li><span class="blue-text">▶</span> Know if a report is of good(-ish) quality.</li></ul>
+							<ul><li><span class="blue-text">●</span> Filter via programme.</li>
+							<li><span class="blue-text">●</span> Know if a report is of good(-ish) quality.</li></ul>
 						</div>
 						<div class="col s12 m6 l3">
 							<b class="blue-text">Uploaders</b>
-							<ul><li><span class="blue-text">▶</span> Anxiety free uploading.</li></ul>
+							<ul><li><span class="blue-text">●</span> Anxiety free uploading.</li></ul>
 						</div>
 						<div class="col s12 m6 l3">
 							<b class="blue-text">Alumni</b>
-							<ul><li><span class="blue-text">▶</span> Impressive content prominently on display.</li>
-							<li><span class="blue-text">▶</span> Hide unimpressive content.</li></ul>
+							<ul><li><span class="blue-text">●</span> Impressive content prominently on display.</li>
+							<li><span class="blue-text">●</span> Hide unimpressive content.</li></ul>
 						</div>
 						<div class="col s12 m6 l3">
 							<b class="blue-text">Headhunters</b>
-							<ul><li><span class="blue-text">▶</span> Filter by recency, programme, or supervisor.</li></ul>
+							<ul><li><span class="blue-text">●</span> Filter by recency, programme, or supervisor.</li></ul>
 						</div>
 						<div class="col s12 m6 l3">
 							<b class="blue-text">Researchers</b>
-							<ul><li><span class="blue-text">▶</span> Advanced subject search.</li></ul>
+							<ul><li><span class="blue-text">●</span> Advanced subject search.</li></ul>
 						</div>
 					</div>
 
@@ -2084,6 +2130,8 @@ public class MyClass {
 						and a Design for Interaction master student. I walked them through the
 						prototypes, and asked for their opinions on the elements, and their overall concepts.
 					</p>
+					<!--Feedback v-->
+					<p>(see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.199 for more information the method)</p>
 
 					<div class="row">
 						<div class="col s12 m6">
@@ -2263,34 +2311,34 @@ public class MyClass {
 						<div class="col s12 m4">
 							<ul>
 								<li><i>Homepage</i></li>
-								<li><span class="blue-text">▶</span> Choose keywords on the homepage, or show the most used keywords somehow.</li>
-								<li><span class="blue-text">▶</span> Add functionality to browse "new/trending/popular in keyword/faculty/programme"</li>
-								<li><span class="blue-text">▶</span> maybe a most cited/viewed/downloaded/bookmarked instead of 'best theses'.</li>
+								<li><span class="blue-text">●</span> Choose keywords on the homepage, or show the most used keywords somehow.</li>
+								<li><span class="blue-text">●</span> Add functionality to browse "new/trending/popular in keyword/faculty/programme"</li>
+								<li><span class="blue-text">●</span> maybe a most cited/viewed/downloaded/bookmarked instead of 'best theses'.</li>
 							</ul>
 						</div>
 						<div class="col s12 m4">
 							<ul>
 								<li><i>Entry page</i></li>
-								<li><span class="blue-text">▶</span> Presentation and poster/graphic abstract are very important, make sure they are on top.</li>
-								<li><span class="blue-text">▶</span> Add keywords on the supervisors to show what they're about.</li>
-								<li><span class="blue-text">▶</span> LinkedIn & GitHub links for the author would be great.</li>
-								<li><span class="blue-text">▶</span> Table of Contents and Bibliography could be combined into "report statistics(?)", and collapsed by default.</li>
-								<li><span class="blue-text">▶</span> No abstract and pitch at the same time on the page.</li>
-								<li><span class="blue-text">▶</span> No 'Other works' section. If you're interested in other works, you'd click on the author.</li>
-								<li><span class="blue-text">▶</span> Add a 'downloadable files' element to the entry.</li>
+								<li><span class="blue-text">●</span> Presentation and poster/graphic abstract are very important, make sure they are on top.</li>
+								<li><span class="blue-text">●</span> Add keywords on the supervisors to show what they're about.</li>
+								<li><span class="blue-text">●</span> LinkedIn & GitHub links for the author would be great.</li>
+								<li><span class="blue-text">●</span> Table of Contents and Bibliography could be combined into "report statistics(?)", and collapsed by default.</li>
+								<li><span class="blue-text">●</span> No abstract and pitch at the same time on the page.</li>
+								<li><span class="blue-text">●</span> No 'Other works' section. If you're interested in other works, you'd click on the author.</li>
+								<li><span class="blue-text">●</span> Add a 'downloadable files' element to the entry.</li>
 							</ul>
 						</div>
 						<div class="col s12 m4">
 							<ul>
 								<li><i>Search page</i></li>
-								<li><span class="blue-text">▶</span> A download button in the search result is not nessecary.</li>
+								<li><span class="blue-text">●</span> A download button in the search result is not nessecary.</li>
 							</ul>
 						</div>
 					</div>
 					
 						<!--<li><i>Upload page</i></li>-->
-						<!--<li><span class="blue-text">▶</span> Upload page could be divided into multiple steps </li>-->
-						<!--<li><span class="blue-text">▶</span> a help icon for everything</li>-->
+						<!--<li><span class="blue-text">●</span> Upload page could be divided into multiple steps </li>-->
+						<!--<li><span class="blue-text">●</span> a help icon for everything</li>-->
 					
 				</div>
 
@@ -2338,7 +2386,7 @@ public class MyClass {
 					<div class="row">
 						<div class="col s4" style="text-align: center;">
 							<a href="/Prototype/Programme.html" target="_blank">A study programme's page</a>
-							<img src="Images/Digitalprototypescreencaps/studentprofilescreencap.JPG" alt="" class="materialboxed z-depth-1" width="100%">
+							<img src="Images/Digitalprototypescreencaps/programmescreencap.JPG" alt="" class="materialboxed z-depth-1" width="100%">
 							<a href="/Prototype/Programme.html" class="btn blue" target="_blank" style="margin-top: 5px"><i class="material-icons left">open_in_new</i>Open</a>
 						</div>
 						<div class="col s4" style="text-align: center;">
@@ -2365,7 +2413,7 @@ public class MyClass {
 					</div>
 
 					<h4 class="blue-text">Feasibility review with the library's senior developer</h4>
-					<p>I went over my digital prototype with <a href="https://nl.linkedin.com/in/andjela-tomic-a7982931">Andjela Tomic</a> to check if the implementations of
+					<p>I went over my digital prototype with Andjela Tomic, the TU Delft library's senior developer, to check if the implementations of
 						the ideas I've had was feasible. She said it was all very feasible, though some things might take more time than others. She was excited to build the concept
 						for real, and warned me that the biggest challenge was convincing the bureaucrats to let us implement it, not the making of the website.
 					</p>
@@ -2374,6 +2422,8 @@ public class MyClass {
 					<p>I went over the design with three IDE students with experience in UI/UX design and who are either close to starting their graduation and orienting themselves,
 						or have already started and are interested in benchmarking their theses against others, and let them speak about anything that came to mind for them.
 					</p>
+					<!--prototype test feedback v-->
+					<p>(see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.199 for more information the method)</p>
 
 					<div class="row">
 						<div class="col s12 l4">
@@ -2540,40 +2590,29 @@ public class MyClass {
 					<div class="row">
 						<div class="col s12 m6">
 							<ul>
-								<li><span class="blue-text">▶</span> awards work, make more (previously featured or something)</li>
-								<li><span class="blue-text">▶</span> supervising availability needs to not be an icon, but text</li>
-								<li><span class="blue-text">▶</span> icons for "no pdf viewable" or "login required" don't work, spell it out (maybe greyed out until viewable)</li>
-								<li><span class="blue-text">▶</span> privacy settings per file needs to be in an "advanced privacy settings" section</li>
-								<li><span class="blue-text">▶</span> adding supervisors to search results should be optional (a check under the searchbar)</li>
-								<li><span class="blue-text">▶</span> think about white space / breathing room when putting 2 columns together</li>
-								<li><span class="blue-text">▶</span> (in programme) put theses on one side, people on the other</li>
-								<li><span class="blue-text">▶</span> supervisors should be able to feature/comment on theses they're proud of</li>
-								<li><span class="blue-text">▶</span> make textfields a bit taller to indicate they're multiline</li>
-								<li><span class="blue-text">▶</span> special upload field for report PDF, thumbnail, and Graphic abstract/poster</li>
-								<li><span class="blue-text">▶</span> don't forget to put thesis type, and programme on each thesis preview</li>
-								<li><span class="blue-text">▶</span> 'under embargo' isn't clear to everyone</li>
-								<li><span class="blue-text">▶</span> the 'recommended' section can be featured more prominently.</li>
-								<li><span class="blue-text">▶</span> 'similar profiles' needs to be 'similar supervisors/alumni'</li>
-								<li><span class="blue-text">▶</span> add 'often used keywords in programme'</li>
+								<li><span class="blue-text">●</span> awards work, make more (previously featured or something)</li>
+								<li><span class="blue-text">●</span> supervising availability needs to not be an icon, but text</li>
+								<li><span class="blue-text">●</span> icons for "no pdf viewable" or "login required" don't work, spell it out (maybe greyed out until viewable).
+									maybe grey out theses you can only access if you're logged in if you're not </li>
+								<li><span class="blue-text">●</span> privacy settings per file needs to be in an "advanced privacy settings" section</li>
+								<li><span class="blue-text">●</span> (in programme) put theses on one side, people on the other</li>
+								<li><span class="blue-text">●</span> supervisors should be able to feature/comment on theses they're proud of</li>
+								<li><span class="blue-text">●</span> special upload field for report PDF, thumbnail, and Graphic abstract/poster</li>
+								<li><span class="blue-text">●</span> the 'recommended' section can be featured more prominently.</li>
+								<li><span class="blue-text">●</span> add 'often used keywords in programme'</li>
 							</ul>
 						</div>
 						<div class="col s12 m6">
 							<ul>
-								<li><span class="blue-text">▶</span> most popular might give very outdated data, maybe "most popular this year"</li>
-								<li><span class="blue-text">▶</span> supervisor profile should feature what they do in the faculty</li>
-								<li><span class="blue-text">▶</span> downloads and bookmarks might be very similar </li>
-								<li><span class="blue-text">▶</span> maybe grey out theses you can only access if you're logged in if you're not </li>
-								<li><span class="blue-text">▶</span> 'Sort By' in a dropdown menu</li>
-								<li><span class="blue-text">▶</span> pop up for the abstract on related theses sucks, give it a timeout before it pops up</li>
-								<li><span class="blue-text">▶</span> a bigger 'go to website' button for augmented entries, disclaimer that the TU is not responsible for the content. </li>
-								<li><span class="blue-text">▶</span> Upload field for iframes and other embeds so user can put things like sketchfabs in there</li>
-								<li><span class="blue-text">▶</span> don't have standard answers for required fields </li>
-								<li><span class="blue-text">▶</span> make the help icons closer to the titles, not floating to the right </li>
-								<li><span class="blue-text">▶</span> upload field for a bibliography???</li>
-								<li><span class="blue-text">▶</span> already open a field for add supervisor.</li>
-								<li><span class="blue-text">▶</span> update profile maybe when you click next or something.</li>
-								<li><span class="blue-text">▶</span> "request copy" on a deleted thesis. </li>
-								<li><span class="blue-text">▶</span> "check entry preview" also needs to save as draft.</li>
+								<li><span class="blue-text">●</span> adding supervisors to search results should be optional (a check under the searchbar)</li>
+								<li><span class="blue-text">●</span> 'Sort By' in a dropdown menu</li>
+								<li><span class="blue-text">●</span> pop up for the abstract on related theses sucks, give it a timeout before it pops up</li>
+								<li><span class="blue-text">●</span> a bigger 'go to website' button for augmented entries, disclaimer that the TU is not responsible for the content. </li>
+								<li><span class="blue-text">●</span> Upload field for iframes and other embeds so user can put things like sketchfabs in there</li>
+								<li><span class="blue-text">●</span> make the help icons closer to the titles, not floating to the right </li>
+								<li><span class="blue-text">●</span> add an upload field for a bibliography</li>
+								<li><span class="blue-text">●</span> already open a field for add supervisor.</li>
+								<li><span class="blue-text">●</span> "check entry preview" also needs to save as draft.</li>
 							</ul>
 						</div>
 					</div>
@@ -2586,71 +2625,374 @@ public class MyClass {
 				<!--Final Prototype-->
 				<div class="container section scrollspy" id="FinalConcept">
 					<h3 class="blue-text">Final Prototype</h3>
-					<p>Fixme: THE PAGES BELOW ARE A WORK IN PROGRESS</p>
-					<a href="Prototype 2/index.html" class="btn blue" target="_blank">See Homepage <i class="material-icons right">open_in_new</i></a><br><br>
-					<a href="Prototype 2/search.html" class="btn blue" target="_blank">See search page <i class="material-icons right">open_in_new</i></a><br><br>
-					<a href="Prototype 2/entry.html" class="btn blue" target="_blank">See thesis entry <i class="material-icons right">open_in_new</i></a><br><br>
-					<a href="Prototype 2/AugmentedEntry.html" class="btn blue" target="_blank">See website-as-report entry <i class="material-icons right">open_in_new</i></a><br><br>
-					<a href="Prototype 2/studentprofile.html" class="btn blue" target="_blank">See student profile <i class="material-icons right">open_in_new</i></a><br><br>
-					<a href="Prototype 2/supervisorprofile.html" class="btn blue" target="_blank">See supervisor profile <i class="material-icons right">open_in_new</i></a><br><br>
-					<a href="Prototype 2/Programme.html" class="btn blue" target="_blank">See programme page <i class="material-icons right">open_in_new</i></a><br><br>
-					<a href="Prototype 2/Keyword.html" class="btn blue" target="_blank">See keyword page <i class="material-icons right">open_in_new</i></a><br><br>
-					<a href="Prototype 2/UploadPage.html" class="btn blue" target="_blank">See Upload page <i class="material-icons right">open_in_new</i></a><br><br>
+					<p>
+						The final prototype has a few minor changes compared to the HTML prototype, as suggested by the feedback from the previous prototype's tests. 
+						The biggest change is that it loads random thesis metadata, such as titles, subtitles, names, etc., into the placeholders to show what the design might look like
+						when it's deployed in the future. Because they are random, they do not always make sense (for example, an applied physics thesis might show up under an EEMCS award.)
+					</p>
+
+					<div class="row">
+						<div class="col s4" style="text-align: center;">
+							<a href="/Prototype 2/index.html" target="_blank">A homepage</a>
+							<img src="Images/Digitalprototypescreencaps/homepagescreencap2.jpg" alt="" class="materialboxed z-depth-1" width="100%">
+							<a href="/Prototype 2/index.html" class="btn blue" target="_blank" style="margin-top: 5px"><i class="material-icons left">open_in_new</i>Open</a>
+						</div>
+						<div class="col s4" style="text-align: center;">
+							<a href="/Prototype 2/search.html" target="_blank">A search results example</a>
+							<img src="Images/Digitalprototypescreencaps/searchscreencap2.jpg" alt="" class="materialboxed z-depth-1" width="100%">
+							<a href="/Prototype 2/search.html" class="btn blue" target="_blank" style="margin-top: 5px"><i class="material-icons left">open_in_new</i>Open</a>
+						</div>
+						<div class="col s4" style="text-align: center;">
+							<a href="/Prototype 2/entry.html" target="_blank">An entry example</a>
+							<img src="Images/Digitalprototypescreencaps/entryscreencap2.jpg" alt="" class="materialboxed z-depth-1" width="100%">
+							<a href="/Prototype 2/entry.html" class="btn blue" target="_blank" style="margin-top: 5px"><i class="material-icons left">open_in_new</i>Open</a>
+						</div>
+					</div>
+						
+					<div class="row">
+						<div class="col s4" style="text-align: center;">
+							<a href="/Prototype 2/AugmentedEntry.html" target="_blank">An entry example for a website as report</a>
+							<img src="Images/Digitalprototypescreencaps/augmentedscreencap2.jpg" alt="" class="materialboxed z-depth-1" width="100%">
+							<a href="/Prototype 2/AugmentedEntry.html" class="btn blue" target="_blank" style="margin-top: 5px"><i class="material-icons left">open_in_new</i>Open</a>
+						</div>
+						<div class="col s4" style="text-align: center;">
+							<a href="/Prototype 2/studentprofile.html" target="_blank">A student profile</a>
+							<img src="Images/Digitalprototypescreencaps/studentprofilescreencap2.jpg" alt="" class="materialboxed z-depth-1" width="100%">
+							<a href="/Prototype 2/studentprofile.html" class="btn blue" target="_blank" style="margin-top: 5px"><i class="material-icons left">open_in_new</i>Open</a>
+						</div>
+						<div class="col s4" style="text-align: center;">
+							<a href="/Prototype 2/supervisorprofile.html" target="_blank">A supervisor profile</a>
+							<img src="Images/Digitalprototypescreencaps/supervisorscreencap2.jpg" alt="" class="materialboxed z-depth-1" width="100%">
+							<a href="/Prototype 2/supervisorprofile.html" class="btn blue" target="_blank" style="margin-top: 5px"><i class="material-icons left">open_in_new</i>Open</a>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col s4" style="text-align: center;">
+							<a href="/Prototype 2/Programme.html" target="_blank">A study programme's page</a>
+							<img src="Images/Digitalprototypescreencaps/programmescreencap2.jpg" alt="" class="materialboxed z-depth-1" width="100%">
+							<a href="/Prototype 2/Programme.html" class="btn blue" target="_blank" style="margin-top: 5px"><i class="material-icons left">open_in_new</i>Open</a>
+						</div>
+						<div class="col s4" style="text-align: center;">
+							<a href="/Prototype 2/Keyword.html" target="_blank">A keyword page</a>
+							<img src="Images/Digitalprototypescreencaps/keywordscreencap2.jpg" alt="" class="materialboxed z-depth-1" width="100%">
+							<a href="/Prototype 2/Keyword.html" class="btn blue" target="_blank" style="margin-top: 5px"><i class="material-icons left">open_in_new</i>Open</a>
+						</div>
+						<div class="col s4" style="text-align: center;">
+							<a href="/Prototype 2/UploadPage.html" target="_blank">The upload page</a>
+							<img src="Images/Digitalprototypescreencaps/uploadscreencap2.jpg" alt="" class="materialboxed z-depth-1" width="100%">
+							<a href="/Prototype 2/UploadPage.html" class="btn blue" target="_blank" style="margin-top: 5px"><i class="material-icons left">open_in_new</i>Open</a>
+						</div>
+					</div>
+					
+					<div class="container">
+						<video width="100%" controls>
+						<source src="Images/Final prototype walkthrough compressed.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+						</video> 
+					</div>
 				</div>
 
 				<!--Evaluation-->
 				<div class="container section scrollspy" id="Evaluation">
 					<h3 class="blue-text">Evaluation</h3>
-					<p>Fixme show student feedback and library worker feedback</p>
-					<p>Fixme Evaluate myself?</p>
+					<p>
+						Since the final prototype was not that much different from the previous one, as well as due to time pressure, I decided to make an online questionnaire
+						that guides participants through the online prototype, and asks open ended questions to see how they feel about it. The main takeaways were:
+					</p>
+					<ul>
+						<li><span class="blue-text">●</span> There was a lot of positive reception to the overall style and functionality of the different pages and elements.</li>
+						<li><span class="blue-text">●</span> The layout and design can be slightly altered to improve readability.</li>
+						<li><span class="blue-text">●</span> The supervisors within the search page feel a bit off.</li>
+						<li><span class="blue-text">●</span> The search filters need a more logical structure.</li>
+						<li><span class="blue-text">●</span> People felt uncomfortable with the idea of author/student/alumnus profiles</li>
+						<li><span class="blue-text">●</span> The length of the upload page is what stresses people out. If it can be shortened, it should.</li>
+					</ul>
+					<!--prototype test feedback and Questionnaire v-->
+					<p>(see <a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">Delft Design Guide</a> p.199, and 93 for more information the method)</p>
+					<a href="https://forms.gle/1QY1CWNUhG1ktPwN6" class="btn blue" target="_blank">See the questionnaire<i class="material-icons right">open_in_new</i></a>
+					<a href="Sources/Final Prototype Questionnaire Results.xlsx" class="btn blue"><i class="material-icons left">download</i>download the questionnaire results</a>
 				</div>
 				
 				<!--Design Document-->
 				<div class="container section scrollspy" id="DesignDocument">
 					<h3 class="blue-text">Design Document</h3>
-					<p>Fixme talk about how I want to make a design document so I can give that to programmers at the library so they know what to build even after I'm gone.</p>
+					<p>
+						The front-end that I designed still needs to be implemented. That task will likely take weeks or months, a lot of unforseen problems will arise, 
+						and adjustments will need to be made. That is why I decided to make a short design document, in which I explain my design decisions, and the order of importance
+						of the new features I designed, so it is clear which need to be implemented first to have a minimum viable product. I decided to keep it short since I already
+						will have this large report, an interactive prototype, and many video presentations in which I go more in-depth. The report contains a MoSCoW order of feature 
+						importance,	and annotated screenshots with the design decisions.
+					</p>
+					<div class="container">
+						<embed src="Sources/Design Document.pdf" width="100%" height="500px"/>
+					</div>
+				</div>
+
+				<!--Marketing-->
+				<div class="container section scrollspy" id="Marketing">
+					<h3 class="blue-text">Marketing, how do we get people to use it?</h3>
+					<p>The new front-end will make it much easier for students to orient themselves in what a graduation report looks like, to benchmark their report against comparable
+						reports, and to show off their report once they've graduated. But that is all useless if the users don't know about this new functionality.
+					</p>
+					<p>The target audience is students right before, and during their graduation. 
+						Currently, students aren't very aware of the existance of the open repository. 
+						They usually find out through supervisors who recommend the reports of alumni they supervised earlier, 
+						or they recommend benchmarking to the student when they're starting to work on their report.
+						However, not every supervisor does this.
+						The supervisors could be informed about the new design using posters hung in the hallways of the faculty offices.
+						This would also reach the graduating students who often have to walk through these hallways to talk to their supervisors and experts on their topics.
+						Posters could also be hung in the regular study rooms of the faculty, or be displayed on the TV's that show slideshows in the faculty.
+					</p>
+					<p>
+						The library is the home of the repository, and the place where TU knowledge is archived. It makes sense to hang posters about the updated design around
+						the library. The people who work at the front desk of the library could be informed about the efficacy of the repository should someone ask around for books, or other
+						knowledge. The library is also working hard on showing the wealth of digital knowledge besides the book wall
+						<a href="https://web.archive.org/web/20230120145107/https://www.tudelft.nl/library/over-de-library/tu-delft-library-presenteert/art-embedded-learning-in-technical-higher-education">with the Oracle project</a>.
+						This is also a great place to advertise where students can dive deeper into this knowledge on the repository.
+					</p>
+					<p>Students get mailed a lot of monthly emails, such as from the study association, the faculty, the board, and more.
+						the updating of the repository could be added as a news item to one of these emails.
+						The TU also has a journal called the <a href="https://web.archive.org/web/20230120151645/https://www.delta.tudelft.nl/">Delta</a>. A news story in the Delta could reach students as well.
+						Some <a href="https://web.archive.org/web/20230120151434/https://www.tudelft.nl/io/delft-design-stories/out-of-the-blue-1">podcasts</a> are also aimed at TU students specifically, an interview in one of these podcasts
+						could give the new design some exposure as well.
+					</p>
+					<p>A place where specifically students who are (almost) graduating gather, is courses and workshops aimed at these students. For example, IDE has an elective course called
+						<a href="https://d2k0ddhflgrk1i.cloudfront.net/Studentenportal/Faculteitspecifiek/IO/Praktische%20zaken/Aanmelden%20voor%20vakken%20-%20Osiris/Spring%20semester%2022-23.xlsx">
+							Initiate to graduate
+						</a>, as well as the 
+						<a href="https://web.archive.org/web/20230120151543/https://www.tudelft.nl/2022/io/februari/join-ides-graduation-community-program">graduation community</a>. If the organisers of these courses and initiatives
+						are informed of the new design, they can recommend, or challenge their participants to use the repository.
+					</p>
 				</div>
 
 				<!--Conclusions-->
 				<div class="container section scrollspy" id="Conclusions">
 					<h3 class="blue-text">Conclusions</h3>
 					<h4 class="blue-text">Answers to the research questions</h4>
-					<blockquote>What types of (interactive) media can be useful for reporting for the different majors?</blockquote>
-					<p>fixme talk about videos for experiments and prototypes, CAD models for physical engineers, zip files for software, diagrams for systems, etc.</p>
+					<blockquote>"What types of (interactive) media can be useful for reporting for the different majors?"</blockquote>
+					<p>
+						Master programmes that deal with experiments, like, for example, applied physics, can use videos of their experiments and setups to great effect,
+						as well as downloadable results files, or interactive graphs.
+						Programmes more heavy on the engineering side can use CAD, and other 3D models for different drafts up to the final design. Programmes with software models for
+						modelling what would happen in real life can have the model displayed as a downloadable file, or have a web-ui for the viewer to play with straight away.
+						Computer science programmes can have the works they made downloadable as zip files, or displayed in an online IDE; links to github for any of the libraries used
+						can also be provided. For myself (Design for Interaction), I used interactive software prototypes that user can play with directly.
+						<a href="#whatcanwedowithmedia">(see 'what can we do with media?')</a>
+					</p>
+					<p>All of these uses of media make the theses more interactive, and more understandable for those who cannot, or don't want to read and understand a full report.</p>
 					
-					<blockquote>How do we encourage students and alumni to add (interactive) media to their reports / the repository?</blockquote>
-					<p>Fixme talk about the upload fields</p>
+					<blockquote>"How do we encourage students and alumni to add (interactive) media to their reports / the repository?"</blockquote>
+					<p>
+						Students already have an innate drive to make their reporting more interesting with media. However, because the system only supports PDFs, students
+						get discouraged, or they don't think of multimedia reporting as an option. The hope is that making the repository support different ways of reporting, 
+						such as via websites, but also by adding multimedia to the thesis entry page, 
+						will put multimedia reporting on the map as a great alternative for traditional reporting. 
+						<a href="#interviews">(see 'interviews')</a>
+					</p>
+					<p>
+						Students gather a lot of data during their graduation project, such as videos, photo's, CAD drafts, data tables, etc.. When uploading their thesis, they will 
+						be invited by the upload page to attach a lot of different files of many different filetypes as well. Displaying dedicated uploadfields implies dedicated support
+						for these filetypes, and since the uploading student already has these files on their harddrive, it will be an easy decision to add them. 
+						<a href="Prototype 2/UploadPage.html">(see the upload page)</a>
+					</p>
+					<p>
+						The largest group of users are students who have started, or are about to start their graduation project. This means that if these students see the already uploaded
+						multimedia reports, they will be aware, and inspired by the possibilities of multimedia reporting, and improve upon it further, creating a positive cycle.
+						<a href="#Analysis">(see 'who uses the repository, what do they need?')</a>
+					</p>
 
-					<blockquote>What do these new (interactive) multimedia reports look like?</blockquote>
-					<p>Fixme talk about downloadable programs, videos, images, etc.</p>
+					<blockquote>"What do these new (interactive) multimedia reports look like?"</blockquote>
+					<p>
+						The main way of reporting will likely stay PDFs for a while. Media can be added to the front page of a thesis report, allowing users to interact with the content
+						outside of the report, likely before reading the report itself. An addition of links, and downloadable files will provide an easy way for the reader to play around
+						with the products of the student's labor, such as someone downloading the source code of a software model and playing around with it, or downloading collected data
+						from an experiment and using it for their own. An example of this can be seen in the
+						<a href="Prototype 2/entry.html" target="_blank">thesis entry page prototype</a>.
+					</p>
+					<p>
+						For full-website reports, the beauty is that it will be completly up to the creator what, how, and when they want to add any type of media.
+						My report is a full-website report, and I used images that users can zoom in on easily, interactive online prototypes users can try out for themselves, and video
+						walkthroughs for the prototypes I made, internal and external hyperlinks for sources and substantiation of claims, along with a lot of other things. 
+						Atula Jadhav used animations and deeper information behind mouse-hovering and clicks, and many other interactions in
+						<a href="http://resolver.tudelft.nl/uuid:98be37d9-3cdd-460f-b5b4-2d80fb96a731" 
+						target="_blank" class="tooltipped" data-tooltip="see last page of her PDF for the link">her full-website report</a>. These are just two examples.
+						Beyond-PDF reporting can take on an infinite number of appearances, and I'm excited to see what students come up with in the future.
+					</p>
 										
-					<blockquote>Is there a way to (programmatically) add multimedia elements to already published reports?</blockquote>
-					<p>Fixme talk about wordclouds, scraping images, scraping video links, scraping other links, etc.</p>
+					<blockquote>"Is there a way to (programmatically) add multimedia elements to already published reports?"</blockquote>
+					<p>
+						PDFs already contain some types of media. Mostly in the form of metadata, images, links, and text. 
+						Images can be extracted from PDFs, and displayed in a 'figures' section. Links can be extracted as well, and metadata about these links, such as page titles, descriptions,
+						and preview images can be fetched to display these links with more information. Some reports are already uploaded with videos or images attached. These can be displayed
+						in their own on-site viewer as well. The current archiving software also allows for map coordinates, and data links, which can be displayed in a google maps widget, or
+						4TU data viewer widget on the thesis entry page. Metadata such as titles, subjects, and study programme can be used to show related theses on the entry page.
+					</p>
+					<p>
+						The text of a thesis can also be used, but for less interesting purposes. The full text of a report can be turned into a wordcloud programatically, which could give
+						an indication of what terms are going to be important in the thesis. The abstract can be summarized by an AI into a an even shorter 'pitch' for the project. And the
+						outline of a PDF can give information for advanced statistics on a report, such as chapter lengths, word count, etc..
+					</p>
+					<p>
+						Currently, the first page of a PDF is used as the preview image for a thesis. This can still be done. I've also talked about using the title of a thesis as a prompt for
+						AI art generation to generate thesis covers, but I haven't explored this.
+						<a href="#whatcanwedowithexistingreports">(see 'what can we do with existing reports?')</a>
+					</p>
 										
-					<blockquote>How do different users use the repository? What are their wants and needs?</blockquote>
-					<p>Fixme talk about orienting students, benchmarking students, uploaders, researchers, headhunters, and their needs</p>
+					<blockquote>"How do different users use the repository? What are their wants and needs?"</blockquote>
+					<p>Most users fall in the following categories:</p>
+					<ul>
+						<li>
+							<span class="blue-text">●</span> <b>'Orienting students'</b>, who haven't started their graduation projects yet, 
+							but they're looking into what a graduation project might look like, what 
+							subjects they might be interested in, and what supervisors they might like, and if they are available. 
+							They want exemplary reports for their masters programme/topic.
+						</li>
+						<li>
+							<span class="blue-text">●</span> <b>'Benchmarking students'</b>, who are currently busy with their graduation projects. 
+							They're looking at similar topics and reports to theirs, so that they can compare, get 
+							inspired, and see what's expected of them. They want exemplary reports for their 
+							masters programme/topic.
+						</li>
+						<li>
+							<span class="blue-text">●</span> <b>'Reporting students'</b>, who are writing their report, and want to convey information.
+							The repository must support their needs as best as possible via multimedia support.
+						</li>
+						<li>
+							<span class="blue-text">●</span> <b>'Uploaders'</b>, who have to go through the upload process during a very stressful 
+							period. The design needs to help them feel less anxious with clear communication 
+							and a transparent process.
+						</li>
+						<li>
+							<span class="blue-text">●</span> <b>'Targeted downloaders'</b>, who know exactly what report they want to download. 
+							They want to get to it quickly, hit download, and leave again.
+						</li>
+					</ul>
+					<p>other users include:</p>
+					<ul>
+						<li>
+							<span class="blue-text">●</span> <b>'Alumni'</b>, who want their repository entry to be something they can be proud of, 
+							and have control over what information of them is on the website after they've 
+							graduated.
+						</li>
+						<li>
+							<span class="blue-text">●</span> <b>'Supervisors'</b>, who want to show off their supervisees' works.
+						</li>
+						<li>
+							<span class="blue-text">●</span> <b>'Headhunters'</b>, are rare, but also use the repository. They want to find recent 
+							graduates from certain masters programmes, or supervisors.
+						</li>
+						<li>
+							<span class="blue-text">●</span> <b>'Researchers'</b>, often use external search engines like google scholar, but do happen 
+							upon the repository. Abstracts, keywords, quick downloads, and reports similar in 
+							topic are important to them. 
+						</li>
+					</ul>
+					<a href="#Analysis">(see 'who uses the repository, what do they need?')</a>
 
-					<blockquote>How can the design of the repository and its search engine support those usecases?</blockquote>
-					<p>Fixme talk about programme pages, profile pages and the information they have, awards, and featureds</p>
+					<blockquote>"How can the design of the repository and its search engine support those usecases?"</blockquote>
+					<p>
+						The repository doesn't show the grades that theses have recieved, however, good and exceptional theses can still be highlighted by using view and download metrics
+						over time to allow for sorting by popularity and trending. Some faculties also give out awards for best theses. These theses can be featured on the front page, and
+						recieve a badge. Supervisors can highlight a thesis they've supervised as well. This way, orienting and benchmarking students can still find out wether or not a 
+						report is exemplary. Topic keywords, preview images and shortened descriptions have been added to thesis previews, which will allow people to quickly gauge interest.
+						<a href="Prototype 2/index.html" target="_blank">(see home page)</a>
+					</p>
+					<p>Filtering by study programme has been made a lot easier, and these programmes will get their own page. This will help students and headhunters find theses that
+						interest them much easier.
+						<a href="Prototype 2/Programme.html" target="_blank">(see programme page)</a>
+					</p>
+					<p>Supervisors will now have their own page with what they do, and what they've supervised on it, as well as an estimation of whether or not they're available for
+						potentially supervising your project.
+						<a href="Prototype 2/supervisorprofile.html" target="_blank">(see supervisor page)</a>
+					</p>
+					<p>
+						Support for many different filetypes and types of media is added, which will allow students to communicate their project, and readers to experience projects,
+						in wonderful new ways. These multimedia thesis entries will be something Alumni can be proud of.
+						(see <a href="Prototype 2/entry.html" target="_blank">entry page</a> or <a href="Prototype 2/AugmentedEntry.html">full-website entry page</a>)
+					</p>
+					<p>
+						The upload page has better explanations for the upload process, and explanations of what's going on behind the screen on it now, as well as useless options removed,
+						or already filled in. This will help with anxiety for uploaders.
+						<a href="Prototype 2/UploadPage.html" target="_blank">(see upload page)</a>
+					</p>
+					<p>
+						Abstracts and keywords will remain and will be more prominently displayed. A cite button will be added for the reasearchers, and a download button at the top will
+						be added for the targeted downloaders.
+						<a href="Prototype 2/entry.html">(see entry page)</a>
+					</p>
 
-					<blockquote>Does this new repository design fit the wants and needs of its stakeholders?</blockquote>
-					<p>Fixme see above</p>
-
+					<blockquote>"Does this new repository design fit the wants and needs of its stakeholders?"</blockquote>
+					<p>
+						While I was not able to gain feedback from every type of stakeholder, the main stakeholders were all very enthusiastic about the new features and the design
+						of the new repository.
+					</p>
+					
+					
 				</div>
 
 				<!--Discussion-->
 				<div class="container section scrollspy" id="Discussion">
 					<h3 class="blue-text">Discussion</h3>
-					<h4 class="blue-text">Privacy concerns</h4>
-					<p>fixme talk about alumni profiles, limited published time, takedown requests, privacy options, etc.</p>
+					<p>
+						There are still some things that can be improved on the current design. For example, the interface sometimes feels a bit cramped and could use
+						some extra padding and whitespace here and there, the search filters might make more
+						sense if they're on the right side of the screen in the <a href="Prototype 2/search.html">search page</a>, and there will be even more problems
+						that will come up once the design is implemented and users start using it.
+					</p>
+					<p>
+						I think adding <a href="Prototype 2/studentprofile.html">profile pages for authors/students/alumni</a> might have been a mistake. The work should speak for 
+						itself, and having only a first and last name would
+						likely by enough already. Most alumni wouldn't likely not want their profile on the repository, as it will quickly become outdated as they grow in their careers.
+					</p>
+					<p>
+						One small problem with the <a href="Prototype 2/supervisorprofile.html">supervisor profiles</a> is that the keywords that get added to the theses they supervise likely
+						won't show up more than once in their supervisor portfolio. I've also been told that supervisors like to take on projects that don't fit in their area of expertise at all,
+						which means that supervisor keywords might not be a good way of getting an idea of the supervisors' deal. An alternative might be using the fingerprint from the 
+						<a href="research.tudelft.nl">research.tudelft</a> website, or to let them, or the secretariat fill these keywords in manually when they edit their about page.
+					</p>
+					<p>
+						I also think that giving the option of a temporary publication window for uploaders may encourage it too much, when the goal should be encouraging uploaders to publish
+						it indefinitely. I think the alternatives I've provided, such as availability only to other students and TU personell, and not listing the thesis in a search engine, in
+						addition to reassuring the uploaders with the takedown request button should they change their minds later, should already change a lot of uploaders' minds. Furthermore,
+						I think it may be better to think of a way to encourage publishing your thesis, such as a free coupon for the on-campus coffee company, or something like that. I wish 
+						I had more time to explore this.
+					</p>
+					<p>
+						Another issue is that of data longevity. Links expire and servers go down. When a lot of the media about the thesis is hosted on other sites, knowledge can be lost
+						when a site goes down, or links break. The <a href="https://archive.org/">internet archive</a> and its 'wayback machine' is one way to archive webpages, but this
+						has its limitation. Hosting media on the TU's own servers can be another way to solve this, but hundreds if not thousands theses get added every year; all of that
+						media would need storage. Since one of the <a href="Sources/Requirements - The Next Generation TU Delft Repository.pdf">requirements for the new system</a> was 1GB per
+						per theses, I've assumed that as a maximum, but knowing how much storage space the TU would need for this, is outside the scope of this project.
+					</p>
+					<p>
+						There are also a lot of different Ideas I would have liked to have more time for to develop. These include showing related keywords after entering a search query to help
+						users find the right terms when searching; nowing what metadata to add to different types of media, as well as the thesis itself, to aid in searching and finding related
+						theses, or searching directly for media; having a big list of supervisors for a particular faculty, and making it a dedicated page for students to find the right supervisor;
+						generating cover art for theses without them using AI, and the metadata is input; and integrating supervisors more into the workflow of what ends up on the repository.
+					</p>
 
-					<h4 class="blue-text">Upload and publishing encouragement</h4>
-					<p>fixme talk about how I currently don't know if the multiple upload fields and privacy options actually work.</p>
+					<h4 class="blue-text">Self Evaluation and What I've Learned</h4>
+					<p>
+						I'm proud of the design I've made, and I feel like I can do a lot more to improve it, and answer questions still left up in the air if I would have the time
+						<a href="#Discussion">(see discussion)</a>. I would love to redesign the upload page when I knew more of what will be possible with the new backend software,
+						what metadata it absolutely needs and what it doesn't need, and with how the users feel about it. I'm proud of my exploration of multimedia reporting, and I
+						think that this will become the new paradigm in science communication and reporting. I'm glad I got the chance to talk to and convince teachers at the TU Delft 
+						about this.
+					</p>
+					<p>
+						I've learned a lot about working for a company that isn't a design studio. I was very surprised that the TU Delft library didn't have information on who
+						uses the repository, as that would be the first thing a designer would ask. I'm proud of my research process, and building this knowledge of the users from 
+						the ground up, without any usage statistics. Doing interviews and meetings is quite hard for me, but I've learned to do it a lot better over the course of this
+						project. I've also learned that planning and having meetings is something that happens a lot at the TU Delft. At first I was honored that so many people wanted to
+						speak to me, but I learned quickly that if I said yes to every meeting, that I would no longer have any time left to do my work in.
+					</p>
 				</div>
 				
 				<!--References-->
 				<div class="container section scrollspy" id="References">
 					<h3 class="blue-text">References</h3>
+					<a href="mailto:ashleyhemerik@gmail.com" class="btn blue"><i class="material-icons left">mail</i>Request access to full interview audio/video</a>
 					<table>
 						<thead>
 							<tr>
@@ -2659,13 +3001,478 @@ public class MyClass {
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>Test Title</td>
-								<td><a href="#">Link</a></td>
-							</tr>
+				
+				<tr>
+					<td>
+						TU Delft (2023, January 26). <i>TU Delft student theses repository</i>. Retrieved from https://repository.tudelft.nl/islandora/search/?collection=education
+					</td>
+					<td><a href="https://web.archive.org/web/20230120130947/https://repository.tudelft.nl/islandora/search/?collection=education">link</a></td>
+				</tr>
+
+				
+				<tr>
+					<td>
+						Clare, C (2021, November 3). <i>Rethinking the library repository: a focus on masters' and doctoral theses</i>. Retrieved from https://openworking.wordpress.com/2021/11/03/rethinking-the-library-repository-a-focus-on-masters-and-doctoral-theses/
+					</td>
+					<td><a href="https://web.archive.org/web/20230120131109/https://openworking.wordpress.com/2021/11/03/rethinking-the-library-repository-a-focus-on-masters-and-doctoral-theses/">link</a></td>
+				</tr>
+				
+				<tr>
+					<td>
+						Heles, D (2021). <i>Q&A: Islandora Upgrade</i>. Retrieved from https://lyrasis.zendesk.com/hc/en-us/articles/360059419231-Q-A-Islandora-Upgrade
+					</td>
+					<td><a href="https://lyrasis.zendesk.com/hc/en-us/articles/360059419231-Q-A-Islandora-Upgrade" target="_blank">link</a></td>
+				</tr>
+				
+
+				<tr>
+					<td>
+						Jadhav, A (2022, March 8). <i>Morphing Matter</i>. Delft: TU Delft. Retrieved from http://resolver.tudelft.nl/uuid:98be37d9-3cdd-460f-b5b4-2d80fb96a731
+					</td>
+					<td><a href="http://resolver.tudelft.nl/uuid:98be37d9-3cdd-460f-b5b4-2d80fb96a731" target="_blank">link</a></td>
+				</tr>
+				
+				<tr>
+				<td>
+					Dunning et al. (2022). <i>Requirements - The Next Generation TU Delft Repository</i>. internal document
+				</td>
+				<td><a href="Sources/Requirements - The Next Generation TU Delft Repository.pdf" target="_blank">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					TU Delft (2022, June 1). <i>Working together to ensure a free flow of knowledge Roadmap 2020-2024</i>. Retrieved from https://tu-delft.foleon.com/tu-delft/library-roadmap-2020-2024/cover/
+				</td>
+				<td><a href="Sources/TU Delft library roadmap.pdf">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Clare and Ghorbani (2021, September 30). <i>Ideas for front-end developments</i>. Retrieved from https://docs.google.com/presentation/d/13ZyVbAICT_KX7OSosZCjxs9u0qYZcGKD/edit#slide=id.gf5290520dd_0_96
+				</td>
+				<td><a href="Sources/ClareGhorbani.pdf" target="_blank">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Davis, H (2006, May). <i>Search Engine Optimization</i>. O'Reilly. Retrieved from https://books.google.nl/books?hl=nl&lr=&id=hYSMBAAAQBAJ&oi=fnd&pg=PT6&dq=search+engine+optimization&ots=2c8ETBLlht&sig=gKOomaT8tqgko2nFFHe05pCUDtQ#v=onepage&q=search%20engine%20optimization&f=false
+				</td>
+				<td><a href="https://books.google.nl/books?hl=nl&lr=&id=hYSMBAAAQBAJ&oi=fnd&pg=PT6&dq=search+engine+optimization&ots=2c8ETBLlht&sig=gKOomaT8tqgko2nFFHe05pCUDtQ#v=onepage&q=search%20engine%20optimization&f=false">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					van Boeijen, Daalhuizen, and Zijlstra (2020). <i>Delft Design Guide</i>. BISPublishers
+				</td>				
+				<td><a href="https://www.bispublishers.com/delft-design-guide-revised.html" target="_blank">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Hemerik A. (2022). <i>Graduation Project Brief</i>.
+				</td>
+				<td><a href="Sources/Graduation Project Brief Ashley Hemerik (Redesigning grad repository).pdf">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Wimmer, Stiles, and Abrams (2021, January). <i>The Observational Research Handbook: Understanding How Consumers Live with Your Products</i>.  World Advertising Research Center Ltd. Retrieved from https://go.gale.com/ps/i.do?id=GALE%7CA75263363&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=00218499&p=AONE&sw=w&userGroupName=anon%7E17a053b1
+				</td>
+				<td><a href="https://go.gale.com/ps/i.do?id=GALE%7CA75263363&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=00218499&p=AONE&sw=w&userGroupName=anon%7E17a053b1">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Harzing, A. (2022, November 6). <i>Publish or Perish</i>. Retrieved from https://harzing.com/resources/publish-or-perish
+				</td>
+				<td><a href="https://harzing.com/resources/publish-or-perish">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Google (2023). <i>Google Scholar</i>. Retrieved from https://scholar.google.com
+				</td>
+				<td><a href="https://scholar.google.com">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Hemerik, A (2022). <i>Citation numbers for TU Delft Repository articles</i>. 
+				</td>
+				<td><a href="Images/PoPCites.csv">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Stone and Lowe (2014, March 31). <i>Who is Citing Undergraduate Theses in Institutional Digital Repositories? Implications for Scholarship and Information Literacy</i>. Taylor & Francis Online. Retrieved from https://doi.org/10.1080/10691316.2014.929065
+				</td>
+				<td><a href="https://doi.org/10.1080/10691316.2014.929065">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Kushkowski, J.D., Parsons, K.A., & Wiese, W.H. (2003). Master's and Doctoral Thesis Citations: Analysis and Trends of a Longitudinal Study. portal: Libraries and the Academy 3(3), 459-479. doi:10.1353/pla.2003.0062.
+				</td>
+				<td><a href="https://doi.org/10.1353/pla.2003.0062">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					De Kleijn, R., Meijer, P., Brekelmans, M., & Pilot, A. (2012). Curricular Goals and Personal Goals in Master's Thesis Projects: Dutch Student-Supervisor Dyads. International Journal of Higher Education, 2(1). https://doi.org/10.5430/ijhe.v2n1p1
+				</td>
+				<td><a href="http://dx.doi.org/10.5430/ijhe.v2n1p1" target="_blank">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Bourke, S., & Holbrook, A. P. (2013). Examining PhD and research masters theses. Assessment and Evaluation in Higher Education, 38(4), 407-416. https://doi.org/10.1080/02602938.2011.638738
+				</td>
+				<td><a href="https://doi.org/10.1080/02602938.2011.638738" target="_blank" >link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					O'Leary, S., & Abbaspour, P. (2015). <em>LCphysX</em>: Teaching Undergraduate Physics Majors Multi- Media Science Communication Skills for Public Outreach. 2015 Conference on Laboratory Instruction Beyond the First Year. https://doi.org/10.1119/bfy.2015.pr.018
+				</td>
+				<td><a href="http://doi.org/10.1119/bfy.2015.pr.018" target="_blank">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Kousha, K., Thelwall, M., & Abdoli, M. (2012). The role of online videos in research communication: A content analysis of YouTube videos cited in academic publications. Journal of the American Society for Information Science and Technology, 63(9), 1710–1727. https://doi.org/10.1002/asi.22717
+				</td>
+				<td><a href="http://doi.org/10.1002/asi.22717" target="_blank">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Bredbenner, K., & Simon, S. M. (2019). Video abstracts and plain language summaries are more effective than graphical abstracts and published abstracts. PLOS ONE, 14(11), e0224697. https://doi.org/10.1371/journal.pone.0224697
+				</td>
+				<td><a href="https://doi.org/10.1371/journal.pone.0224697" target="_blank">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Lesen, A. E., Rogan, A., & Blum, M. J. (2016). Science Communication Through Art: Objectives, Challenges, and Outcomes. Trends in Ecology and Evolution, 31(9), 657–660. https://doi.org/10.1016/j.tree.2016.06.004
+				</td>
+				<td><a href="https://doi.org/10.1016/j.tree.2016.06.004" target="_blank">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					TU Delft (2022). <i>Art-Embedded Learning in Technical Higher Education </i> Retrieved from https://www.tudelft.nl/library/over-de-library/tu-delft-library-presenteert/art-embedded-learning-in-technical-higher-education
+				</td>
+				<td><a href="https://web.archive.org/web/20230120145107/https://www.tudelft.nl/library/over-de-library/tu-delft-library-presenteert/art-embedded-learning-in-technical-higher-education" target="_blank">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Pferschy-Wenzig, E. M., Pferschy, U., Wang, D., Mocan, A., & Atanasov, A. (2016). Does a Graphical Abstract Bring More Visibility to Your Paper? Molecules, 21(9), 1247. https://doi.org/10.3390/molecules21091247
+				</td>
+				<td><a href="http://doi.org/10.3390/molecules21091247" target="_blank">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Japanse voorstellingen - Van Gogh Museum. (n.d.). https://www.vangoghmuseum.nl/nl/prenten/ontdek/p1970S2001/japanse-voorstellingen
+				</td>
+				<td><a href="https://www.vangoghmuseum.nl/nl/prenten/ontdek/p1970S2001/japanse-voorstellingen">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Council’s choice | The Bibliographical Society. (n.d.). http://www.bibsoc.org.uk/news/councils-choice
+				</td>
+				<td><a href="http://www.bibsoc.org.uk/news/councils-choice">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Advanced Search - Soutron LMS. (n.d.). Copyright 2007-2023 Soutron Global, Inc.. For Further Information Please Go to www.soutron.com. https://foundling.soutron.net/Portal/Default/en-GB/Search/AdvancedSearch
+				</td>
+				<td><a href="https://foundling.soutron.net/Portal/Default/en-GB/Search/AdvancedSearch">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Discover Europe's digital cultural heritage. (n.d.). Europeana. https://www.europeana.eu/en
+				</td>
+				<td><a href="https://www.europeana.eu/en">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					TU Eindhoven student theses repository. (n.d.). Eindhoven University of Technology Research Portal. https://research.tue.nl/en/studentTheses/
+				</td>
+				<td><a href="https://research.tue.nl/en/studentTheses/">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Repository home - University of Twente Student Theses. (n.d.). https://essay.utwente.nl/
+				</td>
+				<td><a href="https://essay.utwente.nl/">link</a>	
+				</td>
+			</tr>
+
+				<tr>
+				<td>
+					Univeristy of Wageningen Master theses repository. (n.d.). https://library.wur.nl/WebQuery/theses 
+				</td>
+				<td><a href="https://library.wur.nl/WebQuery/theses">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					altmetric. (n.d.). Altmetric homepage. https://www.altmetric.com/
+				</td>
+				<td><a href="https://www.altmetric.com/">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Digital Publishing Platform & Content Publishing Solutions. (n.d.). Issuu. https://issuu.com/
+				</td>
+				<td><a href="https://issuu.com/">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Kun, P (2020, August 25). <i>Design inquiry through data</i>. Delft University of Technology. Retrieved from https://doi.org/10.4233/uuid:7e914dd9-2b53-4b2c-9061-86087dbb93b9
+				</td>
+				<td><a href="https://doi.org/10.4233/uuid:7e914dd9-2b53-4b2c-9061-86087dbb93b9">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Kim, H (2000, June 16). <i>Motivations for hyperlinking in scholarly electronic articles: A qualitative study</i>. Journal of the American Society for Information Science. Retrieved from Journal of the American Society for Information Science
+				</td>
+				<td><a href="https://doi.org/10.1002/1097-4571(2000)51:10%3C887::AID-ASI20%3E3.0.CO;2-1">link</a></td>
+			</tr>
+ 
+				
+				<tr>
+				<td>
+					Wikipedia contributors. (2022, October 13). Content repository. Wikipedia. https://en.wikipedia.org/wiki/Content_repository
+				</td>
+				<td><a href="https://web.archive.org/web/20230120150200/https://en.wikipedia.org/wiki/Content_repository">
+						link
+				</a>
+				</td>
+			</tr>
+
+				
+				<tr>
+				<td>
+					Team, T. L. (2020, June 2). Embedded Media Definition. Loomly Blog. https://blog.loomly.com/embedded-media-definition/
+				</td>
+				<td><a href="https://web.archive.org/web/20230120150233/https://blog.loomly.com/embedded-media-definition/">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Assistant Secretary for Public Affairs. (n.d.). Use Cases | Usability.gov. https://www.usability.gov/how-to-and-tools/methods/use-cases.html
+				</td>
+				<td><a href="https://web.archive.org/web/20230120150323/https://www.usability.gov/how-to-and-tools/methods/use-cases.html">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Wikipedia contributors. (2022b, December 22). User-centered design. Wikipedia. https://en.wikipedia.org/wiki/User-centered_design
+				</td>
+				<td><a href="https://web.archive.org/web/20230120150352/https://en.wikipedia.org/wiki/User-centered_design">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Lopez, T. (2014, February 3). Stop Citing Your Papers. Start Hyperlinking. Slate Magazine. https://slate.com/technology/2014/02/citing-with-hyperlinks-academia-will-change-with-hypercitation.html
+				</td>
+				<td><a href="https://web.archive.org/web/20230120150445/https://slate.com/technology/2014/02/citing-with-hyperlinks-academia-will-change-with-hypercitation.html">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					What is the difference between a reciprocating engine and an oscillating cylinder engine? (n.d.). Quora. https://www.quora.com/What-is-the-difference-between-a-reciprocating-engine-and-an-oscillating-cylinder-engine
+				</td>
+				<td><a href="https://www.quora.com/What-is-the-difference-between-a-reciprocating-engine-and-an-oscillating-cylinder-engine">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					4TU.ResearchData. (n.d.). Figshare. https://data.4tu.nl/Delft_University_of_Technology
+				</td>
+				<td><a href="https://data.4tu.nl/Delft_University_of_Technology">link</a></td>
+			</tr>
+ 
+				<tr>
+				<td>
+					T-FLEX CAD ST. (2017, December 29). Gearbox (Propeller Turbine) - Download Free 3D model by T-FLEX CAD ST (Free) (@tflexcad). https://sketchfab.com/3d-models/gearbox-propeller-turbine-9c5f775f4c4b447496c9846ce7638b4b
+				</td>
+				<td><a href="https://sketchfab.com/models/9c5f775f4c4b447496c9846ce7638b4b">link</a></td>
+			</tr>
+
+
+				<tr>
+				<td>
+					Sketchfab. (n.d.). Sketchfab - The best 3D viewer on the web. https://sketchfab.com:443/
+				</td>
+				<td><a href="http://sketchfab.com">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					3D content central. (n.d.). https://www.3dcontentcentral.com/
+				</td>
+				<td><a href="https://www.3dcontentcentral.com/">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Upton, J. (2016, July 18). How to embed a 3D model into your website. CAD Design Technologies | CADTEK. https://www.cadtek.com/how-to-embed-3d-model/
+				</td>
+				<td><a href="https://www.cadtek.com/how-to-embed-3d-model/">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Three.js - JavaScript 3D library. (n.d.). https://threejs.org/
+				</td>
+				<td><a href="https://threejs.org/">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					VRA. (2020, September 12). VR Gallery “Mind Storm” upd 12.2022 - Buy Royalty Free 3D model by VRA (@architect47). https://sketchfab.com/3d-models/vr-gallery-mind-storm-upd-122022-e5a86e9d8f584a1992b5bb6d0765d4d2
+				</td>
+				<td><a href="https://sketchfab.com/models/e5a86e9d8f584a1992b5bb6d0765d4d2">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Patrik Huebner, www.patrik-huebner.com. (n.d.). SHUTDOWN.gallery. https://shutdown.gallery/
+				</td>
+				<td><a href="https://shutdown.gallery/">link</a>	
+				</td>
+			</tr>
+
+				<tr>
+				<td>
+					Mozilla Hubs Labs. (2023, January 18). Creator Labs. https://hubs.mozilla.com/labs/
+				</td>
+				<td><a href="https://mixedreality.mozilla.org/hello-webxr/">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Mozilla Hubs. (2020, January 23). Hello WebXR [Video]. YouTube. https://www.youtube.com/watch?v=uXBDogyGXTQ
+				</td>
+				<td><a href="https://www.youtube.com/embed/uXBDogyGXTQ">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Adobe Document Cloud. (2017, March 1). Exploring Virtual Reality and PDF with Adobe Research | Adobe Document Cloud [Video]. YouTube. https://www.youtube.com/watch?v=PxdBiCfXuQ4
+				</td>
+				<td><a href="https://www.youtube.com/embed/PxdBiCfXuQ4">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					JDoodle - Online Compiler, Editor for Java, C/C++, etc. (n.d.). https://www.jdoodle.com/
+				</td>
+				<td><a href="http://jdoodle.com">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					O.J.V. De Koornbeurs. (2023, January 21). Home. http://koornbeurs.nl
+				</td>
+				<td><a href="http://koornbeurs.nl">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Extract PDF images - quickly, online, free. (n.d.). PDF24 Tools. https://tools.pdf24.org/en/extract-images
+				</td>
+				<td><a href="https://tools.pdf24.org/en/extract-images#s=1664275367447">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Zygomatic. (n.d.). Free online word cloud generator and tag cloud creator. wordclouds.com. https://www.wordclouds.com/
+				</td>
+				<td><a href="https://www.wordclouds.com/">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Anuraag. (2022, September 28). Instantly Extract Hyperlinks From PDF Files & Export Them to PDF, DOC, DOCX. SysTools Software Pvt. Ltd. https://www.systoolsgroup.com/how-to/extract-and-export-hyperlinks-from-pdf/
+				</td>
+				<td><a href="https://web.archive.org/web/20230120151208/https://www.systoolsgroup.com/how-to/extract-and-export-hyperlinks-from-pdf/">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					QuillBot (Course Hero), LLC. (n.d.). Summarize any text with a click of a button https://quillbot.com/summarize
+				</td>
+				<td><a href="https://quillbot.com/summarize">link</a></td>
+			</tr>
+
+
+				<tr>
+				<td>
+					Hemerik, A (2022), <i>Concept Wireframes</i>. Retrieved from https://www.figma.com/file/PU5RXxcq9iqhLuHpn9bLUk/Concept-Wireframes?node-id=214%3A839
+				</td>
+				<td><a href="https://www.figma.com/file/PU5RXxcq9iqhLuHpn9bLUk/Concept-Wireframes?node-id=214%3A839">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Marcin Lubecki. (2020a, August 11). VR Art Gallery 2020 L Baked + Max Scene - Buy Royalty Free 3D model by Marcin Lubecki (@Lubus). https://sketchfab.com/3d-models/vr-art-gallery-2020-l-baked-max-scene-77b8c81fd81f43e69e9abf9beceb4d2b
+				</td>
+				<td><a href="https://sketchfab.com/3d-models/vr-art-gallery-2020-l-baked-max-scene-77b8c81fd81f43e69e9abf9beceb4d2b">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					Materialize. (n.d.). <i>Materialize CSS</i> https://materializecss.com/
+				</td>
+				<td><a href="materializecss.com">link</a></td>
+			</tr>
+
+				<tr>
+				<td>
+					TU Delfta (n.d.). <i>TU Delta Homepage</i> https://www.delta.tudelft.nl/
+				</td>
+				<td><a href="https://web.archive.org/web/20230120151645/https://www.delta.tudelft.nl/">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					#23: A Designer walks into a Hospital - Maaike Kleinsmann. (n.d.). TU Delft. https://www.tudelft.nl/io/delft-design-stories/out-of-the-blue-1
+				</td>
+				<td><a href="https://web.archive.org/web/20230120151434/https://www.tudelft.nl/io/delft-design-stories/out-of-the-blue-1">link</a></td>
+			</tr>
+				
+				<tr>
+				<td>
+					Join IDE's Graduation Community Program. (n.d.). TU Delft. https://www.tudelft.nl/2022/io/februari/join-ides-graduation-community-program
+				</td>
+				<td><a href="https://web.archive.org/web/20230120151543/https://www.tudelft.nl/2022/io/februari/join-ides-graduation-community-program">link</a></td>
+				</tr>			
+				
+				<tr>
+					<td>
+						The Internet Archive (n.d.). <i>Wayback machine</i> https://archive.org/
+					</td>
+					<td>
+						<a href="https://archive.org/">link</a>
+					</td>
+				</tr>
 						</tbody>
 					</table>
 				</div>
+				
 
 			</div>
 
@@ -2686,6 +3493,7 @@ public class MyClass {
 					<li><a style="border-color: #2196F3 !important" href="#FinalConcept">The Final Prototype</a></li>
 					<li><a style="border-color: #2196F3 !important" href="#Evaluation">Evaluation</a></li>
 					<li><a style="border-color: #2196F3 !important" href="#DesignDocument">Design Document</a></li>
+					<li><a style="border-color: #2196F3 !important" href="#Marketing">Marketing, how do we get people to use it?</a></li>
 					<li><a style="border-color: #2196F3 !important" href="#Conclusions">Conclusions</a></li>
 					<li><a style="border-color: #2196F3 !important" href="#Discussion">Discussion</a></li>
 					<li><a style="border-color: #2196F3 !important" href="#References">References</a></li>
